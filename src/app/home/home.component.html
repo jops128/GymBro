@@ -1,1 +1,12 @@
-<p>home works!</p>
+<a routerLink="/workout-add" class="btn btn-primary mb-3">Add New Workout</a>
+<div class="card" *ngFor="let workout of workouts$ | async" style="width: 18rem;">
+	<div class="card-header d-flex justify-content-between">
+	  <span>Workout</span>
+	  <a [routerLink]="['/workout-edit', workout.id]" class="btn btn-sm btn-primary">Edit</a>
+	</div>
+	<div class="card-body">
+	  <h5 class="card-title">{{ workout.name }}</h5>
+	  <p class="card-text">{{ workout.description }}</p>
+	  <a [routerLink]="['/workout', workout.id]" class="btn btn-primary">View Details</a>
+	</div>
+</div>

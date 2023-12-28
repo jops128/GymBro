@@ -1,0 +1,14 @@
+<form [formGroup]="workoutForm" class="row w-50 g-3">
+	<div class="col-md-12">
+	  <label for="name" class="form-label">Name</label>
+	  <input type="text" class="form-control" id="name" formControlName="name">
+	</div>
+	<div class="col-md-12">
+	  <label for="description" class="form-label">Description</label>
+	  <input type="text" class="form-control" id="description" formControlName="description">
+	</div>
+	<div class="col-12">
+		<button type="submit" class="btn btn-primary me-2" (click)="saveWorkout()">Save</button>
+		<button type="button" class="btn btn-secondary" routerLink="/">Cancel</button>
+	</div>
+</form>

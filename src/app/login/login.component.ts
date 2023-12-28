@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 import { StorageService } from '../services/storage.service';
 import { AppComponent } from '../app.component';
 import { Router } from '@angular/router';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -22,7 +23,7 @@ export class LoginComponent {
 	}
 
 	public login() {
-		this.authService.login(this.form.value.email, this.form.value.password).subscribe((val) => {
+		this.authService.login(this.form.value.email, this.form.value.password).pipe(take(1)).subscribe((val) => {
 			StorageService.setUser(val);
 			this.router.navigate(['']);
 		})
