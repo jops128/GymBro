@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="savePhase()">
+	<div class="mb-3">
+		<label for="phaseName" class="form-label">Phase Name</label>
+		<input type="text" class="form-control" id="phaseName" formControlName="name" required>
+	</div>
+	<div class="mb-3">
+		<label for="phaseDescription" class="form-label">Phase Description</label>
+		<textarea class="form-control" id="phaseDescription" formControlName="description" required></textarea>
+	</div>
+	<div class="mb-3">
+		<label for="phaseDuration" class="form-label">Number of Weeks</label>
+		<input [disabled]="!!phaseId" type="number" class="form-control" id="phaseDuration" [(ngModel)]="numberOfWeeks"
+			[ngModelOptions]="{standalone: true}" required>
+	</div>
+	<button type="submit" class="btn btn-primary me-2" [disabled]="!form.valid">Save</button>
+	<button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+</form>

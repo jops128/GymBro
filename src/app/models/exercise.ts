@@ -1,15 +1,14 @@
 export interface Exercise {
-	id: string;
-	phaseId: string;
-	name: string;
-	warpUpSets: string;
-	workingSets: string;
-	reps: string;
-	load: string;
-	previousLoad: string;
-	rpe: string;
-	rest: string;
-	substitutionOne: string;
-	substitutionTwo: string;
-	notes: string;
+	id?: string | null;
+	name: string | null;
+	warmUpSets: string | null;
+	workingSets: string | null;
+	reps: string | null;
+	load: string | null;
+	previousLoad: string | null;
+	rpe: string | null;
+	rest: string | null;
+	substitutionOne: string | null;
+	substitutionTwo: string | null;
+	notes: string | null;
 }

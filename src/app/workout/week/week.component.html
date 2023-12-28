@@ -1,0 +1,42 @@
+<div class="card">
+	<div class="card-header">
+		{{ week?.name }}
+		{{ week?.description }}
+		<button class="btn btn-primary btn-sm float-end" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add">Add
+			exercise</button>
+	</div>
+	<div class="card-body">
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th scope="col" [width]="100">Name</th>
+					<th scope="col" [width]="100">Warm Up Sets</th>
+					<th scope="col" [width]="100">Working Sets</th>
+					<th scope="col" [width]="100">Reps</th>
+					<th scope="col" [width]="100">Load</th>
+					<th scope="col" [width]="100">Previous Load</th>
+					<th scope="col" [width]="100">RPE</th>
+					<th scope="col" [width]="100">Rest</th>
+					<th scope="col" [width]="100">Substitution One</th>
+					<th scope="col" [width]="100">Substitution Two</th>
+					<th scope="col" [width]="100">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="table-row" (click)="openViewer(exercise.id!)" *ngFor="let exercise of week?.exercises">
+					<td>{{ exercise.name }}</td>
+					<td>{{ exercise.warmUpSets }}</td>
+					<td>{{ exercise.workingSets }}</td>
+					<td>{{ exercise.reps }}</td>
+					<td>{{ exercise.load }}</td>
+					<td>{{ exercise.previousLoad }}</td>
+					<td>{{ exercise.rpe }}</td>
+					<td>{{ exercise.rest }}</td>
+					<td>{{ exercise.substitutionOne }}</td>
+					<td>{{ exercise.substitutionTwo }}</td>
+					<td>{{ exercise.notes }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

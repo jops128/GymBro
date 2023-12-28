@@ -14,6 +14,9 @@ import { EditWorkoutComponent } from './workout/edit-workout/edit-workout.compon
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { EditPhaseComponent } from './workout/edit-phase/edit-phase.component';
+import { WeekComponent } from './workout/week/week.component';
+import { EditExerciseComponent } from './workout/week/edit-exercise/edit-exercise.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
     LoginComponent,
 	WorkoutComponent,
 	EditWorkoutComponent,
-	HomeComponent
+	HomeComponent,
+	EditPhaseComponent,
+ WeekComponent,
+ EditExerciseComponent
   ],
   imports: [
     BrowserModule,

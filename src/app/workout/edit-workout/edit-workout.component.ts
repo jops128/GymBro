@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs';
+import { ControlsOf } from 'src/app/helpers/form-group-type';
+import { Workout } from 'src/app/models/workout';
 import { WorkoutService } from 'src/app/services/workout.service';
 
 @Component({
@@ -10,11 +12,11 @@ import { WorkoutService } from 'src/app/services/workout.service';
   styleUrl: './edit-workout.component.scss'
 })
 export class EditWorkoutComponent implements OnInit {
-	public workoutForm: FormGroup = new FormGroup({
-		id: new FormControl(''),
+	public workoutForm: FormGroup = new FormGroup<ControlsOf<Workout>>({
 		name: new FormControl(''),
 		description: new FormControl('')
 	});
+
 	public workoutId: string | null = null;
 
 	constructor(private route: ActivatedRoute, private workoutService: WorkoutService) {}
