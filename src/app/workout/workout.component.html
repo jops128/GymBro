@@ -1,5 +1,5 @@
-<ng-container *ngIf="workout; else loader">
-	<h2 appFadeIn>{{ workout.name }}
+<ng-container *ngIf="!isLoading; else loader">
+	<h2 appFadeIn>{{ workout?.name }}
 		<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
 	</h2>
 
@@ -10,7 +10,7 @@
 				<button mat-icon-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}"><mat-icon fontIcon="edit"></mat-icon></button>
 				<button mat-icon-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)"><mat-icon fontIcon="delete"></mat-icon></button>
 			</ng-template>
-			<app-week *ngFor="let week of phase.weeks" [week]="week" [phaseId]="phase.id" [workoutId]="workout.id"></app-week>
+			<app-week *ngFor="let week of phase.weeks" [week]="week" [phaseId]="phase.id" [workoutId]="workout?.id"></app-week>
 		</mat-tab>
 	  </mat-tab-group>
 </ng-container>

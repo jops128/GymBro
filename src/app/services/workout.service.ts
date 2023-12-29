@@ -49,6 +49,9 @@ export class WorkoutService {
 			const phasesCollectionRef = collection(workoutDocRef, 'phases');
 			return from(getDocs(phasesCollectionRef)).pipe(
 			  switchMap(phaseDocsSnapshot => {
+				if (phaseDocsSnapshot.empty) {
+					return of({ ...workoutData, phases: [] });
+				  }
 				const phasePromises = phaseDocsSnapshot.docs.map(phaseDoc => {
 				  const phaseData = mapIdField<Phase>(phaseDoc);
 				  const weeksCollectionRef = collection(phaseDoc.ref, 'weeks');

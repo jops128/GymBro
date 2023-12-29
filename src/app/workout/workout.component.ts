@@ -15,6 +15,7 @@ import { NotificationService } from '../services/notification.service';
 export class WorkoutComponent implements OnInit {
 	workout: Workout | null = null;
 	selectedTabIndex: number = 0;
+	isLoading: boolean = false;
 
 	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService) {}
 
@@ -24,8 +25,11 @@ export class WorkoutComponent implements OnInit {
 			AppComponent.app.router.navigate(['']);
 			return;
 		}
+		this.isLoading = true;
 		this.workoutService.getCompleteWorkoutById(workoutId).pipe(take(1)).subscribe(workout => {
+			console.log('workout: ', workout);
 			this.workout = workout;
+			this.isLoading = false;
 		});
 	}
 	
