@@ -6,6 +6,7 @@ import { AppComponent } from 'src/app/app.component';
 import { ControlsOf } from 'src/app/helpers/form-group-type';
 import { Exercise } from 'src/app/models/exercise';
 import { ExerciseService } from 'src/app/services/exercise.service';
+import { NotificationService } from 'src/app/services/notification.service';
 
 @Component({
   selector: 'app-edit-exercise',
@@ -31,6 +32,7 @@ export class EditExerciseComponent implements OnInit {
 	phaseId: string | null = null;
 	weekId: string | null = null;
 	exerciseId: string | null = null;
+	isLoading: boolean = false;
 
 	constructor(private route: ActivatedRoute, private exerciseService: ExerciseService) {}
 
@@ -41,9 +43,11 @@ export class EditExerciseComponent implements OnInit {
 		this.exerciseId = this.route.snapshot.paramMap.get('exerciseId');
 
 		if(this.exerciseId) {
+			this.isLoading = true;
 			this.exerciseService.getExerciseById(this.workoutId!, this.phaseId!, this.weekId!, this.exerciseId!).pipe(take(1)).subscribe(exercise => {
 				this.form.patchValue(exercise);
-			});
+				this.isLoading = false;
+		});
 		}
 	}
 
@@ -51,6 +55,7 @@ export class EditExerciseComponent implements OnInit {
 		const value = this.form.value as Exercise;
 		if(this.exerciseId) {
 			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.weekId!, this.exerciseId!, value).pipe(take(1)).subscribe(() => {
+				NotificationService.show('Exercise updated');
 				AppComponent.app.router.navigate(['/workout', this.workoutId]);
 			});
 			return;
@@ -58,6 +63,7 @@ export class EditExerciseComponent implements OnInit {
 
 		this.exerciseService.saveExercise(this.workoutId!, this.phaseId!, this.weekId!, value).pipe(take(1)).subscribe(() => {
 			AppComponent.app.router.navigate(['/workout', this.workoutId]);
+			NotificationService.show('Exercise saved');
 		});
 	}
 }

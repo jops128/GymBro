@@ -1,9 +1,16 @@
-<form [formGroup]="workoutForm" class="row w-50">
-	<text-input [formGroup]="workoutForm" [label]="'Name'" [name]="'name'"></text-input>
-	<text-input [formGroup]="workoutForm" [label]="'Description'" [name]="'description'"></text-input>
-	<!-- <button mat-stroked-button color="accent" class="w-25" (click)="addCategory()">Add Category</button> -->
-	<div class="col-12">
-		<button type="submit" mat-flat-button color="primary" class="me-2" (click)="saveWorkout()">Save</button>
-		<button type="button" mat-flat-button color="basic" routerLink="/">Cancel</button>
-	</div>
-</form>
+<ng-container *ngIf="!isLoading; else loader">
+	<app-title appFadeIn>{{ workoutId ? 'Edit workout' : 'New workout' }}</app-title>
+	<form appFadeIn [formGroup]="workoutForm" class="row w-50">
+		<text-input [formGroup]="workoutForm" [label]="'Name'" [name]="'name'"></text-input>
+		<text-input [formGroup]="workoutForm" [label]="'Description'" [name]="'description'"></text-input>
+		<!-- <button mat-stroked-button color="accent" class="w-25" (click)="addCategory()">Add Category</button> -->
+		<div class="col-12">
+			<button type="submit" mat-flat-button color="primary" class="me-2" (click)="saveWorkout()">Save</button>
+			<button type="button" mat-flat-button color="basic" routerLink="/">Cancel</button>
+		</div>
+	</form>
+</ng-container> 
+
+<ng-template #loader>
+	<app-loader></app-loader>
+</ng-template>

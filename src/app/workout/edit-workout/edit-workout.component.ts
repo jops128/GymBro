@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs';
+import { AppComponent } from 'src/app/app.component';
 import { ControlsOf } from 'src/app/helpers/form-group-type';
 import { Workout } from 'src/app/models/workout';
+import { NotificationService } from 'src/app/services/notification.service';
 import { WorkoutService } from 'src/app/services/workout.service';
 
 @Component({
@@ -19,15 +21,18 @@ export class EditWorkoutComponent implements OnInit {
 	});
 
 	public workoutId: string | null = null;
+	public isLoading: boolean = false;
 
 	constructor(private route: ActivatedRoute, private workoutService: WorkoutService) { }
 
 	ngOnInit() {
 		this.workoutId = this.route.snapshot.paramMap.get('id');
-
+		
 		if (this.workoutId) {
+			this.isLoading = true;
 			this.workoutService.getWorkoutById(this.workoutId).pipe(take(1)).subscribe(workout => {
 				this.workoutForm.patchValue(workout);
+				this.isLoading = false;
 			});
 		}
 	}
@@ -35,13 +40,14 @@ export class EditWorkoutComponent implements OnInit {
 	public saveWorkout() {
 		if (this.workoutId) {
 			this.workoutService.updateWorkout(this.workoutId, this.workoutForm.value).pipe(take(1)).subscribe(() => {
-				this.workoutForm.reset();
+				NotificationService.show('Workout updated')				
 			});
 			return;
 		}
 
 		this.workoutService.saveWorkout(this.workoutForm.value).pipe(take(1)).subscribe(() => {
-			this.workoutForm.reset();
+			AppComponent.app.router.navigate(['/']);
+			NotificationService.show('Workout saved')
 		});
 	}
 

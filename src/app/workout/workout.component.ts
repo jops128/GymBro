@@ -5,6 +5,7 @@ import { AppComponent } from '../app.component';
 import { take } from 'rxjs';
 import { Workout } from '../models/workout';
 import { PhaseService } from '../services/phase.service';
+import { NotificationService } from '../services/notification.service';
 
 @Component({
   selector: 'app-workout',
@@ -25,13 +26,13 @@ export class WorkoutComponent implements OnInit {
 		}
 		this.workoutService.getCompleteWorkoutById(workoutId).pipe(take(1)).subscribe(workout => {
 			this.workout = workout;
-			console.log('workout: ', workout);
 		});
 	}
 	
 	deletePhase(id: string) {
 		this.phaseService.deletePhase(this.workout!.id!, id).pipe(take(1)).subscribe(() => {
 			this.workout = { ...this.workout!, phases: this.workout!.phases!.filter(p => p.id !== id) };
+			NotificationService.show('Phase deleted');
 		});
 	}
 

@@ -1,23 +1,20 @@
-<h2>{{ workout?.name }}
-	<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
-  </h2>
-<div class="row">
-	<div class="col-12">
-		<ul class="nav nav-tabs">
-			<li class="nav-item" *ngFor="let phase of workout?.phases; let i = index">
-				<div class="nav-link" [ngClass]="selectedTabIndex === i ? 'active' : ''" data-bs-toggle="tab" (click)="selectTab(i)" role="tab">
-					{{phase.name}}
-					<button mat-stroked-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}">Edit</button>
-					<button mat-stroked-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)">Delete</button>
-				</div>
-			</li>
-		</ul>
-		<div class="tab-content">
-			<div *ngFor="let phase of workout?.phases; let i = index">
-				<div *ngIf="selectedTabIndex === i">
-					<app-week *ngFor="let week of phase.weeks" [week]="week" [phaseId]="phase.id"></app-week>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<ng-container *ngIf="workout; else loader">
+	<h2 appFadeIn>{{ workout.name }}
+		<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
+	</h2>
+
+	<mat-tab-group style="position: absolute;">
+		<mat-tab *ngFor="let phase of workout?.phases; let i = index">
+			<ng-template mat-tab-label>				
+				{{phase.name}}
+				<button mat-icon-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}"><mat-icon fontIcon="edit"></mat-icon></button>
+				<button mat-icon-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)"><mat-icon fontIcon="delete"></mat-icon></button>
+			</ng-template>
+			<app-week *ngFor="let week of phase.weeks" [week]="week" [phaseId]="phase.id" [workoutId]="workout.id"></app-week>
+		</mat-tab>
+	  </mat-tab-group>
+</ng-container>
+
+<ng-template #loader>
+	<app-loader></app-loader>
+</ng-template>

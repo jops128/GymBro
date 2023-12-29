@@ -1,19 +1,22 @@
-<!-- login.component.html -->
-
-<div class="container">
+<div class="container-fluid bg-primary w-100 h-100">
 	<div class="row justify-content-center">
-		<div class="col-md-6">
-			<div class="card mt-5">
-				<div class="card-header">
-					<h4 class="text-center">Login</h4>
-				</div>
+		<div class="col-md-5 col-lg-3 col-sm-7 col-8">
+			<div appFadeIn class="card mx-lg-5 mt-5 shadow-lg p-3 mb-5 bg-white rounded-4 border-0">
 				<div class="card-body">
+					<h1 class="text-center fs-1 fw-bold my-5">Login</h1>
 					<form>
 						<text-input [formGroup]="form" [label]="'Email'" [name]="'email'"></text-input>
-						<text-input [formGroup]="form" [label]="'Password'" [name]="'password'"
-							[isPassword]="true"></text-input>
-						<button type="submit" mat-flat-button color="primary" class="btn-block mt-2"
-							(click)="login()">Login</button>
+						<text-input [formGroup]="form" [label]="'Password'" [name]="'password'" [isPassword]="true"></text-input>
+						<div class="form-group my-5">
+							<button type="submit" mat-flat-button color="primary" class="w-100"
+								(click)="login()">
+								@if(isLoading) {
+									<span class="loader"></span>
+								} @else {
+									Login
+								}
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>

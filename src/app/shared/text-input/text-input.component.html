@@ -1,6 +1,6 @@
 <div [formGroup]="formGroup!">
 	<mat-form-field [floatLabel]="'always'" [subscriptSizing]="'dynamic'" [hideRequiredMarker]="!isRequired" class="w-100 mb-3">
 		<mat-label>{{ label }}</mat-label>
-		<input [disabled]="disabled" matInput [formControlName]="name" [type]="isPassword ? 'password' : 'text'" [placeholder]="label">
+		<input [readonly]="disabled" matInput [formControlName]="name" [type]="isPassword ? 'password' : 'text'" [placeholder]="label">
 	</mat-form-field>
 </div>

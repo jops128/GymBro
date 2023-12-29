@@ -17,15 +17,24 @@ export class LoginComponent {
 		email: new FormControl(''),
 		password: new FormControl(''),
 	});
+	isLoading: boolean = false;
 
 	constructor(private authService: AuthService, private router: Router) {
 
 	}
 
 	public login() {
-		this.authService.login(this.form.value.email, this.form.value.password).pipe(take(1)).subscribe((val) => {
-			StorageService.setUser(val);
-			this.router.navigate(['']);
-		})
+		this.isLoading = true;
+		this.authService.login(this.form.value.email, this.form.value.password).pipe(take(1)).subscribe(
+			{
+				next: (val) => {
+					StorageService.setUser(val);
+					this.router.navigate(['']);
+				},
+				error: () => {
+					this.isLoading = false;
+				}
+			}
+		)
 	}
 }

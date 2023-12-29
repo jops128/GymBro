@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NotificationService } from './services/notification.service';
 
 @Component({
 	selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
 	public static app: AppComponent;
 	title = 'workout-app';
 
-	constructor(public router: Router) {
+	constructor(public router: Router, public notificationService: NotificationService) {
 		AppComponent.app = this;
 	}
 }

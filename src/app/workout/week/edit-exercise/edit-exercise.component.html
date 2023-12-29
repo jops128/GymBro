@@ -1,16 +1,22 @@
-<h2>Edit Exercise</h2>
-<form [formGroup]="form" (ngSubmit)="save()">
-	<text-input [name]="'name'" [formGroup]="form" [label]="'Name'"></text-input>
-	<text-input [name]="'warmUpSets'" [formGroup]="form" [label]="'Warm Up Sets'"></text-input>
-	<text-input [name]="'workingSets'" [formGroup]="form" [label]="'Working Sets'"></text-input>
-	<text-input [name]="'reps'" [formGroup]="form" [label]="'Reps'"></text-input>
-	<text-input [name]="'load'" [formGroup]="form" [label]="'Load'"></text-input>
-	<text-input [name]="'previousLoad'" [formGroup]="form" [label]="'Previous Load'"></text-input>
-	<text-input [name]="'rpe'" [formGroup]="form" [label]="'RPE'"></text-input>
-	<text-input [name]="'rest'" [formGroup]="form" [label]="'Rest'"></text-input>
-	<text-input [name]="'substitutionOne'" [formGroup]="form" [label]="'Substitution One'"></text-input>
-	<text-input [name]="'substitutionTwo'" [formGroup]="form" [label]="'Substitution Two'"></text-input>
-	<text-area [name]="'notes'" [formGroup]="form" [label]="'Notes'"></text-area>
-	<button type="submit" mat-flat-button color="primary">Submit</button>
-	<button type="submit" mat-flat-button color="basic" routerLink="/workout/{{workoutId}}">Cancel</button>
-</form>
+<ng-container *ngIf="!isLoading; else loader">
+	<app-title appFadeIn>{{ exerciseId ? 'Edit exercise' : 'New exercise' }}</app-title>
+	<form appFadeIn [formGroup]="form" (ngSubmit)="save()">
+		<text-input [name]="'name'" [formGroup]="form" [label]="'Name'"></text-input>
+		<text-input [name]="'warmUpSets'" [formGroup]="form" [label]="'Warm Up Sets'"></text-input>
+		<text-input [name]="'workingSets'" [formGroup]="form" [label]="'Working Sets'"></text-input>
+		<text-input [name]="'reps'" [formGroup]="form" [label]="'Reps'"></text-input>
+		<text-input [name]="'load'" [formGroup]="form" [label]="'Load'"></text-input>
+		<text-input [name]="'previousLoad'" [formGroup]="form" [label]="'Previous Load'"></text-input>
+		<text-input [name]="'rpe'" [formGroup]="form" [label]="'RPE'"></text-input>
+		<text-input [name]="'rest'" [formGroup]="form" [label]="'Rest'"></text-input>
+		<text-input [name]="'substitutionOne'" [formGroup]="form" [label]="'Substitution One'"></text-input>
+		<text-input [name]="'substitutionTwo'" [formGroup]="form" [label]="'Substitution Two'"></text-input>
+		<text-area [name]="'notes'" [formGroup]="form" [label]="'Notes'"></text-area>
+		<button type="submit" mat-flat-button color="primary">Submit</button>
+		<button type="submit" mat-flat-button color="basic" routerLink="/workout/{{workoutId}}">Cancel</button>
+	</form>
+</ng-container>
+
+<ng-template #loader>
+	<app-loader></app-loader>
+</ng-template>

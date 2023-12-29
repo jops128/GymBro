@@ -1,17 +1,21 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { take } from 'rxjs';
 import { ControlsOf } from 'src/app/helpers/form-group-type';
+import { UIUtility } from 'src/app/helpers/ui-utility';
 import { Exercise } from 'src/app/models/exercise';
 import { Week } from 'src/app/models/week';
+import { ExerciseService } from 'src/app/services/exercise.service';
 
 @Component({
-  selector: 'app-week',
-  templateUrl: './week.component.html',
-  styleUrl: './week.component.scss'
+	selector: 'app-week',
+	templateUrl: './week.component.html',
+	styleUrl: './week.component.scss'
 })
 export class WeekComponent {
 	@Input('week') week: Week | null = null;
 	@Input('phaseId') phaseId?: string | null = null;
+	@Input('workoutId') workoutId?: string | null = null;
 	fullViewer: boolean = false;
 	selectedExerciseIndex: number = 0;
 
@@ -29,6 +33,8 @@ export class WeekComponent {
 		notes: new FormControl('', Validators.required)
 	});
 
+	constructor(private exerciseService: ExerciseService) { }
+
 	openViewer(index: number) {
 		this.selectedExerciseIndex = index;
 		this.exerciseForm.patchValue(this.week!.exercises![index]);
@@ -40,18 +46,43 @@ export class WeekComponent {
 	}
 
 	previous() {
-		if(this.selectedExerciseIndex === 0) {
+		if (this.selectedExerciseIndex === 0) {
+			return;
+		}
+
+		if (this.exerciseForm.dirty) {
+			const formValue = this.exerciseForm.value as Exercise;
+			const exerciseId = this.week?.exercises?.at(this.selectedExerciseIndex)?.id!
+			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.week?.id!, exerciseId, formValue).pipe(take(1)).subscribe(() => {
+				this.week?.exercises?.splice(this.selectedExerciseIndex, 1, { ...formValue, id: exerciseId });
+				this.selectedExerciseIndex--;
+				this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
+				this.exerciseForm.markAsPristine();
+			});
 			return;
 		}
 		this.selectedExerciseIndex--;
 		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
 	}
-	
+
 	next() {
-		if(this.selectedExerciseIndex === this.week!.exercises!.length - 1) {
+		if (this.selectedExerciseIndex === this.week!.exercises!.length - 1) {
+			return;
+		}
+
+		if (this.exerciseForm.dirty) {
+			const formValue = this.exerciseForm.value as Exercise;
+			const exerciseId = this.week?.exercises?.at(this.selectedExerciseIndex)?.id!
+			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.week?.id!, exerciseId, formValue).pipe(take(1)).subscribe(() => {
+				this.week?.exercises?.splice(this.selectedExerciseIndex, 1, { ...formValue, id: exerciseId });
+				this.selectedExerciseIndex++;
+				this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
+				this.exerciseForm.markAsPristine();
+			});
 			return;
 		}
 		this.selectedExerciseIndex++;
 		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
 	}
 }
+

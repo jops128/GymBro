@@ -2,24 +2,26 @@
 
 .container {
 	margin-top: 50px;
-  }
-  
-  .card {
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-header {
-	background-color: #007bff;
-	color: white;
-  }
-  
-  .btn-primary {
-	background-color: #007bff;
-	border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-	background-color: #0056b3;
-	border-color: #0056b3;
-  }
-  
+}
+
+.loader {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	border: 5px solid;
+	margin-top: 5px;
+	border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	animation: rotation .7s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

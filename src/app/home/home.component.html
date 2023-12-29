@@ -1,12 +1,22 @@
-<a routerLink="/workout-add" mat-flat-button color="primary" class="mb-2">Add New Workout</a>
-<div class="card" *ngFor="let workout of workouts$ | async" style="width: 18rem;">
-	<div class="card-header d-flex justify-content-between">
-	  <span>Workout</span>
-	  <a [routerLink]="['/workout-edit', workout.id]" mat-flat-button color="primary">Edit</a>
+<ng-container *ngIf="workouts$ | async as workouts; else loader">
+	<a appFadeIn routerLink="/workout-add" mat-flat-button color="primary" class="mb-2">Add New Workout</a>
+	<div appFadeIn class="row justify-content-center">
+		<div *ngFor="let workout of workouts" class="col-md-4">
+			<div class="card">
+				<div class="card-header d-flex justify-content-between align-items-center">
+				  <h2 class="mb-0">Workout</h2>
+				  <a [routerLink]="['/workout-edit', workout.id]" mat-flat-button color="primary">Edit</a>
+				</div>
+				<div class="card-body">
+				  <h5 class="card-title">{{ workout.name }}</h5>
+				  <p class="card-text">{{ workout.description }}</p>
+				  <a [routerLink]="['/workout', workout.id]" mat-flat-button color="primary">View Details</a>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="card-body">
-	  <h5 class="card-title">{{ workout.name }}</h5>
-	  <p class="card-text">{{ workout.description }}</p>
-	  <a [routerLink]="['/workout', workout.id]" mat-flat-button color="primary">View Details</a>
-	</div>
-</div>
+</ng-container>
+
+<ng-template #loader>
+	<app-loader></app-loader>
+</ng-template>

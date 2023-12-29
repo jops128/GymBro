@@ -7,6 +7,7 @@ import { ControlsOf } from 'src/app/helpers/form-group-type';
 import { Exercise } from 'src/app/models/exercise';
 import { Phase } from 'src/app/models/phase';
 import { Week } from 'src/app/models/week';
+import { NotificationService } from 'src/app/services/notification.service';
 import { PhaseService } from 'src/app/services/phase.service';
 import { WeekService } from 'src/app/services/week.service';
 
@@ -26,6 +27,7 @@ export class EditPhaseComponent implements OnInit {
 
 	public phaseId: string | null = null;
 	public workoutId: string | null = null;
+	public isLoading: boolean = false;
 
 	constructor(private route: ActivatedRoute, private phaseService: PhaseService, private weekService: WeekService) { }
 
@@ -39,10 +41,12 @@ export class EditPhaseComponent implements OnInit {
 		}
 
 		if (this.phaseId) {
+			this.isLoading = true;
 			this.phaseService.getPhaseById(this.workoutId, this.phaseId).pipe(take(1)).subscribe(phase => {
 				this.form.patchValue(phase);
 				this.numberOfWeeks = phase.numberOfWeeks ?? 0;
-			});
+				this.isLoading = false;
+		});
 		}
 	}
 
@@ -57,6 +61,7 @@ export class EditPhaseComponent implements OnInit {
 			this.phaseService.updatePhase(this.workoutId!, this.phaseId, value).pipe(take(1), switchMap((val) => {
 				return this.weekService.saveWeeks(this.workoutId!, this.phaseId!, weeks);
 			})).subscribe(() => {
+				NotificationService.show('Phase updated');
 				AppComponent.app.router.navigate(['/workout', this.workoutId]);
 			});
 		} else {
@@ -64,6 +69,7 @@ export class EditPhaseComponent implements OnInit {
 				const phaseId = val.id;
 				return this.weekService.saveWeeks(this.workoutId!, phaseId, weeks);
 			})).subscribe(() => {
+				NotificationService.show('Phase saved');
 				AppComponent.app.router.navigate(['/workout', this.workoutId]);
 			});
 		}

@@ -1,6 +1,6 @@
 <div [formGroup]="formGroup!">
 	<mat-form-field [floatLabel]="'always'" [hideRequiredMarker]="!isRequired" class="w-100">
 		<mat-label>{{ label }}</mat-label>
-		<textarea matInput [formControlName]="name" [placeholder]="label"></textarea>
+		<textarea matInput [readonly]="disabled" [formControlName]="name" [placeholder]="label"></textarea>
 	</mat-form-field>
 </div>

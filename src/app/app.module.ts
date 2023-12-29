@@ -21,10 +21,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TextInputComponent } from './shared/text-input/text-input.component';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule } from '@angular/material/form-field';
 import { TextAreaComponent } from './shared/text-area/text-area.component';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { InputBaseComponent } from './shared/input-base/input-base.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { LoaderComponent } from './shared/loader/loader.component';
+import { FadeInDirective } from './shared/directives/fade-in.directive';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TitleComponent } from './shared/title/title.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
 	declarations: [
@@ -38,7 +43,10 @@ import {MatIconModule} from '@angular/material/icon';
 		EditExerciseComponent,
 		TextInputComponent,
 		TextAreaComponent,
-  InputBaseComponent
+		InputBaseComponent,
+		LoaderComponent,
+		FadeInDirective,
+  TitleComponent
 	],
 	imports: [
 		BrowserModule,
@@ -51,6 +59,8 @@ import {MatIconModule} from '@angular/material/icon';
 		MatInputModule,
 		MatButtonModule,
 		MatIconModule,
+		MatSnackBarModule,
+		MatTabsModule,
 		provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
 		provideAuth(() => getAuth()),
 		provideFirestore(() => getFirestore()),
