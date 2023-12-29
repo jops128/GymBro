@@ -1,59 +1,16 @@
 <h2>Edit Exercise</h2>
 <form [formGroup]="form" (ngSubmit)="save()">
-	<div class="form-group">
-		<label for="name">Name</label>
-		<input type="text" id="name" class="form-control" formControlName="name">
-	</div>
-
-	<div class="form-group">
-		<label for="warmUpSets">Warm Up Sets</label>
-		<input type="text" id="warmUpSets" class="form-control" formControlName="warmUpSets">
-	</div>
-
-	<div class="form-group">
-		<label for="workingSets">Working Sets</label>
-		<input type="text" id="workingSets" class="form-control" formControlName="workingSets">
-	</div>
-
-	<div class="form-group">
-		<label for="reps">Reps</label>
-		<input type="text" id="reps" class="form-control" formControlName="reps">
-	</div>
-
-	<div class="form-group">
-		<label for="load">Load</label>
-		<input type="text" id="load" class="form-control" formControlName="load">
-	</div>
-
-	<div class="form-group">
-		<label for="previousLoad">Previous Load</label>
-		<input type="text" id="previousLoad" class="form-control" formControlName="previousLoad">
-	</div>
-
-	<div class="form-group">
-		<label for="rpe">RPE</label>
-		<input type="text" id="rpe" class="form-control" formControlName="rpe">
-	</div>
-
-	<div class="form-group">
-		<label for="rest">Rest</label>
-		<input type="text" id="rest" class="form-control" formControlName="rest">
-	</div>
-
-	<div class="form-group">
-		<label for="substitutionOne">Substitution One</label>
-		<input type="text" id="substitutionOne" class="form-control" formControlName="substitutionOne">
-	</div>
-
-	<div class="form-group">
-		<label for="substitutionTwo">Substitution Two</label>
-		<input type="text" id="substitutionTwo" class="form-control" formControlName="substitutionTwo">
-	</div>
-
-	<div class="form-group">
-		<label for="notes">Notes</label>
-		<input type="text" id="notes" class="form-control" formControlName="notes">
-	</div>
-
-	<button type="submit" class="btn btn-primary">Submit</button>
+	<text-input [name]="'name'" [formGroup]="form" [label]="'Name'"></text-input>
+	<text-input [name]="'warmUpSets'" [formGroup]="form" [label]="'Warm Up Sets'"></text-input>
+	<text-input [name]="'workingSets'" [formGroup]="form" [label]="'Working Sets'"></text-input>
+	<text-input [name]="'reps'" [formGroup]="form" [label]="'Reps'"></text-input>
+	<text-input [name]="'load'" [formGroup]="form" [label]="'Load'"></text-input>
+	<text-input [name]="'previousLoad'" [formGroup]="form" [label]="'Previous Load'"></text-input>
+	<text-input [name]="'rpe'" [formGroup]="form" [label]="'RPE'"></text-input>
+	<text-input [name]="'rest'" [formGroup]="form" [label]="'Rest'"></text-input>
+	<text-input [name]="'substitutionOne'" [formGroup]="form" [label]="'Substitution One'"></text-input>
+	<text-input [name]="'substitutionTwo'" [formGroup]="form" [label]="'Substitution Two'"></text-input>
+	<text-area [name]="'notes'" [formGroup]="form" [label]="'Notes'"></text-area>
+	<button type="submit" mat-flat-button color="primary">Submit</button>
+	<button type="submit" mat-flat-button color="basic" routerLink="/workout/{{workoutId}}">Cancel</button>
 </form>

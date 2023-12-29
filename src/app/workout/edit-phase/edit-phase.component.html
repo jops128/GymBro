@@ -1,17 +1,18 @@
-<form [formGroup]="form" (ngSubmit)="savePhase()">
-	<div class="mb-3">
-		<label for="phaseName" class="form-label">Phase Name</label>
-		<input type="text" class="form-control" id="phaseName" formControlName="name" required>
-	</div>
-	<div class="mb-3">
-		<label for="phaseDescription" class="form-label">Phase Description</label>
-		<textarea class="form-control" id="phaseDescription" formControlName="description" required></textarea>
-	</div>
-	<div class="mb-3">
+<form (ngSubmit)="savePhase()">
+	<text-input [formGroup]="form" [name]="'name'" [label]="'Phase Name'"></text-input>
+	<text-area [formGroup]="form" [name]="'description'" [label]="'Phase Description'"></text-area>
+	<!-- <div class="mb-3">
 		<label for="phaseDuration" class="form-label">Number of Weeks</label>
 		<input [disabled]="!!phaseId" type="number" class="form-control" id="phaseDuration" [(ngModel)]="numberOfWeeks"
 			[ngModelOptions]="{standalone: true}" required>
+	</div> -->
+	<div [formGroup]="form" class="mb-3">
+		<mat-form-field [floatLabel]="'always'" MatFormFieldControl [hideRequiredMarker]="false">
+			<mat-label>Number of Weeks</mat-label>
+			<input [disabled]="!!phaseId" matInput [(ngModel)]="numberOfWeeks"
+			[ngModelOptions]="{standalone: true}">
+		</mat-form-field>
 	</div>
-	<button type="submit" class="btn btn-primary me-2" [disabled]="!form.valid">Save</button>
-	<button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+	<button type="submit" mat-flat-button color="primary" class="me-2" [disabled]="!form.valid">Save</button>
+	<button type="button" mat-flat-button color="basic" (click)="cancel()">Cancel</button>
 </form>

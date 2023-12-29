@@ -7,24 +7,25 @@ import { Workout } from 'src/app/models/workout';
 import { WorkoutService } from 'src/app/services/workout.service';
 
 @Component({
-  selector: 'app-edit-workout',
-  templateUrl: './edit-workout.component.html',
-  styleUrl: './edit-workout.component.scss'
+	selector: 'app-edit-workout',
+	templateUrl: './edit-workout.component.html',
+	styleUrl: './edit-workout.component.scss'
 })
 export class EditWorkoutComponent implements OnInit {
 	public workoutForm: FormGroup = new FormGroup<ControlsOf<Workout>>({
 		name: new FormControl(''),
-		description: new FormControl('')
+		description: new FormControl(''),
+		categories: new FormControl([])
 	});
 
 	public workoutId: string | null = null;
 
-	constructor(private route: ActivatedRoute, private workoutService: WorkoutService) {}
+	constructor(private route: ActivatedRoute, private workoutService: WorkoutService) { }
 
 	ngOnInit() {
 		this.workoutId = this.route.snapshot.paramMap.get('id');
 
-		if(this.workoutId) {
+		if (this.workoutId) {
 			this.workoutService.getWorkoutById(this.workoutId).pipe(take(1)).subscribe(workout => {
 				this.workoutForm.patchValue(workout);
 			});
@@ -32,7 +33,7 @@ export class EditWorkoutComponent implements OnInit {
 	}
 
 	public saveWorkout() {
-		if(this.workoutId) {
+		if (this.workoutId) {
 			this.workoutService.updateWorkout(this.workoutId, this.workoutForm.value).pipe(take(1)).subscribe(() => {
 				this.workoutForm.reset();
 			});
@@ -42,5 +43,10 @@ export class EditWorkoutComponent implements OnInit {
 		this.workoutService.saveWorkout(this.workoutForm.value).pipe(take(1)).subscribe(() => {
 			this.workoutForm.reset();
 		});
+	}
+
+	public addCategory() {
+		const categories = this.workoutForm.get('categories') as FormControl;
+		categories.setValue([...categories.value, '']);
 	}
 }

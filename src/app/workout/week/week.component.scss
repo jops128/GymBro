@@ -1,3 +1,20 @@
 .table-row {
 	cursor: pointer;
 }
+
+.full-screen-viewer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: white;
+	z-index: 2;
+}
+
+.viewer-buttons {
+	position: fixed;
+    bottom: 0;
+    background: white;
+    padding-top: 20px;
+}

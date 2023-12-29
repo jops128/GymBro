@@ -1,5 +1,5 @@
 <h2>{{ workout?.name }}
-	<a routerLink="phase-add" class="btn btn-primary ms-2">Add Phase</a>
+	<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
   </h2>
 <div class="row">
 	<div class="col-12">
@@ -7,8 +7,8 @@
 			<li class="nav-item" *ngFor="let phase of workout?.phases; let i = index">
 				<div class="nav-link" [ngClass]="selectedTabIndex === i ? 'active' : ''" data-bs-toggle="tab" (click)="selectTab(i)" role="tab">
 					{{phase.name}}
-					<button class="btn btn-sm btn-outline-secondary ms-2" routerLink="phase-edit/{{phase.id}}">Edit</button>
-					<button class="btn btn-sm btn-outline-danger ms-2" (click)="deletePhase(phase.id!)">Delete</button>
+					<button mat-stroked-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}">Edit</button>
+					<button mat-stroked-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)">Delete</button>
 				</div>
 			</li>
 		</ul>

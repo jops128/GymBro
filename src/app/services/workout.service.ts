@@ -45,7 +45,7 @@ export class WorkoutService {
 			if (!workoutDoc.exists()) {
 			  throw new Error('Workout not found');
 			}
-			const workoutData = workoutDoc.data() as Workout;
+			const workoutData = mapIdField<Workout>(workoutDoc);
 			const phasesCollectionRef = collection(workoutDocRef, 'phases');
 			return from(getDocs(phasesCollectionRef)).pipe(
 			  switchMap(phaseDocsSnapshot => {

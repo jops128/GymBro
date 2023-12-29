@@ -17,30 +17,48 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { EditPhaseComponent } from './workout/edit-phase/edit-phase.component';
 import { WeekComponent } from './workout/week/week.component';
 import { EditExerciseComponent } from './workout/week/edit-exercise/edit-exercise.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TextInputComponent } from './shared/text-input/text-input.component';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule } from '@angular/material/form-field';
+import { TextAreaComponent } from './shared/text-area/text-area.component';
+import {MatInputModule} from '@angular/material/input';
+import { InputBaseComponent } from './shared/input-base/input-base.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-	WorkoutComponent,
-	EditWorkoutComponent,
-	HomeComponent,
-	EditPhaseComponent,
- WeekComponent,
- EditExerciseComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-	ReactiveFormsModule,
-	RouterModule,
-	FormsModule,
-	LayoutModule,
-	provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideAuth(() => getAuth()),
-	provideFirestore(() => getFirestore())
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		LoginComponent,
+		WorkoutComponent,
+		EditWorkoutComponent,
+		HomeComponent,
+		EditPhaseComponent,
+		WeekComponent,
+		EditExerciseComponent,
+		TextInputComponent,
+		TextAreaComponent,
+  InputBaseComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		ReactiveFormsModule,
+		RouterModule,
+		FormsModule,
+		LayoutModule,
+		MatFormFieldModule,
+		MatInputModule,
+		MatButtonModule,
+		MatIconModule,
+		provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+		provideAuth(() => getAuth()),
+		provideFirestore(() => getFirestore()),
+		BrowserAnimationsModule
+	],
+	providers: [
+		{ provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'outline' } }
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
