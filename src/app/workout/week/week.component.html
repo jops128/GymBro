@@ -1,7 +1,9 @@
-<div appFadeIn *ngIf="!fullViewer" class="card">
-	<div class="card-header bg-primary text-light">
-		{{ week?.name }}
-		{{ week?.description }}
+<div appFadeIn *ngIf="!fullViewer" class="card mb-2 shadow-none">
+	<div class="card-header bg-primary text-light d-flex justify-content-between align-items-center">
+		<h4 class="mb-0">
+			{{ week?.name }}
+			{{ week?.description }}
+		</h4>
 		<button mat-flat-button color="primary" class="btn-sm float-end" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add">Add
 			exercise</button>
 	</div>
