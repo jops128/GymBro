@@ -1,0 +1,10 @@
+<div [formGroup]="formGroup!">
+	<mat-form-field [floatLabel]="'always'" [subscriptSizing]="'dynamic'" [hideRequiredMarker]="!isRequired" class="w-100 mb-3">
+		<mat-label>{{ label }}</mat-label>
+		<mat-select [disabled]="disabled" [formControlName]="name" [placeholder]="label">
+			@for (option of data; track option) {
+			  <mat-option [value]="option">{{ option }}</mat-option>
+			}
+		</mat-select>
+	</mat-form-field>
+</div>

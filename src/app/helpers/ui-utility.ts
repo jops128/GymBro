@@ -8,4 +8,15 @@ export class UIUtility {
 		Reflect.deleteProperty(cloned as any, 'id');
 		return cloned;
 	}
+
+	public static getWorkoutCategories() {
+		return [
+			'Push',
+			'Pull',
+			'Legs',
+			'Cardio',
+			'Full Body',
+			'Body Part Split'
+		]
+	}
 }

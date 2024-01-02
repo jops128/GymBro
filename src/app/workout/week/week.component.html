@@ -9,6 +9,7 @@
 		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
+					<th scope="col" [width]="100"></th>
 					<th scope="col" [width]="100">Name</th>
 					<th scope="col" [width]="100">Warm Up Sets</th>
 					<th scope="col" [width]="100">Working Sets</th>
@@ -23,18 +24,21 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="table-row" (click)="openViewer(i)" *ngFor="let exercise of week?.exercises; let i = index">
-					<td>{{ exercise.name }}</td>
-					<td>{{ exercise.warmUpSets }}</td>
-					<td>{{ exercise.workingSets }}</td>
-					<td>{{ exercise.reps }}</td>
-					<td>{{ exercise.load }}</td>
-					<td>{{ exercise.previousLoad }}</td>
-					<td>{{ exercise.rpe }}</td>
-					<td>{{ exercise.rest }}</td>
-					<td>{{ exercise.substitutionOne }}</td>
-					<td>{{ exercise.substitutionTwo }}</td>
-					<td>{{ exercise.notes }}</td>
+				<tr class="table-row" *ngFor="let exercise of week?.exercises; let i = index">
+					<td (click)="openViewer(i)">{{ exercise.category }}</td>
+					<td (click)="openViewer(i)">{{ exercise.name }}</td>
+					<td (click)="openViewer(i)">{{ exercise.warmUpSets }}</td>
+					<td (click)="openViewer(i)">{{ exercise.workingSets }}</td>
+					<td (click)="openViewer(i)">{{ exercise.reps }}</td>
+					<td (click)="openViewer(i)">{{ exercise.load }}</td>
+					<td (click)="openViewer(i)">{{ exercise.previousLoad }}</td>
+					<td (click)="openViewer(i)">{{ exercise.rpe }}</td>
+					<td (click)="openViewer(i)">{{ exercise.rest }}</td>
+					<td (click)="openViewer(i)">{{ exercise.substitutionOne }}</td>
+					<td (click)="openViewer(i)">{{ exercise.substitutionTwo }}</td>
+					<td (click)="openViewer(i)">{{ exercise.notes }}</td>
+					<td><button mat-icon-button color="primary" class="action-button" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-edit/{{exercise.id}}"><mat-icon fontIcon="edit"></mat-icon></button></td>
+					<td><button mat-icon-button color="warn" class="action-button"><mat-icon fontIcon="delete"></mat-icon></button></td>
 				</tr>
 			</tbody>
 		</table>
@@ -44,25 +48,25 @@
 <div appFadeIn *ngIf="fullViewer" class="full-screen-viewer">
 	<button (click)="closeViewer()" mat-fab color="primary"><mat-icon>close</mat-icon></button>
 
-	<div class="content container h-100 overflow-auto">
+	<div #container class="content container h-100 overflow-auto">
 		@for(exercise of week?.exercises; let i = $index; track exercise.id) {
 			@if(selectedExerciseIndex === i) {
 				<div class="card">
 					<div class="card-header">
-						<h6>{{ week?.name }}</h6>
-						<h4>{{ exercise.name }}</h4>
+						<h5>{{ week?.name }}</h5>
+						<h4>{{ exercise.category }}</h4>
 					</div>
 					<div class="card-body mb-5">
-						<text-input [name]="'name'" [formGroup]="exerciseForm" [label]="'Name'"></text-input>
-						<text-input [name]="'warmUpSets'" [formGroup]="exerciseForm" [label]="'Warm Up Sets'"></text-input>
-						<text-input [name]="'workingSets'" [formGroup]="exerciseForm" [label]="'Working Sets'"></text-input>
-						<text-input [name]="'reps'" [formGroup]="exerciseForm" [label]="'Reps'"></text-input>
+						<text-input [disabled]="true" [name]="'name'" [formGroup]="exerciseForm" [label]="'Name'"></text-input>
+						<text-input [disabled]="true" [name]="'warmUpSets'" [formGroup]="exerciseForm" [label]="'Warm Up Sets'"></text-input>
+						<text-input [disabled]="true" [name]="'workingSets'" [formGroup]="exerciseForm" [label]="'Working Sets'"></text-input>
+						<text-input [disabled]="true" [name]="'reps'" [formGroup]="exerciseForm" [label]="'Reps'"></text-input>
 						<text-input [name]="'load'" [formGroup]="exerciseForm" [label]="'Load'"></text-input>
-						<text-input [name]="'previousLoad'" [formGroup]="exerciseForm" [label]="'Previous Load'"></text-input>
-						<text-input [name]="'rpe'" [formGroup]="exerciseForm" [label]="'RPE'"></text-input>
-						<text-input [name]="'rest'" [formGroup]="exerciseForm" [label]="'Rest'"></text-input>
-						<text-input [name]="'substitutionOne'" [formGroup]="exerciseForm" [label]="'Substitution One'"></text-input>
-						<text-input [name]="'substitutionTwo'" [formGroup]="exerciseForm" [label]="'Substitution Two'"></text-input>
+						<text-input [disabled]="true" [name]="'previousLoad'" [formGroup]="exerciseForm" [label]="'Previous Load'"></text-input>
+						<text-input [disabled]="true" [name]="'rpe'" [formGroup]="exerciseForm" [label]="'RPE'"></text-input>
+						<text-input [disabled]="true" [name]="'rest'" [formGroup]="exerciseForm" [label]="'Rest'"></text-input>
+						<text-input [disabled]="true" [name]="'substitutionOne'" [formGroup]="exerciseForm" [label]="'Substitution One'"></text-input>
+						<text-input [disabled]="true" [name]="'substitutionTwo'" [formGroup]="exerciseForm" [label]="'Substitution Two'"></text-input>
 						<text-area [name]="'notes'" [formGroup]="exerciseForm" [label]="'Notes'"></text-area>
 					</div>
 				</div>
@@ -71,7 +75,7 @@
 	</div>
 
 	<div class="d-flex justify-content-between w-100 px-3 pb-3 viewer-buttons shadow-lg">
-		<button mat-flat-button color="primary" [disabled]="selectedExerciseIndex === 0" (click)="previous()" class="flex-grow-1 me-2">Previous</button>
-		<button mat-flat-button color="primary" [disabled]="selectedExerciseIndex === week?.exercises!.length - 1" (click)="next()" class="flex-grow-1 ms-2">Next</button>
+		<button mat-flat-button color="primary" [disabled]="selectedExerciseIndex === 0" (click)="previous(container)" class="flex-grow-1 me-2">Previous</button>
+		<button mat-flat-button color="primary" [disabled]="selectedExerciseIndex === week?.exercises!.length - 1" (click)="next(container)" class="flex-grow-1 ms-2">Next</button>
 	</div>
 </div>

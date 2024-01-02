@@ -1,6 +1,12 @@
 <div [formGroup]="formGroup!">
 	<mat-form-field [floatLabel]="'always'" [subscriptSizing]="'dynamic'" [hideRequiredMarker]="!isRequired" class="w-100 mb-3">
 		<mat-label>{{ label }}</mat-label>
-		<input [readonly]="disabled" matInput [formControlName]="name" [type]="isPassword ? 'password' : 'text'" [placeholder]="label">
+		<input [readonly]="disabled" matInput [formControlName]="name" [type]="isPassword && hide ? 'password' : 'text'" [placeholder]="label">
+		<button *ngIf="isPassword" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+			<mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+		</button>
+		<button *ngIf="hasLink" mat-icon-button matSuffix (click)="navigateToLink()" [attr.aria-label]="'Open link'">
+			<mat-icon fontIcon="open_in_new"></mat-icon>
+		</button>
 	</mat-form-field>
 </div>

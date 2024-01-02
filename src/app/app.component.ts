@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NotificationService } from './services/notification.service';
+import { StorageService } from './services/storage.service';
 
 @Component({
 	selector: 'app-root',
@@ -13,5 +14,13 @@ export class AppComponent {
 
 	constructor(public router: Router, public notificationService: NotificationService) {
 		AppComponent.app = this;
+		AppComponent.navigateToLastSavedExercise();
+	}
+
+	public static navigateToLastSavedExercise() {
+		const lastOpenedExercise = StorageService.getLastOpenedExercise();
+		if (lastOpenedExercise) {
+			AppComponent.app.router.navigate(['workout', lastOpenedExercise.workoutId], { queryParams: { phaseId: lastOpenedExercise.phaseId, exerciseId: lastOpenedExercise.exerciseId } });
+		}
 	}
 }

@@ -2,11 +2,11 @@
 	<app-title appFadeIn>{{ exerciseId ? 'Edit exercise' : 'New exercise' }}</app-title>
 	<form appFadeIn [formGroup]="form" (ngSubmit)="save()">
 		<text-input [name]="'name'" [formGroup]="form" [label]="'Name'"></text-input>
+		<text-input [name]="'link'" [formGroup]="form" [label]="'Link'"></text-input>
+		<select-input [name]="'category'" [data]="categories" [formGroup]="form" [label]="'Category'"></select-input>
 		<text-input [name]="'warmUpSets'" [formGroup]="form" [label]="'Warm Up Sets'"></text-input>
 		<text-input [name]="'workingSets'" [formGroup]="form" [label]="'Working Sets'"></text-input>
 		<text-input [name]="'reps'" [formGroup]="form" [label]="'Reps'"></text-input>
-		<text-input [name]="'load'" [formGroup]="form" [label]="'Load'"></text-input>
-		<text-input [name]="'previousLoad'" [formGroup]="form" [label]="'Previous Load'"></text-input>
 		<text-input [name]="'rpe'" [formGroup]="form" [label]="'RPE'"></text-input>
 		<text-input [name]="'rest'" [formGroup]="form" [label]="'Rest'"></text-input>
 		<text-input [name]="'substitutionOne'" [formGroup]="form" [label]="'Substitution One'"></text-input>

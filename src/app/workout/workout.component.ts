@@ -6,6 +6,7 @@ import { take } from 'rxjs';
 import { Workout } from '../models/workout';
 import { PhaseService } from '../services/phase.service';
 import { NotificationService } from '../services/notification.service';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-workout',
@@ -16,6 +17,7 @@ export class WorkoutComponent implements OnInit {
 	workout: Workout | null = null;
 	selectedTabIndex: number = 0;
 	isLoading: boolean = false;
+	selectedIndex: number = 0;
 
 	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService) {}
 
@@ -30,6 +32,9 @@ export class WorkoutComponent implements OnInit {
 			console.log('workout: ', workout);
 			this.workout = workout;
 			this.isLoading = false;
+			if(this.route.snapshot.queryParamMap.keys.length > 0) {
+				this.selectedIndex = this.workout.phases?.findIndex(p => p.id === this.route.snapshot.queryParamMap.get('phaseId')!)!;
+			}
 		});
 	}
 	

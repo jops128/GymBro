@@ -1,18 +1,21 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { take } from 'rxjs';
+import { AppComponent } from 'src/app/app.component';
 import { ControlsOf } from 'src/app/helpers/form-group-type';
 import { UIUtility } from 'src/app/helpers/ui-utility';
 import { Exercise } from 'src/app/models/exercise';
 import { Week } from 'src/app/models/week';
 import { ExerciseService } from 'src/app/services/exercise.service';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
 	selector: 'app-week',
 	templateUrl: './week.component.html',
 	styleUrl: './week.component.scss'
 })
-export class WeekComponent {
+export class WeekComponent implements OnInit {
 	@Input('week') week: Week | null = null;
 	@Input('phaseId') phaseId?: string | null = null;
 	@Input('workoutId') workoutId?: string | null = null;
@@ -21,6 +24,8 @@ export class WeekComponent {
 
 	public exerciseForm = new FormGroup<ControlsOf<Exercise>>({
 		name: new FormControl('', Validators.required),
+		link: new FormControl('', Validators.required),
+		category: new FormControl('', Validators.required),
 		warmUpSets: new FormControl('', Validators.required),
 		workingSets: new FormControl('', Validators.required),
 		reps: new FormControl('', Validators.required),
@@ -29,27 +34,40 @@ export class WeekComponent {
 		rpe: new FormControl('', Validators.required),
 		rest: new FormControl('', Validators.required),
 		substitutionOne: new FormControl('', Validators.required),
+		substitutionOneLink: new FormControl(''),
 		substitutionTwo: new FormControl('', Validators.required),
+		substitutionTwoLink: new FormControl(''),
 		notes: new FormControl('', Validators.required)
 	});
 
-	constructor(private exerciseService: ExerciseService) { }
+	constructor(private exerciseService: ExerciseService, private route: ActivatedRoute, private router: Router) { }
+
+	ngOnInit(): void {
+		if (this.route.snapshot.queryParamMap.has('exerciseId')) {
+			const index = this.week?.exercises?.findIndex(e => e.id === this.route.snapshot.queryParamMap.get('exerciseId')!);
+			if (index != null && index > -1) {
+				this.openViewer(index);
+				this.router.navigate([], { queryParams: {} });
+			}
+		}
+	}
 
 	openViewer(index: number) {
 		this.selectedExerciseIndex = index;
 		this.exerciseForm.patchValue(this.week!.exercises![index]);
 		this.fullViewer = true;
+		StorageService.setLastOpenedExercise(this.workoutId!, this.phaseId!, this.week!.exercises![index].id!);
 	}
 
 	closeViewer() {
 		this.fullViewer = false;
+		StorageService.removeLastOpenedExercise();
 	}
 
-	previous() {
+	previous(parentElement: HTMLDivElement) {
 		if (this.selectedExerciseIndex === 0) {
 			return;
 		}
-
 		if (this.exerciseForm.dirty) {
 			const formValue = this.exerciseForm.value as Exercise;
 			const exerciseId = this.week?.exercises?.at(this.selectedExerciseIndex)?.id!
@@ -59,13 +77,15 @@ export class WeekComponent {
 				this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
 				this.exerciseForm.markAsPristine();
 			});
+			parentElement.scrollTo(0, 0)
 			return;
 		}
 		this.selectedExerciseIndex--;
 		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
+		parentElement.scrollTo(0, 0)
 	}
 
-	next() {
+	next(parentElement: HTMLDivElement) {
 		if (this.selectedExerciseIndex === this.week!.exercises!.length - 1) {
 			return;
 		}
@@ -79,10 +99,12 @@ export class WeekComponent {
 				this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
 				this.exerciseForm.markAsPristine();
 			});
+			parentElement.scrollTo(0, 0)
 			return;
 		}
 		this.selectedExerciseIndex++;
 		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
+		parentElement.scrollTo(0, 0)
 	}
 }
 

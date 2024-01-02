@@ -30,6 +30,7 @@ export class LoginComponent {
 				next: (val) => {
 					StorageService.setUser(val);
 					this.router.navigate(['']);
+					AppComponent.navigateToLastSavedExercise();
 				},
 				error: () => {
 					this.isLoading = false;

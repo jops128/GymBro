@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs';
 import { AppComponent } from 'src/app/app.component';
 import { ControlsOf } from 'src/app/helpers/form-group-type';
+import { UIUtility } from 'src/app/helpers/ui-utility';
 import { Exercise } from 'src/app/models/exercise';
 import { ExerciseService } from 'src/app/services/exercise.service';
 import { NotificationService } from 'src/app/services/notification.service';
@@ -16,15 +17,19 @@ import { NotificationService } from 'src/app/services/notification.service';
 export class EditExerciseComponent implements OnInit {
 	public form = new FormGroup<ControlsOf<Exercise>>({
 		name: new FormControl('', Validators.required),
+		link: new FormControl(''),
+		category: new FormControl('', Validators.required),
 		warmUpSets: new FormControl('', Validators.required),
 		workingSets: new FormControl('', Validators.required),
 		reps: new FormControl('', Validators.required),
-		load: new FormControl('', Validators.required),
-		previousLoad: new FormControl('', Validators.required),
+		load: new FormControl('0', Validators.required),
+		previousLoad: new FormControl('0', Validators.required),
 		rpe: new FormControl('', Validators.required),
 		rest: new FormControl('', Validators.required),
 		substitutionOne: new FormControl('', Validators.required),
+		substitutionOneLink: new FormControl(''),
 		substitutionTwo: new FormControl('', Validators.required),
+		substitutionTwoLink: new FormControl(''),
 		notes: new FormControl('', Validators.required)
 	});
 
@@ -33,7 +38,7 @@ export class EditExerciseComponent implements OnInit {
 	weekId: string | null = null;
 	exerciseId: string | null = null;
 	isLoading: boolean = false;
-
+	categories = UIUtility.getWorkoutCategories();
 	constructor(private route: ActivatedRoute, private exerciseService: ExerciseService) {}
 
 	ngOnInit(): void {
