@@ -10,8 +10,13 @@
 		<text-input [name]="'rpe'" [formGroup]="form" [label]="'RPE'"></text-input>
 		<text-input [name]="'rest'" [formGroup]="form" [label]="'Rest'"></text-input>
 		<text-input [name]="'substitutionOne'" [formGroup]="form" [label]="'Substitution One'"></text-input>
+		<text-input [name]="'substitutionOneLink'" [formGroup]="form" [label]="'Substitution One Link'"></text-input>
 		<text-input [name]="'substitutionTwo'" [formGroup]="form" [label]="'Substitution Two'"></text-input>
+		<text-input [name]="'substitutionTwoLink'" [formGroup]="form" [label]="'Substitution Two Link'"></text-input>
 		<text-area [name]="'notes'" [formGroup]="form" [label]="'Notes'"></text-area>
+		<div *ngIf="!exerciseId" class="mb-3">
+			<mat-checkbox [(ngModel)]="applyForAllWeeks" class="example-margin" [ngModelOptions]="{standalone: true}">Apply for all weeks</mat-checkbox>		  
+		</div>
 		<button type="submit" mat-flat-button color="primary">Submit</button>
 		<button type="submit" mat-flat-button color="basic" routerLink="/workout/{{workoutId}}">Cancel</button>
 	</form>

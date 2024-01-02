@@ -29,9 +29,10 @@ import { LoaderComponent } from './shared/loader/loader.component';
 import { FadeInDirective } from './shared/directives/fade-in.directive';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TitleComponent } from './shared/title/title.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { SelectInputComponent } from './shared/select-input/select-input.component';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
 	declarations: [
@@ -65,6 +66,7 @@ import {MatSelectModule} from '@angular/material/select';
 		MatSnackBarModule,
 		MatTabsModule,
 		MatSelectModule,
+		MatCheckboxModule,
 		provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
 		provideAuth(() => getAuth()),
 		provideFirestore(() => getFirestore()),
