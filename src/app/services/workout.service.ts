@@ -63,6 +63,7 @@ export class WorkoutService {
 										return from(getDocs(exercisesCollectionRef)).pipe(
 											map(exerciseDocsSnapshot => {
 												const exercises = exerciseDocsSnapshot.docs.map(exerciseDoc => mapIdField<Exercise>(exerciseDoc));
+												exercises.sort((a, b) => a.createdDate! > b.createdDate! ? 1 : -1)
 												return { ...weekData, exercises };
 											})
 										);
@@ -76,7 +77,10 @@ export class WorkoutService {
 							);
 						});
 						return forkJoin(phasePromises).pipe(
-							map(phases => ({ ...workoutData, phases }))
+							map(phases => {
+								phases.sort((a, b) => a.createdDate! > b.createdDate! ? 1 : -1);
+								return { ...workoutData, phases };
+							})
 						);
 					})
 				);

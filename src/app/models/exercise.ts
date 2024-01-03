@@ -1,4 +1,6 @@
-export interface Exercise {
+import { AuditableEntity } from './auditable-entity';
+
+export interface Exercise extends AuditableEntity {
 	id?: string | null;
 	name: string | null;
 	category: string | null;

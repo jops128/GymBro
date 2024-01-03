@@ -27,11 +27,12 @@ export class EditExerciseComponent implements OnInit {
 		previousLoad: new FormControl('0', Validators.required),
 		rpe: new FormControl('', Validators.required),
 		rest: new FormControl('', Validators.required),
-		substitutionOne: new FormControl('', Validators.required),
+		substitutionOne: new FormControl(''),
 		substitutionOneLink: new FormControl(''),
-		substitutionTwo: new FormControl('', Validators.required),
+		substitutionTwo: new FormControl(''),
 		substitutionTwoLink: new FormControl(''),
-		notes: new FormControl('', Validators.required)
+		notes: new FormControl('', Validators.required),
+		createdDate: new FormControl(new Date())
 	});
 
 	applyForAllWeeks: boolean = false;

@@ -20,7 +20,8 @@ export class EditPhaseComponent implements OnInit {
 
 	public form = new FormGroup<ControlsOf<Phase>>({
 		name: new FormControl('', Validators.required),
-		description: new FormControl('')
+		description: new FormControl(''),
+		createdDate: new FormControl(new Date())
 	});
 
 	public numberOfWeeks = 0;
