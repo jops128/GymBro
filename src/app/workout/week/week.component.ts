@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { take } from 'rxjs';
@@ -8,7 +8,9 @@ import { UIUtility } from 'src/app/helpers/ui-utility';
 import { Exercise } from 'src/app/models/exercise';
 import { Week } from 'src/app/models/week';
 import { ExerciseService } from 'src/app/services/exercise.service';
+import { NotificationService } from 'src/app/services/notification.service';
 import { StorageService } from 'src/app/services/storage.service';
+import { WeekService } from 'src/app/services/week.service';
 
 @Component({
 	selector: 'app-week',
@@ -19,6 +21,7 @@ export class WeekComponent implements OnInit {
 	@Input('week') week: Week | null = null;
 	@Input('phaseId') phaseId?: string | null = null;
 	@Input('workoutId') workoutId?: string | null = null;
+	@Output('onDeleteWeek') onDeleteWeek = new EventEmitter<string>();
 	fullViewer: boolean = false;
 	selectedExerciseIndex: number = 0;
 
@@ -40,7 +43,7 @@ export class WeekComponent implements OnInit {
 		notes: new FormControl('', Validators.required)
 	});
 
-	constructor(private exerciseService: ExerciseService, private route: ActivatedRoute, private router: Router) { }
+	constructor(private exerciseService: ExerciseService, private route: ActivatedRoute, private router: Router, private weekService: WeekService) { }
 
 	ngOnInit(): void {
 		if (this.route.snapshot.queryParamMap.has('exerciseId')) {
@@ -105,6 +108,14 @@ export class WeekComponent implements OnInit {
 		this.selectedExerciseIndex++;
 		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
 		parentElement.scrollTo(0, 0)
+	}
+
+	deleteWeek() {
+		this.weekService.deleteWeek(this.workoutId!, this.phaseId!, this.week!.id!).pipe(take(1)).subscribe(() => {
+			this.onDeleteWeek.emit(this.week!.id!);
+			this.week = null;
+			NotificationService.show('Week deleted');
+		});
 	}
 }
 

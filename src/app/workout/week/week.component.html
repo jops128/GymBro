@@ -1,11 +1,16 @@
-<div appFadeIn *ngIf="!fullViewer" class="card mb-2 shadow-none">
+<div appFadeIn *ngIf="!fullViewer" class="card my-2 shadow-none">
 	<div class="card-header bg-primary text-light d-flex justify-content-between align-items-center">
 		<h4 class="mb-0">
 			{{ week?.name }}
 			{{ week?.description }}
 		</h4>
-		<button mat-flat-button color="primary" class="btn-sm float-end" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add">Add
-			exercise</button>
+		<div>
+			<button mat-flat-button color="basic" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add">Add
+				exercise</button>
+			<button mat-flat-button color="warn" matTooltip="Delete week" class="ms-2 text-center" (click)="deleteWeek()">
+				<mat-icon fontIcon="delete" class="m-0"></mat-icon>
+			</button>
+		</div>
 	</div>
 	<div class="card-body overflow-auto">
 		<table class="table table-striped table-bordered">
@@ -23,6 +28,8 @@
 					<th scope="col" [width]="100">Substitution One</th>
 					<th scope="col" [width]="100">Substitution Two</th>
 					<th scope="col" [width]="500">Notes</th>
+					<th scope="col" [width]="100"></th>
+					<th scope="col" [width]="100"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -39,8 +46,8 @@
 					<td (click)="openViewer(i)">{{ exercise.substitutionOne }}</td>
 					<td (click)="openViewer(i)">{{ exercise.substitutionTwo }}</td>
 					<td (click)="openViewer(i)" class="table-note">{{ exercise.notes }}</td>
-					<td><button mat-icon-button color="primary" class="action-button" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-edit/{{exercise.id}}"><mat-icon fontIcon="edit"></mat-icon></button></td>
-					<td><button mat-icon-button color="warn" class="action-button"><mat-icon fontIcon="delete"></mat-icon></button></td>
+					<td class="text-center"><button mat-icon-button color="primary" class="action-button" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-edit/{{exercise.id}}"><mat-icon fontIcon="edit"></mat-icon></button></td>
+					<td class="text-center"><button mat-icon-button color="warn" class="action-button"><mat-icon fontIcon="delete"></mat-icon></button></td>
 				</tr>
 			</tbody>
 		</table>

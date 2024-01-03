@@ -17,6 +17,7 @@ export class TextInputComponent extends InputBaseComponent implements OnInit {
 	}
 
 	override ngOnInit(): void {
+		super.ngOnInit();
 		switch (this.name) {
 		  case 'name':
 			this.hasLink = this.formGroup!.get('link') !== null && this.formGroup!.get('link')!.value !== '' && this.name === 'name';

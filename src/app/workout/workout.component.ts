@@ -7,6 +7,8 @@ import { Workout } from '../models/workout';
 import { PhaseService } from '../services/phase.service';
 import { NotificationService } from '../services/notification.service';
 import { StorageService } from '../services/storage.service';
+import { WeekService } from '../services/week.service';
+import { Week } from '../models/week';
 
 @Component({
   selector: 'app-workout',
@@ -19,7 +21,7 @@ export class WorkoutComponent implements OnInit {
 	isLoading: boolean = false;
 	selectedIndex: number = 0;
 
-	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService) {}
+	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService, private weekService: WeekService) {}
 
 	ngOnInit() {
 		const workoutId = this.route.snapshot.paramMap.get('id');
@@ -29,7 +31,7 @@ export class WorkoutComponent implements OnInit {
 		}
 		this.isLoading = true;
 		this.workoutService.getCompleteWorkoutById(workoutId).pipe(take(1)).subscribe(workout => {
-			console.log('workout: ', workout);
+			
 			this.workout = workout;
 			this.isLoading = false;
 			if(this.route.snapshot.queryParamMap.keys.length > 0) {
@@ -47,5 +49,21 @@ export class WorkoutComponent implements OnInit {
 
 	selectTab(tabIndex: number) {
 		this.selectedTabIndex = tabIndex;
+	}
+
+	addWeek() {
+		const week: Week = {
+			name: `Week ${this.workout!.phases![this.selectedTabIndex].weeks!.length + 1}`,
+			description: ''
+		}
+		this.weekService.saveWeek(this.workout?.id!, this.workout?.phases![this.selectedTabIndex].id!, week).pipe(take(1)).subscribe((addedWeek) => {
+			week.id = addedWeek.id;
+			this.workout!.phases![this.selectedTabIndex].weeks!.push(week);
+			NotificationService.show('Week added');
+		});
+	}
+
+	onDeleteWeek(weekId: string) {
+		this.workout!.phases![this.selectedTabIndex].weeks = this.workout!.phases![this.selectedTabIndex].weeks!.filter(w => w.id !== weekId);
 	}
 }

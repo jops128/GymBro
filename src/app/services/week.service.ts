@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Firestore, addDoc, collection, deleteDoc, doc, getDoc, getDocs, updateDoc } from '@angular/fire/firestore';
 import { Week } from '../models/week';
-import { Observable, from, map } from 'rxjs';
+import { Observable, forkJoin, from, map, switchMap } from 'rxjs';
 import { mapIdField } from '../helpers/response-map.helper';
 
 @Injectable({
@@ -48,9 +48,9 @@ export class WeekService {
 	public getAllWeeks(workoutId: string, phaseId: string): Observable<Week[]> {
 		const weeksCollectionRef = collection(this.firestore, 'workouts', workoutId, 'phases', phaseId, 'weeks');
 		return from(getDocs(weeksCollectionRef)).pipe(
-		  map(weeksDocsSnapshot => {
-			return weeksDocsSnapshot.docs.map(weekDoc => mapIdField<Week>(weekDoc));
-		  })
+			map(weeksDocsSnapshot => {
+				return weeksDocsSnapshot.docs.map(weekDoc => mapIdField<Week>(weekDoc));
+			})
 		);
-	  }
+	}
 }

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Workout } from '../models/workout';
 import { WorkoutService } from '../services/workout.service';
+import { NotificationService } from '../services/notification.service';
+import { DialogService } from '../services/dialog.service';
 
 @Component({
   selector: 'app-home',
@@ -18,5 +20,16 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() {
 		this.workouts$ = this.workoutService.getAllWorkouts();
+	}
+
+	deleteWorkout(workoutId: string) {
+		DialogService.showConfirmationDialog(
+			() => {
+				this.workoutService.deleteWorkout(workoutId).subscribe(() => {
+					NotificationService.show('Workout deleted');
+					this.workouts$ = this.workoutService.getAllWorkouts();
+				});
+			}
+		)
 	}
 }

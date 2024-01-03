@@ -58,9 +58,7 @@ export class EditPhaseComponent implements OnInit {
 		}
 
 		if (this.phaseId) {
-			this.phaseService.updatePhase(this.workoutId!, this.phaseId, value).pipe(take(1), switchMap((val) => {
-				return this.weekService.saveWeeks(this.workoutId!, this.phaseId!, weeks);
-			})).subscribe(() => {
+			this.phaseService.updatePhase(this.workoutId!, this.phaseId, value).pipe(take(1)).subscribe(() => {
 				NotificationService.show('Phase updated');
 				AppComponent.app.router.navigate(['/workout', this.workoutId]);
 			});

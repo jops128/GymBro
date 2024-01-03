@@ -33,6 +33,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { SelectInputComponent } from './shared/select-input/select-input.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
 	declarations: [
@@ -67,6 +69,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 		MatTabsModule,
 		MatSelectModule,
 		MatCheckboxModule,
+		MatTooltipModule,
+		MatDialogModule,
 		provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
 		provideAuth(() => getAuth()),
 		provideFirestore(() => getFirestore()),

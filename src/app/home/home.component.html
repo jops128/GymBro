@@ -11,6 +11,7 @@
 				  <h5 class="card-title">{{ workout.name }}</h5>
 				  <p class="card-text">{{ workout.description }}</p>
 				  <a [routerLink]="['/workout', workout.id]" mat-flat-button color="primary">View Details</a>
+				  <button type="button" mat-flat-button color="warn" class="ms-2" (click)="deleteWorkout(workout.id!)">Delete</button>
 				</div>
 			</div>
 		</div>
