@@ -9,6 +9,7 @@ import { NotificationService } from '../services/notification.service';
 import { StorageService } from '../services/storage.service';
 import { WeekService } from '../services/week.service';
 import { Week } from '../models/week';
+import { DialogService } from '../services/dialog.service';
 
 @Component({
   selector: 'app-workout',
@@ -41,10 +42,14 @@ export class WorkoutComponent implements OnInit {
 	}
 	
 	deletePhase(id: string) {
-		this.phaseService.deletePhase(this.workout!.id!, id).pipe(take(1)).subscribe(() => {
-			this.workout = { ...this.workout!, phases: this.workout!.phases!.filter(p => p.id !== id) };
-			NotificationService.show('Phase deleted');
-		});
+		DialogService.showConfirmationDialog(
+			() => {
+				this.phaseService.deletePhase(this.workout!.id!, id).pipe(take(1)).subscribe(() => {
+					this.workout = { ...this.workout!, phases: this.workout!.phases!.filter(p => p.id !== id) };
+					NotificationService.show('Phase deleted');
+				})
+			}
+		)
 	}
 
 	selectTab(tabIndex: number) {

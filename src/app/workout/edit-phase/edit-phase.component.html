@@ -3,10 +3,10 @@
 	<form appFadeIn (ngSubmit)="savePhase()">
 		<text-input [formGroup]="form" [name]="'name'" [label]="'Phase Name'"></text-input>
 		<text-area [formGroup]="form" [name]="'description'" [label]="'Phase Description'"></text-area>
-		<div class="mb-3">
+		<div *ngIf="!!phaseId" class="mb-3">
 			<mat-form-field [floatLabel]="'always'" MatFormFieldControl [hideRequiredMarker]="false">
 				<mat-label>Number of Weeks</mat-label>
-				<input [disabled]="!!phaseId" matInput [(ngModel)]="numberOfWeeks"
+				<input [disabled]="true" matInput [(ngModel)]="numberOfWeeks"
 				[ngModelOptions]="{standalone: true}">
 			</mat-form-field>
 		</div>

@@ -47,7 +47,7 @@
 					<td (click)="openViewer(i)">{{ exercise.substitutionTwo }}</td>
 					<td (click)="openViewer(i)" class="table-note">{{ exercise.notes }}</td>
 					<td class="text-center"><button mat-icon-button color="primary" class="action-button" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-edit/{{exercise.id}}"><mat-icon fontIcon="edit"></mat-icon></button></td>
-					<td class="text-center"><button mat-icon-button color="warn" class="action-button"><mat-icon fontIcon="delete"></mat-icon></button></td>
+					<td class="text-center"><button mat-icon-button color="warn" class="action-button" (click)="deleteExercise(exercise.id!)"><mat-icon fontIcon="delete"></mat-icon></button></td>
 				</tr>
 			</tbody>
 		</table>

@@ -7,6 +7,7 @@ import { ControlsOf } from 'src/app/helpers/form-group-type';
 import { UIUtility } from 'src/app/helpers/ui-utility';
 import { Exercise } from 'src/app/models/exercise';
 import { Week } from 'src/app/models/week';
+import { DialogService } from 'src/app/services/dialog.service';
 import { ExerciseService } from 'src/app/services/exercise.service';
 import { NotificationService } from 'src/app/services/notification.service';
 import { StorageService } from 'src/app/services/storage.service';
@@ -111,11 +112,27 @@ export class WeekComponent implements OnInit {
 	}
 
 	deleteWeek() {
-		this.weekService.deleteWeek(this.workoutId!, this.phaseId!, this.week!.id!).pipe(take(1)).subscribe(() => {
-			this.onDeleteWeek.emit(this.week!.id!);
-			this.week = null;
-			NotificationService.show('Week deleted');
-		});
+		DialogService.showConfirmationDialog(
+			() => {
+				this.weekService.deleteWeek(this.workoutId!, this.phaseId!, this.week!.id!).pipe(take(1)).subscribe(() => {
+					this.onDeleteWeek.emit(this.week!.id!);
+					this.week = null;
+					NotificationService.show('Week deleted');
+				})
+			}
+		)
+	}
+
+	deleteExercise(exerciseId: string) {
+		DialogService.showConfirmationDialog(
+			() => {
+				this.exerciseService.deleteExercise(this.workoutId!, this.phaseId!, this.week!.id!, exerciseId).pipe(take(1)).subscribe(() => {
+					this.week?.exercises?.splice(this.selectedExerciseIndex, 1);
+					this.selectedExerciseIndex = 0;
+					this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
+					NotificationService.show('Exercise deleted');
+				});
+			})
 	}
 }
 

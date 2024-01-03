@@ -41,48 +41,46 @@ export class WorkoutService {
 	public getCompleteWorkoutById(workoutId: string): Observable<Workout> {
 		const workoutDocRef = doc(this.firestore, 'workouts', workoutId);
 		return from(getDoc(workoutDocRef)).pipe(
-		  switchMap(workoutDoc => {
-			if (!workoutDoc.exists()) {
-			  throw new Error('Workout not found');
-			}
-			const workoutData = mapIdField<Workout>(workoutDoc);
-			const phasesCollectionRef = collection(workoutDocRef, 'phases');
-			return from(getDocs(phasesCollectionRef)).pipe(
-			  switchMap(phaseDocsSnapshot => {
-				if (phaseDocsSnapshot.empty) {
-					return of({ ...workoutData, phases: [] });
-				  }
-				const phasePromises = phaseDocsSnapshot.docs.map(phaseDoc => {
-				  const phaseData = mapIdField<Phase>(phaseDoc);
-				  const weeksCollectionRef = collection(phaseDoc.ref, 'weeks');
-				  return from(getDocs(weeksCollectionRef)).pipe(
-					switchMap(weekDocsSnapshot => {
-					  const weekPromises = weekDocsSnapshot.docs.map(weekDoc => {
-						const weekData = mapIdField<Week>(weekDoc);
-						const exercisesCollectionRef = collection(weekDoc.ref, 'exercises');
-						return from(getDocs(exercisesCollectionRef)).pipe(
-						  map(exerciseDocsSnapshot => {
-							const exercises = exerciseDocsSnapshot.docs.map(exerciseDoc => mapIdField<Exercise>(exerciseDoc));
-							return { ...weekData, exercises };
-						  })
+			switchMap(workoutDoc => {
+				if (!workoutDoc.exists()) {
+					throw new Error('Workout not found');
+				}
+				const workoutData = mapIdField<Workout>(workoutDoc);
+				const phasesCollectionRef = collection(workoutDocRef, 'phases');
+				return from(getDocs(phasesCollectionRef)).pipe(
+					switchMap(phaseDocsSnapshot => {
+						if (phaseDocsSnapshot.empty) {
+							return of({ ...workoutData, phases: [] });
+						}
+						const phasePromises = phaseDocsSnapshot.docs.map(phaseDoc => {
+							const phaseData = mapIdField<Phase>(phaseDoc);
+							const weeksCollectionRef = collection(phaseDoc.ref, 'weeks');
+							return from(getDocs(weeksCollectionRef)).pipe(
+								switchMap(weekDocsSnapshot => {
+									const weekPromises = weekDocsSnapshot.docs.map(weekDoc => {
+										const weekData = mapIdField<Week>(weekDoc);
+										const exercisesCollectionRef = collection(weekDoc.ref, 'exercises');
+										return from(getDocs(exercisesCollectionRef)).pipe(
+											map(exerciseDocsSnapshot => {
+												const exercises = exerciseDocsSnapshot.docs.map(exerciseDoc => mapIdField<Exercise>(exerciseDoc));
+												return { ...weekData, exercises };
+											})
+										);
+									});
+									return weekPromises.length > 0 ? forkJoin(weekPromises) : of([]);
+								}),
+								map(weeks => {
+									weeks.sort((a, b) => a.name!.localeCompare(b.name!));
+									return { ...phaseData, weeks };
+								})
+							);
+						});
+						return forkJoin(phasePromises).pipe(
+							map(phases => ({ ...workoutData, phases }))
 						);
-					  });
-					  return forkJoin(weekPromises).pipe(
-						map(weeks => {
-						  return { ...phaseData, weeks };
-						})
-					  );
 					})
-				  );
-				});
-				return forkJoin(phasePromises).pipe(
-				  map(phases => {
-					return { ...workoutData, phases };
-				  })
 				);
-			  })
-			);
-		  })
+			})
 		);
-	  }
+	}
 }
