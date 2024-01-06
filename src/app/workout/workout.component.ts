@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WorkoutService } from '../services/workout.service';
 import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../app.component';
-import { take } from 'rxjs';
+import { forkJoin, take } from 'rxjs';
 import { Workout } from '../models/workout';
 import { PhaseService } from '../services/phase.service';
 import { NotificationService } from '../services/notification.service';
@@ -13,11 +13,13 @@ import { DialogService } from '../services/dialog.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ControlsOf } from '../helpers/form-group-type';
 import { Exercise } from '../models/exercise';
+import { ExerciseService } from '../services/exercise.service';
+import { phase1, phase2, phase3 } from 'src/assets/seedData';
 
 @Component({
-  selector: 'app-workout',
-  templateUrl: './workout.component.html',
-  styleUrl: './workout.component.scss'
+	selector: 'app-workout',
+	templateUrl: './workout.component.html',
+	styleUrl: './workout.component.scss'
 })
 export class WorkoutComponent implements OnInit {
 	workout: Workout | null = null;
@@ -26,13 +28,13 @@ export class WorkoutComponent implements OnInit {
 
 	fullViewer: boolean = false;
 	viewerExerciseId: string | null = null;
-	viewerPhaseId: string | null = null;	
+	viewerPhaseId: string | null = null;
 
-	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService, private weekService: WeekService) {}
+	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService, private weekService: WeekService, private exerciseService: ExerciseService) { }
 
 	ngOnInit() {
 		const workoutId = this.route.snapshot.paramMap.get('id');
-		if(!workoutId) {
+		if (!workoutId) {
 			AppComponent.app.router.navigate(['']);
 			return;
 		}
@@ -40,15 +42,16 @@ export class WorkoutComponent implements OnInit {
 		this.workoutService.getCompleteWorkoutById(workoutId).pipe(take(1)).subscribe(workout => {
 			
 			this.workout = workout;
+			// this.seedData();
 			this.isLoading = false;
-			if(this.route.snapshot.queryParamMap.keys.length > 0) {
+			if (this.route.snapshot.queryParamMap.keys.length > 0) {
 				this.selectedTabIndex = this.workout.phases?.findIndex(p => p.id === this.route.snapshot.queryParamMap.get('phaseId')!)!;
 				this.openViewer(this.route.snapshot.queryParamMap.get('phaseId')!, this.route.snapshot.queryParamMap.get('exerciseId')!);
 				AppComponent.app.router.navigate([], { queryParams: {} });
 			}
 		});
 	}
-	
+
 	deletePhase(id: string) {
 		DialogService.showConfirmationDialog(
 			() => {
@@ -89,4 +92,41 @@ export class WorkoutComponent implements OnInit {
 	closeViewer() {
 		this.fullViewer = false;
 	}
+
+	seedData() {
+		let phase1Index = 0;
+		let phase2Index = 0;
+		let phase3Index = 0;
+		this.workout!.phases!.forEach((phase, index) => {
+			switch (index) {
+				case 0:
+					phase.weeks?.forEach(week => {
+						const chunk = phase1.slice(phase1Index, phase1Index + 30);
+						const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
+						forkJoin(requests).pipe(take(1)).subscribe();
+						phase1Index += 30;
+					})
+					break;
+				case 1:
+					phase.weeks?.forEach(week => {
+						const chunk = phase2.slice(phase2Index, phase2Index + 21);
+						const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
+						forkJoin(requests).pipe(take(1)).subscribe();
+						phase2Index += 21;
+					})
+					break;
+				case 2:
+					phase.weeks?.forEach(week => {
+						const chunk = phase3.slice(phase3Index, phase3Index + 27);
+						const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
+						forkJoin(requests).pipe(take(1)).subscribe();
+						phase3Index += 27;
+					})
+					break;
+				default:
+					break;
+			}
+		})
+	}
+
 }

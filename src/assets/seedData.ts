@@ -9,14 +9,15 @@ export const phase1: Exercise[] = [
         reps: "2-4",
         load: "100 ali moze vise",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Hack Squat",
         substitutionOneLink: "https://youtu.be/wEgQUCdtFLg",
         substitutionTwo: "DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/htDXu61MPio",
         notes: "Sit back and down, keep your upper back tight to the bar",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:35.011Z")
     },
     {
         name: "Pause Squat (Back off)",
@@ -26,14 +27,15 @@ export const phase1: Exercise[] = [
         reps: "5",
         load: "85 ali bi moglo vise",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Pause Hack Squat",
         substitutionOneLink: "https://youtu.be/JAT2dTyLXPI",
         substitutionTwo: "Pause DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/HyFNlo47d8Y",
         notes: " Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:36.011Z")
     },
     {
         name: "Barbell RDL",
@@ -43,14 +45,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "60 ali treba povecat",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB RDL",
         substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
         notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:37.011Z")
     },
     {
         name: "Walking Lunge",
@@ -60,14 +63,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "17 ipo",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB Step-Up",
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
         notes: "Take medium strides, minimize the amount you push off your rear leg",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:38.011Z")
     },
     {
         name: "Seated Leg Curl",
@@ -84,7 +88,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
         notes: "Focus on squeezing your hamstrings to move the weight",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:39.011Z")
     },
     {
         name: "Leg Press Toe Press",
@@ -101,7 +106,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
         notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:40.011Z")
     },
     {
         name: "Decline Plate-Weighted Crunch",
@@ -118,7 +124,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Crunch",
         substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
         notes: "Hold a plate or DB to your chest and crunch hard!",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:30:41.011Z")
     },
     {
         name: "Bench Press",
@@ -128,14 +135,15 @@ export const phase1: Exercise[] = [
         reps: "3-5",
         load: "90",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
         notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:42.011Z")
     },
     {
         name: "Larsen Press",
@@ -145,14 +153,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "70",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press (No Leg Drive)",
         substitutionOneLink: "https://youtu.be/ers_ZfvpL34",
         substitutionTwo: "Machine Chest Press (No Leg Drive) ",
         substitutionTwoLink: "https://youtu.be/0GW4HdrWlcQ",
         notes: "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:43.011Z")
     },
     {
         name: "Standing Dumbbell Arnold Press",
@@ -162,14 +171,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "seated db press 14 mozda moze 16",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Seated DB Shoulder Press",
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
         notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:44.011Z")
     },
     {
         name: "A1. Press-Around",
@@ -186,7 +196,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Deficit Push Up",
         substitutionTwoLink: "https://youtu.be/-MRNjTr6xrE?t=791",
         notes: "Brace with your non-working arm, squeeze your pecs by pressing the cable across your body",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:45.011Z")
     },
     {
         name: "Cross-Body Cable Y-Raise (Side Delt)",
@@ -203,7 +214,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
         notes: "Think about swinging the cable out and up as if \"drawing a sword\" from your side",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:46.011Z")
     },
     {
         name: "Squeeze-Only Triceps Pressdown + Stretch-Only Overhead Triceps Extension",
@@ -220,7 +232,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Skull Crusher(12 - 15 reps) ",
         substitutionTwoLink: "https://youtu.be/popGXI-qs98?t=336",
         notes: "Do the second half of the ROM for pressdowns (\"\"the squeeze\"\") and the first half of the ROM for overhead extensions (\"\"the stretch\"\")",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:47.011Z")
     },
     {
         name: "N1-Style Cross-Body Triceps Extension",
@@ -237,7 +250,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Single-Arm Cable Tricep Kickback",
         substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=327",
         notes: "Extend your triceps with your arm more out to the side than a regular pressdown. Feel the stretch as the cable moves across your torso",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:48.011Z")
     },
     {
         name: "Lat Pulldown (Feeder Sets)",
@@ -254,7 +268,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Do 4 feeder sets of 10 reps by gradually building the weight up from set to set. Set 1 is pretty light (RPE 4-5). Set 2 is a little heavier (RPE 6-7). Set 3 is a little heavier again (RPE 7-8). Set 4 is your hard set: try to hit failure at 10 reps on this last set.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:30:49.011Z")
     },
     {
         name: "Lat Pulldown (Failure Set)",
@@ -271,7 +286,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "After hitting failure at ~10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:50.011Z")
     },
     {
         name: "Omni-Grip Machine Chest-Supported Row",
@@ -281,14 +297,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "55 ali na drugoj masini",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Incline Chest-Supported DB Row",
         substitutionOneLink: "https://youtu.be/bsx8PIGIuaI",
         substitutionTwo: "Cable Seated Row",
         substitutionTwoLink: "https://youtu.be/FbWfA_s0XL8?t=273",
         notes: "Use 3 different grips for the 3 working sets (ideally going from wider to closer)",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:51.011Z")
     },
     {
         name: "A1. Bottom-Half DB Lat Pullover",
@@ -305,7 +322,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "1-Arm Lat Pull-In",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         notes: "Do DB lat pullovers, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:52.011Z")
     },
     {
         name: "Omni-Direction Face Pull",
@@ -322,7 +340,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
         notes: "1st set: low-to-high 2nd set: mid - range 3rd set: high - to - low",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:53.011Z")
     },
     {
         name: "EZ-Bar Curl",
@@ -339,7 +358,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
         notes: "Focus on contracting your biceps, minimize torso momentum",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:54.011Z")
     },
     {
         name: "Bottom-Half Preacher Curl",
@@ -356,7 +376,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bottom-Half Bayesian Curl",
         substitutionTwoLink: "https://youtu.be/7d5WEXB0W5Y",
         notes: "Do preacher curls, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:55.011Z")
     },
     {
         name: "Deadlift",
@@ -366,14 +387,15 @@ export const phase1: Exercise[] = [
         reps: "5",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-5 min",
         substitutionOne: "Trap Bar Deadlift",
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
         notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:56.011Z")
     },
     {
         name: "Barbell RDL",
@@ -383,14 +405,15 @@ export const phase1: Exercise[] = [
         reps: "8",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Stiff-Leg Deadlift",
         substitutionOneLink: "https://youtu.be/EbDSWqgmcA0",
         substitutionTwo: "DB RDL",
         substitutionTwoLink: "https://youtu.be/V5u2AP9wBwE",
         notes: "Think about doing a high-hip conventional deadlift with a slight bend in the knees",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:30:57.011Z")
     },
     {
         name: "Close-Grip Barbell Incline Press",
@@ -400,14 +423,15 @@ export const phase1: Exercise[] = [
         reps: "8, 5, 12",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Close-Grip DB Incline Press",
         substitutionOneLink: "https://youtu.be/mW2Mx0msvaU",
         substitutionTwo: "Close-Grip Machine Press",
         substitutionTwoLink: "https://youtu.be/WqDwmwN56lY",
         notes: "Use ~45° incline and a grip width just outside shoulder width",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:30:58.011Z")
     },
     {
         name: "Chin-Up",
@@ -417,14 +441,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Underhand Lat Pulldown",
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=316",
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Underhand grip, pull your chest to the bar, add weight if needed to hit RPE",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:30:59.011Z")
     },
     {
         name: "Leg Press",
@@ -434,14 +459,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Goblet Squat",
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
         notes: "Medium width feet placement on the platform, don't allow your lower back to round",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:00.011Z")
     },
     {
         name: "Kroc Row",
@@ -451,14 +477,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Single-Arm DB Row",
         substitutionOneLink: "https://youtu.be/djKXLt7kv7Q?t=115",
         substitutionTwo: "Meadows Row",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=336",
         notes: "Kroc rows are basically just a dumbbell row with mild cheating and a slightly more upright posture. Don't be afraid to go heavy and use straps if your grip is limiting",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:01.011Z")
     },
     {
         name: "Diamond Pushup",
@@ -475,7 +502,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
         notes: "Place your hands close together on the ground so that they form a diamond shape and do as many pushups as possible with a smooth tempo ",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:02.011Z")
     },
     {
         name: "Squat",
@@ -485,14 +513,15 @@ export const phase1: Exercise[] = [
         reps: "3-5",
         load: "",
         previousLoad: "100 ali moze vise",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Hack Squat",
         substitutionOneLink: "https://youtu.be/wEgQUCdtFLg",
         substitutionTwo: "DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/htDXu61MPio",
         notes: "Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:03.011Z")
     },
     {
         name: "Pause Squat (Back off)",
@@ -502,14 +531,15 @@ export const phase1: Exercise[] = [
         reps: "5",
         load: "",
         previousLoad: "85 ali bi moglo vise",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Pause Hack Squat",
         substitutionOneLink: "https://youtu.be/JAT2dTyLXPI",
         substitutionTwo: "Pause DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/HyFNlo47d8Y",
         notes: " Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:04.011Z")
     },
     {
         name: "Barbell RDL",
@@ -519,14 +549,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "60 ali treba povecat",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB RDL",
         substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
         notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:05.011Z")
     },
     {
         name: "Walking Lunge",
@@ -536,14 +567,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "17 ipo",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB Step-Up",
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
         notes: "Take medium strides, minimize the amount you push off your rear leg",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:06.011Z")
     },
     {
         name: "Seated Leg Curl",
@@ -560,7 +592,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
         notes: "Focus on squeezing your hamstrings to move the weight",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:07.011Z")
     },
     {
         name: "Leg Press Toe Press",
@@ -577,7 +610,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
         notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:08.011Z")
     },
     {
         name: "Decline Plate-Weighted Crunch",
@@ -594,7 +628,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Crunch",
         substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
         notes: "Hold a plate or DB to your chest and crunch hard!",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:09.011Z")
     },
     {
         name: "Bench Press",
@@ -604,14 +639,15 @@ export const phase1: Exercise[] = [
         reps: "3-5",
         load: "",
         previousLoad: "90",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
         notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:10.011Z")
     },
     {
         name: "Larsen Press",
@@ -621,14 +657,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "70",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press (No Leg Drive)",
         substitutionOneLink: "https://youtu.be/ers_ZfvpL34",
         substitutionTwo: "Machine Chest Press (No Leg Drive) ",
         substitutionTwoLink: "https://youtu.be/0GW4HdrWlcQ",
         notes: "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:11.011Z")
     },
     {
         name: "Standing Dumbbell Arnold Press",
@@ -638,14 +675,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "seated db press 14 mozda moze 16",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Seated DB Shoulder Press",
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
         notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:12.011Z")
     },
     {
         name: "A1. Press-Around",
@@ -662,7 +700,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Deficit Push Up",
         substitutionTwoLink: "https://youtu.be/-MRNjTr6xrE?t=791",
         notes: "Brace with your non-working arm, squeeze your pecs by pressing the cable across your body",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:13.011Z")
     },
     {
         name: "Cross-Body Cable Y-Raise (Side Delt)",
@@ -679,7 +718,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
         notes: "Think about swinging the cable out and up as if \"drawing a sword\" from your side",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:14.011Z")
     },
     {
         name: "Squeeze-Only Triceps Pressdown + Stretch-Only Overhead Triceps Extension",
@@ -696,7 +736,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Skull Crusher(12 - 15 reps) ",
         substitutionTwoLink: "https://youtu.be/popGXI-qs98?t=336",
         notes: "Do the second half of the ROM for pressdowns (\"\"the squeeze\"\") and the first half of the ROM for overhead extensions (\"\"the stretch\"\")",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:15.011Z")
     },
     {
         name: "N1-Style Cross-Body Triceps Extension",
@@ -713,7 +754,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Single-Arm Cable Tricep Kickback",
         substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=327",
         notes: "Extend your triceps with your arm more out to the side than a regular pressdown. Feel the stretch as the cable moves across your torso",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:16.011Z")
     },
     {
         name: "Lat Pulldown (Feeder Sets)",
@@ -730,7 +772,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Do 4 feeder sets of 10 reps by gradually building the weight up from set to set. Set 1 is pretty light (RPE 4-5). Set 2 is a little heavier (RPE 6-7). Set 3 is a little heavier again (RPE 7-8). Set 4 is your hard set: try to hit failure at 10 reps on this last set.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:17.011Z")
     },
     {
         name: "Lat Pulldown (Failure Set)",
@@ -747,7 +790,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "After hitting failure at ~10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:18.011Z")
     },
     {
         name: "Omni-Grip Machine Chest-Supported Row",
@@ -757,14 +801,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "55 ali na drugoj masini",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Incline Chest-Supported DB Row",
         substitutionOneLink: "https://youtu.be/bsx8PIGIuaI",
         substitutionTwo: "Cable Seated Row",
         substitutionTwoLink: "https://youtu.be/FbWfA_s0XL8?t=273",
         notes: "Use 3 different grips for the 3 working sets (ideally going from wider to closer)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:19.011Z")
     },
     {
         name: "A1. Bottom-Half DB Lat Pullover",
@@ -781,7 +826,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "1-Arm Lat Pull-In",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         notes: "Do DB lat pullovers, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:20.011Z")
     },
     {
         name: "Omni-Direction Face Pull",
@@ -798,7 +844,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
         notes: "1st set: low-to-high 2nd set: mid - range 3rd set: high - to - low",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:21.011Z")
     },
     {
         name: "EZ-Bar Curl",
@@ -815,7 +862,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
         notes: "Focus on contracting your biceps, minimize torso momentum",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:22.011Z")
     },
     {
         name: "Bottom-Half Preacher Curl",
@@ -832,7 +880,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bottom-Half Bayesian Curl",
         substitutionTwoLink: "https://youtu.be/7d5WEXB0W5Y",
         notes: "Do preacher curls, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:23.011Z")
     },
     {
         name: "Deadlift",
@@ -842,14 +891,15 @@ export const phase1: Exercise[] = [
         reps: "4",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-5 min",
         substitutionOne: "Trap Bar Deadlift",
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
         notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:24.011Z")
     },
     {
         name: "Stiff-Leg Deadlift",
@@ -859,14 +909,15 @@ export const phase1: Exercise[] = [
         reps: "8",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Barbell RDL",
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "DB RDL",
         substitutionTwoLink: "https://youtu.be/V5u2AP9wBwE",
         notes: "Think about doing a high-hip conventional deadlift with a slight bend in the knees",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:25.011Z")
     },
     {
         name: "Close-Grip Barbell Incline Press",
@@ -876,14 +927,15 @@ export const phase1: Exercise[] = [
         reps: "8, 5, 12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Close-Grip DB Incline Press",
         substitutionOneLink: "https://youtu.be/mW2Mx0msvaU",
         substitutionTwo: "Close-Grip Machine Press",
         substitutionTwoLink: "https://youtu.be/WqDwmwN56lY",
         notes: "Use ~45° incline and a grip width just outside shoulder width",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:26.011Z")
     },
     {
         name: "Chin-Up",
@@ -893,14 +945,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Underhand Lat Pulldown",
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=316",
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Underhand grip, pull your chest to the bar, add weight if needed to hit RPE",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:27.011Z")
     },
     {
         name: "Leg Press",
@@ -910,14 +963,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Goblet Squat",
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
         notes: "Medium width feet placement on the platform, don't allow your lower back to round",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:28.011Z")
     },
     {
         name: "Kroc Row",
@@ -927,14 +981,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Single-Arm DB Row",
         substitutionOneLink: "https://youtu.be/djKXLt7kv7Q?t=115",
         substitutionTwo: "Meadows Row",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=336",
         notes: "Kroc rows are basically just a dumbbell row with mild cheating and a slightly more upright posture. Don't be afraid to go heavy and use straps if your grip is limiting",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:29.011Z")
     },
     {
         name: "Diamond Pushup",
@@ -951,7 +1006,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
         notes: "Place your hands close together on the ground so that they form a diamond shape and do as many pushups as possible with a smooth tempo ",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:30.011Z")
     },
     {
         name: "Squat",
@@ -961,14 +1017,15 @@ export const phase1: Exercise[] = [
         reps: "4-6",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Hack Squat",
         substitutionOneLink: "https://youtu.be/wEgQUCdtFLg",
         substitutionTwo: "DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/htDXu61MPio",
         notes: "Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:31.011Z")
     },
     {
         name: "Pause Squat (Back off)",
@@ -978,14 +1035,15 @@ export const phase1: Exercise[] = [
         reps: "5",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Pause Hack Squat",
         substitutionOneLink: "https://youtu.be/JAT2dTyLXPI",
         substitutionTwo: "Pause DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/HyFNlo47d8Y",
         notes: " Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:32.011Z")
     },
     {
         name: "Barbell RDL",
@@ -995,14 +1053,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB RDL",
         substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
         notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:33.011Z")
     },
     {
         name: "Walking Lunge",
@@ -1012,14 +1071,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB Step-Up",
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
         notes: "Take medium strides, minimize the amount you push off your rear leg",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:34.011Z")
     },
     {
         name: "Seated Leg Curl",
@@ -1036,7 +1096,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
         notes: "Focus on squeezing your hamstrings to move the weight",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:35.011Z")
     },
     {
         name: "Leg Press Toe Press",
@@ -1053,7 +1114,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
         notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:36.011Z")
     },
     {
         name: "Decline Plate-Weighted Crunch",
@@ -1070,7 +1132,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Crunch",
         substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
         notes: "Hold a plate or DB to your chest and crunch hard!",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:37.011Z")
     },
     {
         name: "Bench Press",
@@ -1080,14 +1143,15 @@ export const phase1: Exercise[] = [
         reps: "2-4",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
         notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:38.011Z")
     },
     {
         name: "Larsen Press",
@@ -1097,14 +1161,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press (No Leg Drive)",
         substitutionOneLink: "https://youtu.be/ers_ZfvpL34",
         substitutionTwo: "Machine Chest Press (No Leg Drive) ",
         substitutionTwoLink: "https://youtu.be/0GW4HdrWlcQ",
         notes: "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:39.011Z")
     },
     {
         name: "Standing Dumbbell Arnold Press",
@@ -1114,14 +1179,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Seated DB Shoulder Press",
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
         notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:40.011Z")
     },
     {
         name: "A1. Press-Around",
@@ -1138,7 +1204,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Deficit Push Up",
         substitutionTwoLink: "https://youtu.be/-MRNjTr6xrE?t=791",
         notes: "Brace with your non-working arm, squeeze your pecs by pressing the cable across your body",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:31:41.011Z")
     },
     {
         name: "Cross-Body Cable Y-Raise (Side Delt)",
@@ -1155,7 +1222,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
         notes: "Think about swinging the cable out and up as if \"drawing a sword\" from your side",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:42.011Z")
     },
     {
         name: "Squeeze-Only Triceps Pressdown + Stretch-Only Overhead Triceps Extension",
@@ -1172,7 +1240,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Skull Crusher(12 - 15 reps) ",
         substitutionTwoLink: "https://youtu.be/popGXI-qs98?t=336",
         notes: "Do the second half of the ROM for pressdowns (\"\"the squeeze\"\") and the first half of the ROM for overhead extensions (\"\"the stretch\"\")",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:43.011Z")
     },
     {
         name: "N1-Style Cross-Body Triceps Extension",
@@ -1189,7 +1258,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Single-Arm Cable Tricep Kickback",
         substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=327",
         notes: "Extend your triceps with your arm more out to the side than a regular pressdown. Feel the stretch as the cable moves across your torso",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:44.011Z")
     },
     {
         name: "Lat Pulldown (Feeder Sets)",
@@ -1206,7 +1276,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Do 4 feeder sets of 10 reps by gradually building the weight up from set to set. Set 1 is pretty light (RPE 4-5). Set 2 is a little heavier (RPE 6-7). Set 3 is a little heavier again (RPE 7-8). Set 4 is your hard set: try to hit failure at 10 reps on this last set.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:45.011Z")
     },
     {
         name: "Lat Pulldown (Failure Set)",
@@ -1223,7 +1294,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "After hitting failure at ~10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:46.011Z")
     },
     {
         name: "Omni-Grip Machine Chest-Supported Row",
@@ -1233,14 +1305,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Incline Chest-Supported DB Row",
         substitutionOneLink: "https://youtu.be/bsx8PIGIuaI",
         substitutionTwo: "Cable Seated Row",
         substitutionTwoLink: "https://youtu.be/FbWfA_s0XL8?t=273",
         notes: "Use 3 different grips for the 3 working sets (ideally going from wider to closer)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:47.011Z")
     },
     {
         name: "A1. Bottom-Half DB Lat Pullover",
@@ -1257,7 +1330,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "1-Arm Lat Pull-In",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         notes: "Do DB lat pullovers, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:48.011Z")
     },
     {
         name: "Omni-Direction Face Pull",
@@ -1274,7 +1348,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
         notes: "1st set: low-to-high 2nd set: mid - range 3rd set: high - to - low",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:31:49.011Z")
     },
     {
         name: "EZ-Bar Curl",
@@ -1291,7 +1366,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
         notes: "Focus on contracting your biceps, minimize torso momentum",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:50.011Z")
     },
     {
         name: "Bottom-Half Preacher Curl",
@@ -1308,7 +1384,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bottom-Half Bayesian Curl",
         substitutionTwoLink: "https://youtu.be/7d5WEXB0W5Y",
         notes: "Do preacher curls, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:51.011Z")
     },
     {
         name: "Deadlift",
@@ -1318,14 +1395,15 @@ export const phase1: Exercise[] = [
         reps: "3",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-5 min",
         substitutionOne: "Trap Bar Deadlift",
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
         notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:52.011Z")
     },
     {
         name: "Stiff-Leg Deadlift",
@@ -1335,14 +1413,15 @@ export const phase1: Exercise[] = [
         reps: "8",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Barbell RDL",
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "DB RDL",
         substitutionTwoLink: "https://youtu.be/V5u2AP9wBwE",
         notes: "Think about doing a high-hip conventional deadlift with a slight bend in the knees",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:53.011Z")
     },
     {
         name: "Close-Grip Barbell Incline Press",
@@ -1352,14 +1431,15 @@ export const phase1: Exercise[] = [
         reps: "8, 5, 12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Close-Grip DB Incline Press",
         substitutionOneLink: "https://youtu.be/mW2Mx0msvaU",
         substitutionTwo: "Close-Grip Machine Press",
         substitutionTwoLink: "https://youtu.be/WqDwmwN56lY",
         notes: "Use ~45° incline and a grip width just outside shoulder width",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:54.011Z")
     },
     {
         name: "Chin-Up",
@@ -1369,14 +1449,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Underhand Lat Pulldown",
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=316",
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Underhand grip, pull your chest to the bar, add weight if needed to hit RPE",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:55.011Z")
     },
     {
         name: "Leg Press",
@@ -1386,14 +1467,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Goblet Squat",
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
         notes: "Medium width feet placement on the platform, don't allow your lower back to round",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:56.011Z")
     },
     {
         name: "Kroc Row",
@@ -1403,14 +1485,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Single-Arm DB Row",
         substitutionOneLink: "https://youtu.be/djKXLt7kv7Q?t=115",
         substitutionTwo: "Meadows Row",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=336",
         notes: "Kroc rows are basically just a dumbbell row with mild cheating and a slightly more upright posture. Don't be afraid to go heavy and use straps if your grip is limiting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:31:57.011Z")
     },
     {
         name: "Diamond Pushup",
@@ -1427,7 +1510,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
         notes: "Place your hands close together on the ground so that they form a diamond shape and do as many pushups as possible with a smooth tempo ",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:58.011Z")
     },
     {
         name: "Squat",
@@ -1437,14 +1521,15 @@ export const phase1: Exercise[] = [
         reps: "3-5",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Hack Squat",
         substitutionOneLink: "https://youtu.be/wEgQUCdtFLg",
         substitutionTwo: "DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/htDXu61MPio",
         notes: "Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:31:59.011Z")
     },
     {
         name: "Pause Squat (Back off)",
@@ -1454,14 +1539,15 @@ export const phase1: Exercise[] = [
         reps: "5",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Pause Hack Squat",
         substitutionOneLink: "https://youtu.be/JAT2dTyLXPI",
         substitutionTwo: "Pause DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/HyFNlo47d8Y",
         notes: " Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:00.011Z")
     },
     {
         name: "Barbell RDL",
@@ -1471,14 +1557,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB RDL",
         substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
         notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:01.011Z")
     },
     {
         name: "Walking Lunge",
@@ -1488,14 +1575,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB Step-Up",
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
         notes: "Take medium strides, minimize the amount you push off your rear leg",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:02.011Z")
     },
     {
         name: "Seated Leg Curl",
@@ -1512,7 +1600,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
         notes: "Focus on squeezing your hamstrings to move the weight",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:03.011Z")
     },
     {
         name: "Leg Press Toe Press",
@@ -1529,7 +1618,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
         notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:04.011Z")
     },
     {
         name: "Decline Plate-Weighted Crunch",
@@ -1546,7 +1636,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Crunch",
         substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
         notes: "Hold a plate or DB to your chest and crunch hard!",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:05.011Z")
     },
     {
         name: "Bench Press",
@@ -1556,14 +1647,15 @@ export const phase1: Exercise[] = [
         reps: "2-4",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
         notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:06.011Z")
     },
     {
         name: "Larsen Press",
@@ -1573,14 +1665,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press (No Leg Drive)",
         substitutionOneLink: "https://youtu.be/ers_ZfvpL34",
         substitutionTwo: "Machine Chest Press (No Leg Drive) ",
         substitutionTwoLink: "https://youtu.be/0GW4HdrWlcQ",
         notes: "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:07.011Z")
     },
     {
         name: "Standing Dumbbell Arnold Press",
@@ -1590,14 +1683,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Seated DB Shoulder Press",
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
         notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:08.011Z")
     },
     {
         name: "A1. Press-Around",
@@ -1614,7 +1708,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Deficit Push Up",
         substitutionTwoLink: "https://youtu.be/-MRNjTr6xrE?t=791",
         notes: "Brace with your non-working arm, squeeze your pecs by pressing the cable across your body",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:09.011Z")
     },
     {
         name: "Cross-Body Cable Y-Raise (Side Delt)",
@@ -1631,7 +1726,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
         notes: "Think about swinging the cable out and up as if \"drawing a sword\" from your side",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:10.011Z")
     },
     {
         name: "Squeeze-Only Triceps Pressdown + Stretch-Only Overhead Triceps Extension",
@@ -1648,7 +1744,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Skull Crusher(12 - 15 reps) ",
         substitutionTwoLink: "https://youtu.be/popGXI-qs98?t=336",
         notes: "Do the second half of the ROM for pressdowns (\"\"the squeeze\"\") and the first half of the ROM for overhead extensions (\"\"the stretch\"\")",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:11.011Z")
     },
     {
         name: "N1-Style Cross-Body Triceps Extension",
@@ -1665,7 +1762,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Single-Arm Cable Tricep Kickback",
         substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=327",
         notes: "Extend your triceps with your arm more out to the side than a regular pressdown. Feel the stretch as the cable moves across your torso",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:12.011Z")
     },
     {
         name: "Lat Pulldown (Feeder Sets)",
@@ -1682,7 +1780,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Do 4 feeder sets of 10 reps by gradually building the weight up from set to set. Set 1 is pretty light (RPE 4-5). Set 2 is a little heavier (RPE 6-7). Set 3 is a little heavier again (RPE 7-8). Set 4 is your hard set: try to hit failure at 10 reps on this last set.",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:13.011Z")
     },
     {
         name: "Lat Pulldown (Failure Set)",
@@ -1699,7 +1798,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "After hitting failure at ~10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:14.011Z")
     },
     {
         name: "Omni-Grip Machine Chest-Supported Row",
@@ -1709,14 +1809,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Incline Chest-Supported DB Row",
         substitutionOneLink: "https://youtu.be/bsx8PIGIuaI",
         substitutionTwo: "Cable Seated Row",
         substitutionTwoLink: "https://youtu.be/FbWfA_s0XL8?t=273",
         notes: "Use 3 different grips for the 3 working sets (ideally going from wider to closer)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:15.011Z")
     },
     {
         name: "A1. Bottom-Half DB Lat Pullover",
@@ -1733,7 +1834,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "1-Arm Lat Pull-In",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         notes: "Do DB lat pullovers, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:16.011Z")
     },
     {
         name: "Omni-Direction Face Pull",
@@ -1750,7 +1852,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
         notes: "1st set: low-to-high 2nd set: mid - range 3rd set: high - to - low",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:17.011Z")
     },
     {
         name: "EZ-Bar Curl",
@@ -1767,7 +1870,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
         notes: "Focus on contracting your biceps, minimize torso momentum",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:18.011Z")
     },
     {
         name: "Bottom-Half Preacher Curl",
@@ -1784,7 +1888,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bottom-Half Bayesian Curl",
         substitutionTwoLink: "https://youtu.be/7d5WEXB0W5Y",
         notes: "Do preacher curls, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:19.011Z")
     },
     {
         name: "Deadlift",
@@ -1794,14 +1899,15 @@ export const phase1: Exercise[] = [
         reps: "2",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-5 min",
         substitutionOne: "Trap Bar Deadlift",
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
         notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:20.011Z")
     },
     {
         name: "Stiff-Leg Deadlift",
@@ -1811,14 +1917,15 @@ export const phase1: Exercise[] = [
         reps: "8",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Barbell RDL",
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "DB RDL",
         substitutionTwoLink: "https://youtu.be/V5u2AP9wBwE",
         notes: "Think about doing a high-hip conventional deadlift with a slight bend in the knees",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:21.011Z")
     },
     {
         name: "Close-Grip Barbell Incline Press",
@@ -1828,14 +1935,15 @@ export const phase1: Exercise[] = [
         reps: "8, 5, 12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Close-Grip DB Incline Press",
         substitutionOneLink: "https://youtu.be/mW2Mx0msvaU",
         substitutionTwo: "Close-Grip Machine Press",
         substitutionTwoLink: "https://youtu.be/WqDwmwN56lY",
         notes: "Use ~45° incline and a grip width just outside shoulder width",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:22.011Z")
     },
     {
         name: "Chin-Up",
@@ -1845,14 +1953,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Underhand Lat Pulldown",
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=316",
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Underhand grip, pull your chest to the bar, add weight if needed to hit RPE",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:23.011Z")
     },
     {
         name: "Leg Press",
@@ -1862,14 +1971,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Goblet Squat",
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
         notes: "Medium width feet placement on the platform, don't allow your lower back to round",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:24.011Z")
     },
     {
         name: "Kroc Row",
@@ -1879,14 +1989,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Single-Arm DB Row",
         substitutionOneLink: "https://youtu.be/djKXLt7kv7Q?t=115",
         substitutionTwo: "Meadows Row",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=336",
         notes: "Kroc rows are basically just a dumbbell row with mild cheating and a slightly more upright posture. Don't be afraid to go heavy and use straps if your grip is limiting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:25.011Z")
     },
     {
         name: "Diamond Pushup",
@@ -1903,7 +2014,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
         notes: "Place your hands close together on the ground so that they form a diamond shape and do as many pushups as possible with a smooth tempo ",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:26.011Z")
     },
     {
         name: "Squat",
@@ -1913,14 +2025,15 @@ export const phase1: Exercise[] = [
         reps: "2-4",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Hack Squat",
         substitutionOneLink: "https://youtu.be/wEgQUCdtFLg",
         substitutionTwo: "DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/htDXu61MPio",
         notes: "Sit back and down, keep your upper back tight to the bar",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:27.011Z")
     },
     {
         name: "Pause Squat (Back off)",
@@ -1930,14 +2043,15 @@ export const phase1: Exercise[] = [
         reps: "5",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Pause Hack Squat",
         substitutionOneLink: "https://youtu.be/JAT2dTyLXPI",
         substitutionTwo: "Pause DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/HyFNlo47d8Y",
         notes: " Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:28.011Z")
     },
     {
         name: "Barbell RDL",
@@ -1947,14 +2061,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB RDL",
         substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
         notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:29.011Z")
     },
     {
         name: "Walking Lunge",
@@ -1964,14 +2079,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "DB Step-Up",
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
         notes: "Take medium strides, minimize the amount you push off your rear leg",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:30.011Z")
     },
     {
         name: "Seated Leg Curl",
@@ -1988,7 +2104,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
         notes: "Focus on squeezing your hamstrings to move the weight",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:31.011Z")
     },
     {
         name: "Leg Press Toe Press",
@@ -2005,7 +2122,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
         notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:32.011Z")
     },
     {
         name: "Decline Plate-Weighted Crunch",
@@ -2022,7 +2140,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Crunch",
         substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
         notes: "Hold a plate or DB to your chest and crunch hard!",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:33.011Z")
     },
     {
         name: "Bench Press",
@@ -2032,14 +2151,15 @@ export const phase1: Exercise[] = [
         reps: "3-5",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
         notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:34.011Z")
     },
     {
         name: "Larsen Press",
@@ -2049,14 +2169,15 @@ export const phase1: Exercise[] = [
         reps: "10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press (No Leg Drive)",
         substitutionOneLink: "https://youtu.be/ers_ZfvpL34",
         substitutionTwo: "Machine Chest Press (No Leg Drive) ",
         substitutionTwoLink: "https://youtu.be/0GW4HdrWlcQ",
         notes: "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:35.011Z")
     },
     {
         name: "Standing Dumbbell Arnold Press",
@@ -2066,14 +2187,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Seated DB Shoulder Press",
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
         notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:36.011Z")
     },
     {
         name: "A1. Press-Around",
@@ -2090,7 +2212,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Deficit Push Up",
         substitutionTwoLink: "https://youtu.be/-MRNjTr6xrE?t=791",
         notes: "Brace with your non-working arm, squeeze your pecs by pressing the cable across your body",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:37.011Z")
     },
     {
         name: "Cross-Body Cable Y-Raise (Side Delt)",
@@ -2107,7 +2230,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
         notes: "Think about swinging the cable out and up as if \"drawing a sword\" from your side",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:38.011Z")
     },
     {
         name: "Squeeze-Only Triceps Pressdown + Stretch-Only Overhead Triceps Extension",
@@ -2124,7 +2248,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Skull Crusher(12 - 15 reps) ",
         substitutionTwoLink: "https://youtu.be/popGXI-qs98?t=336",
         notes: "Do the second half of the ROM for pressdowns (\"\"the squeeze\"\") and the first half of the ROM for overhead extensions (\"\"the stretch\"\")",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:39.011Z")
     },
     {
         name: "N1-Style Cross-Body Triceps Extension",
@@ -2141,7 +2266,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Single-Arm Cable Tricep Kickback",
         substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=327",
         notes: "Extend your triceps with your arm more out to the side than a regular pressdown. Feel the stretch as the cable moves across your torso",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:40.011Z")
     },
     {
         name: "Lat Pulldown (Feeder Sets)",
@@ -2158,7 +2284,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Do 4 feeder sets of 10 reps by gradually building the weight up from set to set. Set 1 is pretty light (RPE 4-5). Set 2 is a little heavier (RPE 6-7). Set 3 is a little heavier again (RPE 7-8). Set 4 is your hard set: try to hit failure at 10 reps on this last set.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:32:41.011Z")
     },
     {
         name: "Lat Pulldown (Failure Set)",
@@ -2175,7 +2302,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "After hitting failure at ~10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:42.011Z")
     },
     {
         name: "Omni-Grip Machine Chest-Supported Row",
@@ -2185,14 +2313,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Incline Chest-Supported DB Row",
         substitutionOneLink: "https://youtu.be/bsx8PIGIuaI",
         substitutionTwo: "Cable Seated Row",
         substitutionTwoLink: "https://youtu.be/FbWfA_s0XL8?t=273",
         notes: "Use 3 different grips for the 3 working sets (ideally going from wider to closer)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:43.011Z")
     },
     {
         name: "A1. Bottom-Half DB Lat Pullover",
@@ -2209,7 +2338,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "1-Arm Lat Pull-In",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         notes: "Do DB lat pullovers, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:44.011Z")
     },
     {
         name: "Omni-Direction Face Pull",
@@ -2226,7 +2356,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
         notes: "1st set: low-to-high 2nd set: mid - range 3rd set: high - to - low",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:45.011Z")
     },
     {
         name: "EZ-Bar Curl",
@@ -2243,7 +2374,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
         notes: "Focus on contracting your biceps, minimize torso momentum",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:46.011Z")
     },
     {
         name: "Bottom-Half Preacher Curl",
@@ -2260,7 +2392,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bottom-Half Bayesian Curl",
         substitutionTwoLink: "https://youtu.be/7d5WEXB0W5Y",
         notes: "Do preacher curls, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:47.011Z")
     },
     {
         name: "Deadlift",
@@ -2270,14 +2403,15 @@ export const phase1: Exercise[] = [
         reps: "1",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-5 min",
         substitutionOne: "Trap Bar Deadlift",
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
         notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:48.011Z")
     },
     {
         name: "Stiff-Leg Deadlift",
@@ -2287,14 +2421,15 @@ export const phase1: Exercise[] = [
         reps: "8",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Barbell RDL",
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "DB RDL",
         substitutionTwoLink: "https://youtu.be/V5u2AP9wBwE",
         notes: "Think about doing a high-hip conventional deadlift with a slight bend in the knees",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:32:49.011Z")
     },
     {
         name: "Close-Grip Barbell Incline Press",
@@ -2304,14 +2439,15 @@ export const phase1: Exercise[] = [
         reps: "8, 5, 12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "Close-Grip DB Incline Press",
         substitutionOneLink: "https://youtu.be/mW2Mx0msvaU",
         substitutionTwo: "Close-Grip Machine Press",
         substitutionTwoLink: "https://youtu.be/WqDwmwN56lY",
         notes: "Use ~45° incline and a grip width just outside shoulder width",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:50.011Z")
     },
     {
         name: "Chin-Up",
@@ -2321,14 +2457,15 @@ export const phase1: Exercise[] = [
         reps: "8-10",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Underhand Lat Pulldown",
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=316",
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Underhand grip, pull your chest to the bar, add weight if needed to hit RPE",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:51.011Z")
     },
     {
         name: "Leg Press",
@@ -2338,14 +2475,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Goblet Squat",
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
         notes: "Medium width feet placement on the platform, don't allow your lower back to round",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:52.011Z")
     },
     {
         name: "Kroc Row",
@@ -2355,14 +2493,15 @@ export const phase1: Exercise[] = [
         reps: "10-12",
         load: "",
         previousLoad: "0",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~2-3 min",
         substitutionOne: "Single-Arm DB Row",
         substitutionOneLink: "https://youtu.be/djKXLt7kv7Q?t=115",
         substitutionTwo: "Meadows Row",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=336",
         notes: "Kroc rows are basically just a dumbbell row with mild cheating and a slightly more upright posture. Don't be afraid to go heavy and use straps if your grip is limiting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:53.011Z")
     },
     {
         name: "Diamond Pushup",
@@ -2379,7 +2518,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
         notes: "Place your hands close together on the ground so that they form a diamond shape and do as many pushups as possible with a smooth tempo ",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:54.011Z")
     },
     {
         name: "Squat",
@@ -2396,7 +2536,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/htDXu61MPio",
         notes: "Sit back and down, keep your upper back tight to the bar",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:55.011Z")
     },
     {
         name: "Pause Squat (Back off)",
@@ -2413,7 +2554,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pause DB Bulgarian Split Squat",
         substitutionTwoLink: "https://youtu.be/HyFNlo47d8Y",
         notes: " Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:56.011Z")
     },
     {
         name: "Barbell RDL",
@@ -2430,7 +2572,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
         notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:32:57.011Z")
     },
     {
         name: "Walking Lunge",
@@ -2447,7 +2590,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
         notes: "Take medium strides, minimize the amount you push off your rear leg",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:58.011Z")
     },
     {
         name: "Seated Leg Curl",
@@ -2464,7 +2608,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
         notes: "Focus on squeezing your hamstrings to move the weight",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:32:59.011Z")
     },
     {
         name: "Leg Press Toe Press",
@@ -2481,7 +2626,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
         notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:33:00.011Z")
     },
     {
         name: "Decline Plate-Weighted Crunch",
@@ -2498,7 +2644,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Crunch",
         substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
         notes: "Hold a plate or DB to your chest and crunch hard!",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:33:01.011Z")
     },
     {
         name: "Bench Press",
@@ -2515,7 +2662,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
         notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:33:02.011Z")
     },
     {
         name: "Larsen Press",
@@ -2532,7 +2680,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Chest Press (No Leg Drive) ",
         substitutionTwoLink: "https://youtu.be/0GW4HdrWlcQ",
         notes: "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:33:03.011Z")
     },
     {
         name: "Standing Dumbbell Arnold Press",
@@ -2549,7 +2698,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
         notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
-        category: "Full Body"
+        category: "Full Body",
+        createdDate: new Date("2024-01-06T23:33:04.011Z")
     },
     {
         name: "A1. Press-Around",
@@ -2566,7 +2716,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Deficit Push Up",
         substitutionTwoLink: "https://youtu.be/-MRNjTr6xrE?t=791",
         notes: "Brace with your non-working arm, squeeze your pecs by pressing the cable across your body",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:05.011Z")
     },
     {
         name: "Cross-Body Cable Y-Raise (Side Delt)",
@@ -2583,7 +2734,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
         notes: "Think about swinging the cable out and up as if \"drawing a sword\" from your side",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:06.011Z")
     },
     {
         name: "Squeeze-Only Triceps Pressdown + Stretch-Only Overhead Triceps Extension",
@@ -2600,7 +2752,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB Skull Crusher(12 - 15 reps) ",
         substitutionTwoLink: "https://youtu.be/popGXI-qs98?t=336",
         notes: "Do the second half of the ROM for pressdowns (\"\"the squeeze\"\") and the first half of the ROM for overhead extensions (\"\"the stretch\"\")",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:07.011Z")
     },
     {
         name: "N1-Style Cross-Body Triceps Extension",
@@ -2617,7 +2770,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Single-Arm Cable Tricep Kickback",
         substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=327",
         notes: "Extend your triceps with your arm more out to the side than a regular pressdown. Feel the stretch as the cable moves across your torso",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:08.011Z")
     },
     {
         name: "Lat Pulldown (Feeder Sets)",
@@ -2634,7 +2788,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Do 4 feeder sets of 10 reps by gradually building the weight up from set to set. Set 1 is pretty light (RPE 4-5). Set 2 is a little heavier (RPE 6-7). Set 3 is a little heavier again (RPE 7-8). Set 4 is your hard set: try to hit failure at 10 reps on this last set.",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:09.011Z")
     },
     {
         name: "Lat Pulldown (Failure Set)",
@@ -2651,7 +2806,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "After hitting failure at ~10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:10.011Z")
     },
     {
         name: "Omni-Grip Machine Chest-Supported Row",
@@ -2668,7 +2824,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Seated Row",
         substitutionTwoLink: "https://youtu.be/FbWfA_s0XL8?t=273",
         notes: "Use 3 different grips for the 3 working sets (ideally going from wider to closer)",
-        category: "Legs"
+        category: "Legs",
+        createdDate: new Date("2024-01-06T23:33:11.011Z")
     },
     {
         name: "A1. Bottom-Half DB Lat Pullover",
@@ -2685,7 +2842,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "1-Arm Lat Pull-In",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         notes: "Do DB lat pullovers, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:12.011Z")
     },
     {
         name: "Omni-Direction Face Pull",
@@ -2702,7 +2860,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
         notes: "1st set: low-to-high 2nd set: mid - range 3rd set: high - to - low",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:13.011Z")
     },
     {
         name: "EZ-Bar Curl",
@@ -2719,7 +2878,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
         notes: "Focus on contracting your biceps, minimize torso momentum",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:14.011Z")
     },
     {
         name: "Bottom-Half Preacher Curl",
@@ -2736,7 +2896,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Bottom-Half Bayesian Curl",
         substitutionTwoLink: "https://youtu.be/7d5WEXB0W5Y",
         notes: "Do preacher curls, but cut out the top half of the ROM (stay entirely in the stretched aspect of the lift)",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:15.011Z")
     },
     {
         name: "Deadlift",
@@ -2753,7 +2914,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
         notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:16.011Z")
     },
     {
         name: "Stiff-Leg Deadlift",
@@ -2770,7 +2932,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "DB RDL",
         substitutionTwoLink: "https://youtu.be/V5u2AP9wBwE",
         notes: "Think about doing a high-hip conventional deadlift with a slight bend in the knees",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:17.011Z")
     },
     {
         name: "Close-Grip Barbell Incline Press",
@@ -2787,7 +2950,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Close-Grip Machine Press",
         substitutionTwoLink: "https://youtu.be/WqDwmwN56lY",
         notes: "Use ~45° incline and a grip width just outside shoulder width",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:18.011Z")
     },
     {
         name: "Chin-Up",
@@ -2804,7 +2968,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Pull-Up",
         substitutionTwoLink: "https://youtu.be/Hdc7Mw6BIEE?t=99",
         notes: "Underhand grip, pull your chest to the bar, add weight if needed to hit RPE",
-        category: "Push"
+        category: "Push",
+        createdDate: new Date("2024-01-06T23:33:19.011Z")
     },
     {
         name: "Leg Press",
@@ -2821,7 +2986,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
         notes: "Medium width feet placement on the platform, don't allow your lower back to round",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:33:20.011Z")
     },
     {
         name: "Kroc Row",
@@ -2838,7 +3004,8 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Meadows Row",
         substitutionTwoLink: "https://youtu.be/f2JDJV0AnyY?t=336",
         notes: "Kroc rows are basically just a dumbbell row with mild cheating and a slightly more upright posture. Don't be afraid to go heavy and use straps if your grip is limiting",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:33:21.011Z")
     },
     {
         name: "Diamond Pushup",
@@ -2855,1438 +3022,1523 @@ export const phase1: Exercise[] = [
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
         notes: "Place your hands close together on the ground so that they form a diamond shape and do as many pushups as possible with a smooth tempo ",
-        category: "Pull"
+        category: "Pull",
+        createdDate: new Date("2024-01-06T23:33:22.011Z")
     }
 ]
 export const phase2: Exercise[] = [
-	{
-		category: "Legs",
-		name: "Squat or Machine Squat",
-		link: "https://youtu.be/bEv6CCg2BC8?t=147",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "Machine Squat",
-		substitutionOneLink: "https://youtu.be/N56STpGGRYE",
-		substitutionTwo: "Bulgarian Split Squat",
-		substitutionTwoLink: "https://youtu.be/htDXu61MPio",
-		notes: "Sit back and down, keep your upper back tight to the bar"
-	},
-	{
-		category: "Legs",
-		name: "Barbell RDL",
-		link: "https://youtu.be/_oyxCn2iSjU?t=95",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "DB RDL",
-		substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
-		substitutionTwo: "45° Hyperextension",
-		substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-		notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round"
-	},
-	{
-		category: "Legs",
-		name: "Leg Extension",
-		link: "https://youtu.be/ljO4jkwv8wQ?t=203",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Step-Up",
-		substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
-		substitutionTwo: "Goblet Squat",
-		substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-		notes: "Focus on squeezing your quads to make the weight move."
-	},
-	{
-		category: "Legs",
-		name: "Seated Calf Raise",
-		link: "https://youtu.be/-qsRtp_PbVM?t=311",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Standing Calf Raise",
-		substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-		substitutionTwo: "Leg Press Toe Press",
-		substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
-		notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce"
-	},
-	{
-		category: "Legs",
-		name: "Cable Crunch",
-		link: "https://youtu.be/2RrGnjxSsiA?t=124",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Plate-Weighted Crunch",
-		substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
-		substitutionTwo: "Machine Crunch",
-		substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
-		notes: "Round your back as you crunch"
-	},
-	{
-		category: "Push",
-		name: "Bench Press",
-		link: "https://youtu.be/vcBig73ojpE?t=134",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "DB Bench Press",
-		substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
-		substitutionTwo: "Machine Chest Press",
-		substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep"
-	},
-	{
-		category: "Push",
-		name: "High-Incline Smith Machine Press",
-		link: "https://youtu.be/egBQ9Svdnok",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Incline DB Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
-		substitutionTwo: "Incline Machine Press",
-		substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
-		notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control"
-	},
-	{
-		category: "Push",
-		name: "Egyptian Cable Lateral Raise",
-		link: "https://youtu.be/SJqInYJcg5k?t=653",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Machine Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
-		notes: "Lean away from the cable. Focus on squeezing your delts."
-	},
-	{
-		category: "Push",
-		name: "Overhead Cable Triceps Extension",
-		link: "https://youtu.be/qIW3z-ydg-M",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Floor Skull Crusher",
-		substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
-		substitutionTwo: "DB French Press",
-		substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-		notes: "Do both arms at once, resist the negative"
-	},
-	{
-		category: "Push",
-		name: "Cable Triceps Kickback",
-		link: "https://youtu.be/94DXwlcX8Po?t=327",
-		warmUpSets: "1",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Triceps Kickback",
-		substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
-		substitutionTwo: "Triceps Pressdown",
-		substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
-		notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)"
-	},
-	{
-		category: "Pull",
-		name: "Neutral-Grip Lat Pulldown",
-		link: "https://youtu.be/12xHxUnBEiI?t=240",
-		warmUpSets: "3",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Neutral-Grip Pull-Up",
-		substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
-		substitutionTwo: "Machine Pulldown",
-		substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-		notes: "Pull your elbows down against your sides"
-	},
-	{
-		category: "Pull",
-		name: "Pendlay Row",
-		link: "https://youtu.be/axoeDmW0oAY?t=185",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Meadows Row",
-		substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
-		substitutionTwo: "Single-Arm Row",
-		substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
-		notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum"
-	},
-	{
-		category: "Pull",
-		name: "Reverse Pec Deck",
-		link: "https://youtu.be/qfc70k40318?t=259",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Reverse Cable Flye",
-		substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
-		substitutionTwo: "Bent-Over Reverse DB Flye",
-		substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-		notes: "Swing the weight \"out\", not \"back\""
-	},
-	{
-		category: "Pull",
-		name: "EZ-Bar Curl",
-		link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Curl",
-		substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		substitutionTwo: "Cable Curl",
-		substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-		notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps"
-	},
-	{
-		category: "Pull",
-		name: "Hammer Cheat Curl",
-		link: "https://youtu.be/qVek72z3F1U?t=536",
-		warmUpSets: "1",
-		workingSets: "1",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "0 min",
-		substitutionOne: "Inverse Zottman Curl",
-		substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
-		substitutionTwo: "DB Curl",
-		substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary"
-	},
-	{
-		category: "Full Body",
-		name: "Hack Squat",
-		link: "https://youtu.be/wEgQUCdtFLg",
-		warmUpSets: "3-4",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "44814",
-		rest: "~3-5 min",
-		substitutionOne: "Machine Squat",
-		substitutionOneLink: "https://youtu.be/N56STpGGRYE",
-		substitutionTwo: "Bulgarian Split Squat",
-		substitutionTwoLink: "https://youtu.be/htDXu61MPio",
-		notes: "Allow your knees to come forward (past your toes), focus the tension on your quads"
-	},
-	{
-		category: "Full Body",
-		name: "Seated DB Shoulder Press",
-		link: "https://youtu.be/ae9IxwoEpQ8?t=507",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Shoulder Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-		substitutionTwo: "Standing DB Arnold Press",
-		substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-		notes: "Bring the dumbbells all the way down, keep your torso upright"
-	},
-	{
-		category: "Full Body",
-		name: "Close-Grip Seated Cable Row",
-		link: "https://youtu.be/PAXkl-AdJFg?t=335",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "T-Bar Row",
-		substitutionOneLink: "https://youtu.be/160n9FBX84s",
-		substitutionTwo: "Incline Chest-Supported DB Row",
-		substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-		notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back."
-	},
-	{
-		category: "Full Body",
-		name: "Weighted Dip",
-		link: "https://youtu.be/yN6Q1UI_xkE?t=75",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Chest Press",
-		substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		substitutionTwo: "DB Bench Press",
-		substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
-		notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip"
-	},
-	{
-		category: "Full Body",
-		name: "Seated Leg Curl",
-		link: "https://youtu.be/2CMmuH4qJh0",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Lying Leg Curl",
-		substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
-		substitutionTwo: "Nordic Ham Curl",
-		substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-		notes: "Focus on squeezing your hamstrings to move the weight"
-	},
-	{
-		category: "Full Body",
-		name: "Machine Lateral Raise",
-		link: "https://youtu.be/-9QsrJ542ao",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Cable Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
-		notes: "Focus on squeezing your lateral delt to move the weight"
-	},
-	{
-		category: "Legs",
-		name: "Squat or Machine Squat",
-		link: "https://youtu.be/bEv6CCg2BC8?t=147",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "Machine Squat",
-		substitutionOneLink: "https://youtu.be/N56STpGGRYE",
-		substitutionTwo: "Bulgarian Split Squat",
-		substitutionTwoLink: "https://youtu.be/htDXu61MPio",
-		notes: "Sit back and down, keep your upper back tight to the bar"
-	},
-	{
-		category: "Legs",
-		name: "Barbell RDL",
-		link: "https://youtu.be/_oyxCn2iSjU?t=95",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "DB RDL",
-		substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
-		substitutionTwo: "45° Hyperextension",
-		substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-		notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round"
-	},
-	{
-		category: "Legs",
-		name: "Leg Extension",
-		link: "https://youtu.be/ljO4jkwv8wQ?t=203",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Step-Up",
-		substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
-		substitutionTwo: "Goblet Squat",
-		substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-		notes: "Focus on squeezing your quads to make the weight move."
-	},
-	{
-		category: "Legs",
-		name: "Seated Calf Raise",
-		link: "https://youtu.be/-qsRtp_PbVM?t=311",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Standing Calf Raise",
-		substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-		substitutionTwo: "Leg Press Toe Press",
-		substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
-		notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce"
-	},
-	{
-		category: "Legs",
-		name: "Cable Crunch",
-		link: "https://youtu.be/2RrGnjxSsiA?t=124",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Plate-Weighted Crunch",
-		substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
-		substitutionTwo: "Machine Crunch",
-		substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
-		notes: "Round your back as you crunch."
-	},
-	{
-		category: "Push",
-		name: "Bench Press",
-		link: "https://youtu.be/vcBig73ojpE?t=134",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "DB Bench Press",
-		substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
-		substitutionTwo: "Machine Chest Press",
-		substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep."
-	},
-	{
-		category: "Push",
-		name: "High-Incline Smith Machine Press",
-		link: "https://youtu.be/egBQ9Svdnok",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Incline DB Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
-		substitutionTwo: "Incline Machine Press",
-		substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
-		notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control."
-	},
-	{
-		category: "Push",
-		name: "Egyptian Cable Lateral Raise",
-		link: "https://youtu.be/SJqInYJcg5k?t=653",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Machine Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
-		notes: "Lean away from the cable. Focus on squeezing your delts."
-	},
-	{
-		category: "Push",
-		name: "Overhead Cable Triceps Extension",
-		link: "https://youtu.be/qIW3z-ydg-M",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Floor Skull Crusher",
-		substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
-		substitutionTwo: "DB French Press",
-		substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-		notes: "Do both arms at once, resist the negative"
-	},
-	{
-		category: "Push",
-		name: "Cable Triceps Kickback",
-		link: "https://youtu.be/94DXwlcX8Po?t=327",
-		warmUpSets: "1",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Triceps Kickback",
-		substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
-		substitutionTwo: "Triceps Pressdown",
-		substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
-		notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)"
-	},
-	{
-		category: "Pull",
-		name: "Neutral-Grip Lat Pulldown",
-		link: "https://youtu.be/12xHxUnBEiI?t=240",
-		warmUpSets: "3",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Neutral-Grip Pull-Up",
-		substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
-		substitutionTwo: "Machine Pulldown",
-		substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-		notes: "Pull your elbows down against your sides."
-	},
-	{
-		category: "Pull",
-		name: "Pendlay Row",
-		link: "https://youtu.be/axoeDmW0oAY?t=185",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Meadows Row",
-		substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
-		substitutionTwo: "Single-Arm Row",
-		substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
-		notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum."
-	},
-	{
-		category: "Pull",
-		name: "Reverse Pec Deck",
-		link: "https://youtu.be/qfc70k40318?t=259",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Reverse Cable Flye",
-		substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
-		substitutionTwo: "Bent-Over Reverse DB Flye",
-		substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-		notes: "Swing the weight \"out\", not \"back\"."
-	},
-	{
-		category: "Pull",
-		name: "EZ-Bar Curl",
-		link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Curl",
-		substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		substitutionTwo: "Cable Curl",
-		substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-		notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps."
-	},
-	{
-		category: "Pull",
-		name: "Hammer Cheat Curl",
-		link: "https://youtu.be/qVek72z3F1U?t=536",
-		warmUpSets: "1",
-		workingSets: "1",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "0 min",
-		substitutionOne: "Inverse Zottman Curl",
-		substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
-		substitutionTwo: "DB Curl",
-		substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary."
-	},
-	{
-		category: "Full Body",
-		name: "Deadlift",
-		link: "https://youtu.be/VL5Ab0T07e4?t=175",
-		warmUpSets: "3-4",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "Trap Bar Deadlift",
-		substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
-		substitutionTwo: "Barbell Hip Thrust",
-		substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
-		notes: "Can pull sumo or conventional, go with whatever variation you are stronger with."
-	},
-	{
-		category: "Full Body",
-		name: "Seated DB Shoulder Press",
-		link: "https://youtu.be/ae9IxwoEpQ8?t=507",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Shoulder Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-		substitutionTwo: "Standing DB Arnold Press",
-		substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-		notes: "Bring the dumbbells all the way down, keep your torso upright"
-	},
-	{
-		category: "Full Body",
-		name: "Close-Grip Seated Cable Row",
-		link: "https://youtu.be/PAXkl-AdJFg?t=335",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "T-Bar Row",
-		substitutionOneLink: "https://youtu.be/160n9FBX84s",
-		substitutionTwo: "Incline Chest-Supported DB Row",
-		substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-		notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back."
-	},
-	{
-		category: "Full Body",
-		name: "Weighted Dip",
-		link: "https://youtu.be/yN6Q1UI_xkE?t=75",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Chest Press",
-		substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		substitutionTwo: "DB Bench Press",
-		substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
-		notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip"
-	},
-	{
-		category: "Full Body",
-		name: "Seated Leg Curl",
-		link: "https://youtu.be/2CMmuH4qJh0",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Lying Leg Curl",
-		substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
-		substitutionTwo: "Nordic Ham Curl",
-		substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-		notes: "Focus on squeezing your hamstrings to move the weight"
-	},
-	{
-		category: "Full Body",
-		name: "Machine Lateral Raise",
-		link: "https://youtu.be/-9QsrJ542ao",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Cable Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
-		notes: "Focus on squeezing your lateral delt to move the weight"
-	},
-	{
-		category: "Legs",
-		name: "Squat or Machine Squat",
-		link: "https://youtu.be/bEv6CCg2BC8?t=147",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "Machine Squat",
-		substitutionOneLink: "https://youtu.be/N56STpGGRYE",
-		substitutionTwo: "Bulgarian Split Squat",
-		substitutionTwoLink: "https://youtu.be/htDXu61MPio",
-		notes: "Sit back and down, keep your upper back tight to the bar"
-	},
-	{
-		category: "Legs",
-		name: "Barbell RDL",
-		link: "https://youtu.be/_oyxCn2iSjU?t=95",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "DB RDL",
-		substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
-		substitutionTwo: "45° Hyperextension",
-		substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-		notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round"
-	},
-	{
-		category: "Legs",
-		name: "Leg Extension",
-		link: "https://youtu.be/ljO4jkwv8wQ?t=203",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Step-Up",
-		substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
-		substitutionTwo: "Goblet Squat",
-		substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-		notes: "Focus on squeezing your quads to make the weight move."
-	},
-	{
-		category: "Legs",
-		name: "Seated Calf Raise",
-		link: "https://youtu.be/-qsRtp_PbVM?t=311",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Standing Calf Raise",
-		substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-		substitutionTwo: "Leg Press Toe Press",
-		substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
-		notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce"
-	},
-	{
-		category: "Legs",
-		name: "Cable Crunch",
-		link: "https://youtu.be/2RrGnjxSsiA?t=124",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Plate-Weighted Crunch",
-		substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
-		substitutionTwo: "Machine Crunch",
-		substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
-		notes: "Round your back as you crunch"
-	},
-	{
-		category: "Push",
-		name: "Bench Press",
-		link: "https://youtu.be/vcBig73ojpE?t=134",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "DB Bench Press",
-		substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
-		substitutionTwo: "Machine Chest Press",
-		substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep"
-	},
-	{
-		category: "Push",
-		name: "High-Incline Smith Machine Press",
-		link: "https://youtu.be/egBQ9Svdnok",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Incline DB Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
-		substitutionTwo: "Incline Machine Press",
-		substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
-		notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control"
-	},
-	{
-		category: "Push",
-		name: "Egyptian Cable Lateral Raise",
-		link: "https://youtu.be/SJqInYJcg5k?t=653",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Machine Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
-		notes: "Lean away from the cable. Focus on squeezing your delts."
-	},
-	{
-		category: "Push",
-		name: "Overhead Cable Triceps Extension",
-		link: "https://youtu.be/qIW3z-ydg-M",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Floor Skull Crusher",
-		substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
-		substitutionTwo: "DB French Press",
-		substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-		notes: "Do both arms at once, resist the negative"
-	},
-	{
-		category: "Push",
-		name: "Cable Triceps Kickback",
-		link: "https://youtu.be/94DXwlcX8Po?t=327",
-		warmUpSets: "1",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Triceps Kickback",
-		substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
-		substitutionTwo: "Triceps Pressdown",
-		substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
-		notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)"
-	},
-	{
-		category: "Pull",
-		name: "Neutral-Grip Lat Pulldown",
-		link: "https://youtu.be/12xHxUnBEiI?t=240",
-		warmUpSets: "3",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Neutral-Grip Pull-Up",
-		substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
-		substitutionTwo: "Machine Pulldown",
-		substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-		notes: "Pull your elbows down against your sides"
-	},
-	{
-		category: "Pull",
-		name: "Pendlay Row",
-		link: "https://youtu.be/axoeDmW0oAY?t=185",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Meadows Row",
-		substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
-		substitutionTwo: "Single-Arm Row",
-		substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
-		notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum"
-	},
-	{
-		category: "Pull",
-		name: "Reverse Pec Deck",
-		link: "https://youtu.be/qfc70k40318?t=259",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Reverse Cable Flye",
-		substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
-		substitutionTwo: "Bent-Over Reverse DB Flye",
-		substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-		notes: "Swing the weight \"out\", not \"back\""
-	},
-	{
-		category: "Pull",
-		name: "EZ-Bar Curl",
-		link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Curl",
-		substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		substitutionTwo: "Cable Curl",
-		substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-		notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps"
-	},
-	{
-		category: "Pull",
-		name: "Hammer Cheat Curl",
-		link: "https://youtu.be/qVek72z3F1U?t=536",
-		warmUpSets: "1",
-		workingSets: "1",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "0 min",
-		substitutionOne: "Inverse Zottman Curl",
-		substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
-		substitutionTwo: "DB Curl",
-		substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary"
-	},
-	{
-		category: "Full Body",
-		name: "Hack Squat",
-		link: "https://youtu.be/wEgQUCdtFLg",
-		warmUpSets: "3-4",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "44814",
-		rest: "~3-5 min",
-		substitutionOne: "Machine Squat",
-		substitutionOneLink: "https://youtu.be/N56STpGGRYE",
-		substitutionTwo: "Bulgarian Split Squat",
-		substitutionTwoLink: "https://youtu.be/htDXu61MPio",
-		notes: "Allow your knees to come forward (past your toes), focus the tension on your quads"
-	},
-	{
-		category: "Full Body",
-		name: "Seated DB Shoulder Press",
-		link: "https://youtu.be/ae9IxwoEpQ8?t=507",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Shoulder Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-		substitutionTwo: "Standing DB Arnold Press",
-		substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-		notes: "Bring the dumbbells all the way down, keep your torso upright"
-	},
-	{
-		category: "Full Body",
-		name: "Close-Grip Seated Cable Row",
-		link: "https://youtu.be/PAXkl-AdJFg?t=335",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "T-Bar Row",
-		substitutionOneLink: "https://youtu.be/160n9FBX84s",
-		substitutionTwo: "Incline Chest-Supported DB Row",
-		substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-		notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back."
-	},
-	{
-		category: "Full Body",
-		name: "Weighted Dip",
-		link: "https://youtu.be/yN6Q1UI_xkE?t=75",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Chest Press",
-		substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		substitutionTwo: "DB Bench Press",
-		substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
-		notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip"
-	},
-	{
-		category: "Full Body",
-		name: "Seated Leg Curl",
-		link: "https://youtu.be/2CMmuH4qJh0",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Lying Leg Curl",
-		substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
-		substitutionTwo: "Nordic Ham Curl",
-		substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-		notes: "Focus on squeezing your hamstrings to move the weight"
-	},
-	{
-		category: "Full Body",
-		name: "Machine Lateral Raise",
-		link: "https://youtu.be/-9QsrJ542ao",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Cable Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
-		notes: "Focus on squeezing your lateral delt to move the weight"
-	},
-	{
-		category: "Legs",
-		name: "Squat or Machine Squat",
-		link: "https://youtu.be/bEv6CCg2BC8?t=147",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "Machine Squat",
-		substitutionOneLink: "https://youtu.be/N56STpGGRYE",
-		substitutionTwo: "Bulgarian Split Squat",
-		substitutionTwoLink: "https://youtu.be/htDXu61MPio",
-		notes: "Sit back and down, keep your upper back tight to the bar"
-	},
-	{
-		category: "Legs",
-		name: "Barbell RDL",
-		link: "https://youtu.be/_oyxCn2iSjU?t=95",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "DB RDL",
-		substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
-		substitutionTwo: "45° Hyperextension",
-		substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-		notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round"
-	},
-	{
-		category: "Legs",
-		name: "Leg Extension",
-		link: "https://youtu.be/ljO4jkwv8wQ?t=203",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Step-Up",
-		substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
-		substitutionTwo: "Goblet Squat",
-		substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-		notes: "Focus on squeezing your quads to make the weight move."
-	},
-	{
-		category: "Legs",
-		name: "Seated Calf Raise",
-		link: "https://youtu.be/-qsRtp_PbVM?t=311",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Standing Calf Raise",
-		substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-		substitutionTwo: "Leg Press Toe Press",
-		substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
-		notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce"
-	},
-	{
-		category: "Legs",
-		name: "Cable Crunch",
-		link: "https://youtu.be/2RrGnjxSsiA?t=124",
-		warmUpSets: "2",
-		workingSets: "3",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Plate-Weighted Crunch",
-		substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
-		substitutionTwo: "Machine Crunch",
-		substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
-		notes: "Round your back as you crunch"
-	},
-	{
-		category: "Push",
-		name: "Bench Press",
-		link: "https://youtu.be/vcBig73ojpE?t=134",
-		warmUpSets: "3-4",
-		workingSets: "1",
-		reps: "3-5",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "DB Bench Press",
-		substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
-		substitutionTwo: "Machine Chest Press",
-		substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep"
-	},
-	{
-		category: "Push",
-		name: "High-Incline Smith Machine Press",
-		link: "https://youtu.be/egBQ9Svdnok",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Incline DB Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
-		substitutionTwo: "Incline Machine Press",
-		substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
-		notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control"
-	},
-	{
-		category: "Push",
-		name: "Egyptian Cable Lateral Raise",
-		link: "https://youtu.be/SJqInYJcg5k?t=653",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Machine Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
-		notes: "Lean away from the cable. Focus on squeezing your delts."
-	},
-	{
-		category: "Push",
-		name: "Overhead Cable Triceps Extension",
-		link: "https://youtu.be/qIW3z-ydg-M",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Floor Skull Crusher",
-		substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
-		substitutionTwo: "DB French Press",
-		substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-		notes: "Do both arms at once, resist the negative"
-	},
-	{
-		category: "Push",
-		name: "Cable Triceps Kickback",
-		link: "https://youtu.be/94DXwlcX8Po?t=327",
-		warmUpSets: "1",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Triceps Kickback",
-		substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
-		substitutionTwo: "Triceps Pressdown",
-		substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
-		notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)"
-	},
-	{
-		category: "Pull",
-		name: "Neutral-Grip Lat Pulldown",
-		link: "https://youtu.be/12xHxUnBEiI?t=240",
-		warmUpSets: "3",
-		workingSets: "3",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Neutral-Grip Pull-Up",
-		substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
-		substitutionTwo: "Machine Pulldown",
-		substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-		notes: "Pull your elbows down against your sides"
-	},
-	{
-		category: "Pull",
-		name: "Pendlay Row",
-		link: "https://youtu.be/axoeDmW0oAY?t=185",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Meadows Row",
-		substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
-		substitutionTwo: "Single-Arm Row",
-		substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
-		notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum"
-	},
-	{
-		category: "Pull",
-		name: "Reverse Pec Deck",
-		link: "https://youtu.be/qfc70k40318?t=259",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Reverse Cable Flye",
-		substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
-		substitutionTwo: "Bent-Over Reverse DB Flye",
-		substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-		notes: "Swing the weight \"out\", not \"back\""
-	},
-	{
-		category: "Pull",
-		name: "EZ-Bar Curl",
-		link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Curl",
-		substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		substitutionTwo: "Cable Curl",
-		substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-		notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps"
-	},
-	{
-		category: "Pull",
-		name: "Hammer Cheat Curl",
-		link: "https://youtu.be/qVek72z3F1U?t=536",
-		warmUpSets: "1",
-		workingSets: "1",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "0 min",
-		substitutionOne: "Inverse Zottman Curl",
-		substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
-		substitutionTwo: "DB Curl",
-		substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
-		notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary"
-	},
-	{
-		category: "Full Body",
-		name: "Deadlift",
-		link: "https://youtu.be/VL5Ab0T07e4?t=175",
-		warmUpSets: "3-4",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "44782",
-		rest: "~3-5 min",
-		substitutionOne: "Trap Bar Deadlift",
-		substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
-		substitutionTwo: "Barbell Hip Thrust",
-		substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
-		notes: "Can pull sumo or conventional, go with whatever variation you are stronger with"
-	},
-	{
-		category: "Full Body",
-		name: "Seated DB Shoulder Press",
-		link: "https://youtu.be/ae9IxwoEpQ8?t=507",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Shoulder Press",
-		substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-		substitutionTwo: "Standing DB Arnold Press",
-		substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-		notes: "Bring the dumbbells all the way down, keep your torso upright"
-	},
-	{
-		category: "Full Body",
-		name: "Close-Grip Seated Cable Row",
-		link: "https://youtu.be/PAXkl-AdJFg?t=335",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "T-Bar Row",
-		substitutionOneLink: "https://youtu.be/160n9FBX84s",
-		substitutionTwo: "Incline Chest-Supported DB Row",
-		substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-		notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back."
-	},
-	{
-		category: "Full Body",
-		name: "Weighted Dip",
-		link: "https://youtu.be/yN6Q1UI_xkE?t=75",
-		warmUpSets: "3",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~3-4 min",
-		substitutionOne: "Machine Chest Press",
-		substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
-		substitutionTwo: "DB Bench Press",
-		substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
-		notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip"
-	},
-	{
-		category: "Full Body",
-		name: "Seated Leg Curl",
-		link: "https://youtu.be/2CMmuH4qJh0",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "4-6",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "Lying Leg Curl",
-		substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
-		substitutionTwo: "Nordic Ham Curl",
-		substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-		notes: "Focus on squeezing your hamstrings to move the weight"
-	},
-	{
-		category: "Full Body",
-		name: "Machine Lateral Raise",
-		link: "https://youtu.be/-9QsrJ542ao",
-		warmUpSets: "2",
-		workingSets: "2",
-		reps: "6-8",
-		load: "",
-		previousLoad: "",
-		rpe: "10",
-		rest: "~2-3 min",
-		substitutionOne: "DB Lateral Raise",
-		substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
-		substitutionTwo: "Cable Lateral Raise",
-		substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
-		notes: "Focus on squeezing your lateral delt to move the weight"
-	}
+    {
+        category: "Legs",
+        name: "Squat or Machine Squat",
+        link: "https://youtu.be/bEv6CCg2BC8?t=147",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "Machine Squat",
+        substitutionOneLink: "https://youtu.be/N56STpGGRYE",
+        substitutionTwo: "Bulgarian Split Squat",
+        substitutionTwoLink: "https://youtu.be/htDXu61MPio",
+        notes: "Sit back and down, keep your upper back tight to the bar",
+        createdDate: new Date("2024-01-06T23:33:23.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Barbell RDL",
+        link: "https://youtu.be/_oyxCn2iSjU?t=95",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "DB RDL",
+        substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
+        substitutionTwo: "45° Hyperextension",
+        substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
+        notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
+        createdDate: new Date("2024-01-06T23:33:24.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Leg Extension",
+        link: "https://youtu.be/ljO4jkwv8wQ?t=203",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Step-Up",
+        substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
+        substitutionTwo: "Goblet Squat",
+        substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
+        notes: "Focus on squeezing your quads to make the weight move.",
+        createdDate: new Date("2024-01-06T23:33:25.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Seated Calf Raise",
+        link: "https://youtu.be/-qsRtp_PbVM?t=311",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Standing Calf Raise",
+        substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
+        substitutionTwo: "Leg Press Toe Press",
+        substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+        createdDate: new Date("2024-01-06T23:33:26.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Cable Crunch",
+        link: "https://youtu.be/2RrGnjxSsiA?t=124",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Plate-Weighted Crunch",
+        substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
+        substitutionTwo: "Machine Crunch",
+        substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
+        notes: "Round your back as you crunch",
+        createdDate: new Date("2024-01-06T23:33:27.011Z")
+    },
+    {
+        category: "Push",
+        name: "Bench Press",
+        link: "https://youtu.be/vcBig73ojpE?t=134",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "DB Bench Press",
+        substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
+        substitutionTwo: "Machine Chest Press",
+        substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+        createdDate: new Date("2024-01-06T23:33:28.011Z")
+    },
+    {
+        category: "Push",
+        name: "High-Incline Smith Machine Press",
+        link: "https://youtu.be/egBQ9Svdnok",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Incline DB Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
+        substitutionTwo: "Incline Machine Press",
+        substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
+        notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control",
+        createdDate: new Date("2024-01-06T23:33:29.011Z")
+    },
+    {
+        category: "Push",
+        name: "Egyptian Cable Lateral Raise",
+        link: "https://youtu.be/SJqInYJcg5k?t=653",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Machine Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
+        notes: "Lean away from the cable. Focus on squeezing your delts.",
+        createdDate: new Date("2024-01-06T23:33:30.011Z")
+    },
+    {
+        category: "Push",
+        name: "Overhead Cable Triceps Extension",
+        link: "https://youtu.be/qIW3z-ydg-M",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Floor Skull Crusher",
+        substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
+        substitutionTwo: "DB French Press",
+        substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
+        notes: "Do both arms at once, resist the negative",
+        createdDate: new Date("2024-01-06T23:33:31.011Z")
+    },
+    {
+        category: "Push",
+        name: "Cable Triceps Kickback",
+        link: "https://youtu.be/94DXwlcX8Po?t=327",
+        warmUpSets: "1",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Triceps Kickback",
+        substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
+        substitutionTwo: "Triceps Pressdown",
+        substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
+        notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)",
+        createdDate: new Date("2024-01-06T23:33:32.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Neutral-Grip Lat Pulldown",
+        link: "https://youtu.be/12xHxUnBEiI?t=240",
+        warmUpSets: "3",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Neutral-Grip Pull-Up",
+        substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
+        substitutionTwo: "Machine Pulldown",
+        substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
+        notes: "Pull your elbows down against your sides",
+        createdDate: new Date("2024-01-06T23:33:33.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Pendlay Row",
+        link: "https://youtu.be/axoeDmW0oAY?t=185",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Meadows Row",
+        substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
+        substitutionTwo: "Single-Arm Row",
+        substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
+        notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum",
+        createdDate: new Date("2024-01-06T23:33:34.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Reverse Pec Deck",
+        link: "https://youtu.be/qfc70k40318?t=259",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Reverse Cable Flye",
+        substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
+        substitutionTwo: "Bent-Over Reverse DB Flye",
+        substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
+        notes: "Swing the weight \"out\", not \"back\"",
+        createdDate: new Date("2024-01-06T23:33:35.011Z")
+    },
+    {
+        category: "Pull",
+        name: "EZ-Bar Curl",
+        link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Curl",
+        substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        substitutionTwo: "Cable Curl",
+        substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps",
+        createdDate: new Date("2024-01-06T23:33:36.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Hammer Cheat Curl",
+        link: "https://youtu.be/qVek72z3F1U?t=536",
+        warmUpSets: "1",
+        workingSets: "1",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "0 min",
+        substitutionOne: "Inverse Zottman Curl",
+        substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
+        substitutionTwo: "DB Curl",
+        substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary",
+        createdDate: new Date("2024-01-06T23:33:37.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Hack Squat",
+        link: "https://youtu.be/wEgQUCdtFLg",
+        warmUpSets: "3-4",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "44814",
+        rest: "~3-5 min",
+        substitutionOne: "Machine Squat",
+        substitutionOneLink: "https://youtu.be/N56STpGGRYE",
+        substitutionTwo: "Bulgarian Split Squat",
+        substitutionTwoLink: "https://youtu.be/htDXu61MPio",
+        notes: "Allow your knees to come forward (past your toes), focus the tension on your quads",
+        createdDate: new Date("2024-01-06T23:33:38.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated DB Shoulder Press",
+        link: "https://youtu.be/ae9IxwoEpQ8?t=507",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Shoulder Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
+        substitutionTwo: "Standing DB Arnold Press",
+        substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
+        notes: "Bring the dumbbells all the way down, keep your torso upright",
+        createdDate: new Date("2024-01-06T23:33:39.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Close-Grip Seated Cable Row",
+        link: "https://youtu.be/PAXkl-AdJFg?t=335",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "T-Bar Row",
+        substitutionOneLink: "https://youtu.be/160n9FBX84s",
+        substitutionTwo: "Incline Chest-Supported DB Row",
+        substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
+        notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back.",
+        createdDate: new Date("2024-01-06T23:33:40.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Weighted Dip",
+        link: "https://youtu.be/yN6Q1UI_xkE?t=75",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Chest Press",
+        substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        substitutionTwo: "DB Bench Press",
+        substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
+        notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip",
+        createdDate: new Date("2024-01-06T23:33:41.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated Leg Curl",
+        link: "https://youtu.be/2CMmuH4qJh0",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Lying Leg Curl",
+        substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
+        substitutionTwo: "Nordic Ham Curl",
+        substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
+        notes: "Focus on squeezing your hamstrings to move the weight",
+        createdDate: new Date("2024-01-06T23:33:42.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Machine Lateral Raise",
+        link: "https://youtu.be/-9QsrJ542ao",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Cable Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
+        notes: "Focus on squeezing your lateral delt to move the weight",
+        createdDate: new Date("2024-01-06T23:33:43.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Squat or Machine Squat",
+        link: "https://youtu.be/bEv6CCg2BC8?t=147",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "Machine Squat",
+        substitutionOneLink: "https://youtu.be/N56STpGGRYE",
+        substitutionTwo: "Bulgarian Split Squat",
+        substitutionTwoLink: "https://youtu.be/htDXu61MPio",
+        notes: "Sit back and down, keep your upper back tight to the bar",
+        createdDate: new Date("2024-01-06T23:33:44.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Barbell RDL",
+        link: "https://youtu.be/_oyxCn2iSjU?t=95",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "DB RDL",
+        substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
+        substitutionTwo: "45° Hyperextension",
+        substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
+        notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
+        createdDate: new Date("2024-01-06T23:33:45.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Leg Extension",
+        link: "https://youtu.be/ljO4jkwv8wQ?t=203",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Step-Up",
+        substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
+        substitutionTwo: "Goblet Squat",
+        substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
+        notes: "Focus on squeezing your quads to make the weight move.",
+        createdDate: new Date("2024-01-06T23:33:46.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Seated Calf Raise",
+        link: "https://youtu.be/-qsRtp_PbVM?t=311",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Standing Calf Raise",
+        substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
+        substitutionTwo: "Leg Press Toe Press",
+        substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+        createdDate: new Date("2024-01-06T23:33:47.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Cable Crunch",
+        link: "https://youtu.be/2RrGnjxSsiA?t=124",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Plate-Weighted Crunch",
+        substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
+        substitutionTwo: "Machine Crunch",
+        substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
+        notes: "Round your back as you crunch.",
+        createdDate: new Date("2024-01-06T23:33:48.011Z")
+    },
+    {
+        category: "Push",
+        name: "Bench Press",
+        link: "https://youtu.be/vcBig73ojpE?t=134",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "DB Bench Press",
+        substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
+        substitutionTwo: "Machine Chest Press",
+        substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep.",
+        createdDate: new Date("2024-01-06T23:33:49.011Z")
+    },
+    {
+        category: "Push",
+        name: "High-Incline Smith Machine Press",
+        link: "https://youtu.be/egBQ9Svdnok",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Incline DB Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
+        substitutionTwo: "Incline Machine Press",
+        substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
+        notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control.",
+        createdDate: new Date("2024-01-06T23:33:50.011Z")
+    },
+    {
+        category: "Push",
+        name: "Egyptian Cable Lateral Raise",
+        link: "https://youtu.be/SJqInYJcg5k?t=653",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Machine Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
+        notes: "Lean away from the cable. Focus on squeezing your delts.",
+        createdDate: new Date("2024-01-06T23:33:51.011Z")
+    },
+    {
+        category: "Push",
+        name: "Overhead Cable Triceps Extension",
+        link: "https://youtu.be/qIW3z-ydg-M",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Floor Skull Crusher",
+        substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
+        substitutionTwo: "DB French Press",
+        substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
+        notes: "Do both arms at once, resist the negative",
+        createdDate: new Date("2024-01-06T23:33:52.011Z")
+    },
+    {
+        category: "Push",
+        name: "Cable Triceps Kickback",
+        link: "https://youtu.be/94DXwlcX8Po?t=327",
+        warmUpSets: "1",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Triceps Kickback",
+        substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
+        substitutionTwo: "Triceps Pressdown",
+        substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
+        notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)",
+        createdDate: new Date("2024-01-06T23:33:53.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Neutral-Grip Lat Pulldown",
+        link: "https://youtu.be/12xHxUnBEiI?t=240",
+        warmUpSets: "3",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Neutral-Grip Pull-Up",
+        substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
+        substitutionTwo: "Machine Pulldown",
+        substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
+        notes: "Pull your elbows down against your sides.",
+        createdDate: new Date("2024-01-06T23:33:54.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Pendlay Row",
+        link: "https://youtu.be/axoeDmW0oAY?t=185",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Meadows Row",
+        substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
+        substitutionTwo: "Single-Arm Row",
+        substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
+        notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum.",
+        createdDate: new Date("2024-01-06T23:33:55.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Reverse Pec Deck",
+        link: "https://youtu.be/qfc70k40318?t=259",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Reverse Cable Flye",
+        substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
+        substitutionTwo: "Bent-Over Reverse DB Flye",
+        substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
+        notes: "Swing the weight \"out\", not \"back\".",
+        createdDate: new Date("2024-01-06T23:33:56.011Z")
+    },
+    {
+        category: "Pull",
+        name: "EZ-Bar Curl",
+        link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Curl",
+        substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        substitutionTwo: "Cable Curl",
+        substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps.",
+        createdDate: new Date("2024-01-06T23:33:57.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Hammer Cheat Curl",
+        link: "https://youtu.be/qVek72z3F1U?t=536",
+        warmUpSets: "1",
+        workingSets: "1",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "0 min",
+        substitutionOne: "Inverse Zottman Curl",
+        substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
+        substitutionTwo: "DB Curl",
+        substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary.",
+        createdDate: new Date("2024-01-06T23:33:58.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Deadlift",
+        link: "https://youtu.be/VL5Ab0T07e4?t=175",
+        warmUpSets: "3-4",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "Trap Bar Deadlift",
+        substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
+        substitutionTwo: "Barbell Hip Thrust",
+        substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
+        notes: "Can pull sumo or conventional, go with whatever variation you are stronger with.",
+        createdDate: new Date("2024-01-06T23:33:59.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated DB Shoulder Press",
+        link: "https://youtu.be/ae9IxwoEpQ8?t=507",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Shoulder Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
+        substitutionTwo: "Standing DB Arnold Press",
+        substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
+        notes: "Bring the dumbbells all the way down, keep your torso upright",
+        createdDate: new Date("2024-01-06T23:34:00.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Close-Grip Seated Cable Row",
+        link: "https://youtu.be/PAXkl-AdJFg?t=335",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "T-Bar Row",
+        substitutionOneLink: "https://youtu.be/160n9FBX84s",
+        substitutionTwo: "Incline Chest-Supported DB Row",
+        substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
+        notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back.",
+        createdDate: new Date("2024-01-06T23:34:01.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Weighted Dip",
+        link: "https://youtu.be/yN6Q1UI_xkE?t=75",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Chest Press",
+        substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        substitutionTwo: "DB Bench Press",
+        substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
+        notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip",
+        createdDate: new Date("2024-01-06T23:34:02.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated Leg Curl",
+        link: "https://youtu.be/2CMmuH4qJh0",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Lying Leg Curl",
+        substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
+        substitutionTwo: "Nordic Ham Curl",
+        substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
+        notes: "Focus on squeezing your hamstrings to move the weight",
+        createdDate: new Date("2024-01-06T23:34:03.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Machine Lateral Raise",
+        link: "https://youtu.be/-9QsrJ542ao",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Cable Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
+        notes: "Focus on squeezing your lateral delt to move the weight",
+        createdDate: new Date("2024-01-06T23:34:04.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Squat or Machine Squat",
+        link: "https://youtu.be/bEv6CCg2BC8?t=147",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "Machine Squat",
+        substitutionOneLink: "https://youtu.be/N56STpGGRYE",
+        substitutionTwo: "Bulgarian Split Squat",
+        substitutionTwoLink: "https://youtu.be/htDXu61MPio",
+        notes: "Sit back and down, keep your upper back tight to the bar",
+        createdDate: new Date("2024-01-06T23:34:05.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Barbell RDL",
+        link: "https://youtu.be/_oyxCn2iSjU?t=95",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "DB RDL",
+        substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
+        substitutionTwo: "45° Hyperextension",
+        substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
+        notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
+        createdDate: new Date("2024-01-06T23:34:06.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Leg Extension",
+        link: "https://youtu.be/ljO4jkwv8wQ?t=203",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Step-Up",
+        substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
+        substitutionTwo: "Goblet Squat",
+        substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
+        notes: "Focus on squeezing your quads to make the weight move.",
+        createdDate: new Date("2024-01-06T23:34:07.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Seated Calf Raise",
+        link: "https://youtu.be/-qsRtp_PbVM?t=311",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Standing Calf Raise",
+        substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
+        substitutionTwo: "Leg Press Toe Press",
+        substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+        createdDate: new Date("2024-01-06T23:34:08.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Cable Crunch",
+        link: "https://youtu.be/2RrGnjxSsiA?t=124",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Plate-Weighted Crunch",
+        substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
+        substitutionTwo: "Machine Crunch",
+        substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
+        notes: "Round your back as you crunch",
+        createdDate: new Date("2024-01-06T23:34:09.011Z")
+    },
+    {
+        category: "Push",
+        name: "Bench Press",
+        link: "https://youtu.be/vcBig73ojpE?t=134",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "DB Bench Press",
+        substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
+        substitutionTwo: "Machine Chest Press",
+        substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+        createdDate: new Date("2024-01-06T23:34:10.011Z")
+    },
+    {
+        category: "Push",
+        name: "High-Incline Smith Machine Press",
+        link: "https://youtu.be/egBQ9Svdnok",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Incline DB Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
+        substitutionTwo: "Incline Machine Press",
+        substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
+        notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control",
+        createdDate: new Date("2024-01-06T23:34:11.011Z")
+    },
+    {
+        category: "Push",
+        name: "Egyptian Cable Lateral Raise",
+        link: "https://youtu.be/SJqInYJcg5k?t=653",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Machine Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
+        notes: "Lean away from the cable. Focus on squeezing your delts.",
+        createdDate: new Date("2024-01-06T23:34:12.011Z")
+    },
+    {
+        category: "Push",
+        name: "Overhead Cable Triceps Extension",
+        link: "https://youtu.be/qIW3z-ydg-M",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Floor Skull Crusher",
+        substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
+        substitutionTwo: "DB French Press",
+        substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
+        notes: "Do both arms at once, resist the negative",
+        createdDate: new Date("2024-01-06T23:34:13.011Z")
+    },
+    {
+        category: "Push",
+        name: "Cable Triceps Kickback",
+        link: "https://youtu.be/94DXwlcX8Po?t=327",
+        warmUpSets: "1",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Triceps Kickback",
+        substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
+        substitutionTwo: "Triceps Pressdown",
+        substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
+        notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)",
+        createdDate: new Date("2024-01-06T23:34:14.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Neutral-Grip Lat Pulldown",
+        link: "https://youtu.be/12xHxUnBEiI?t=240",
+        warmUpSets: "3",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Neutral-Grip Pull-Up",
+        substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
+        substitutionTwo: "Machine Pulldown",
+        substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
+        notes: "Pull your elbows down against your sides",
+        createdDate: new Date("2024-01-06T23:34:15.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Pendlay Row",
+        link: "https://youtu.be/axoeDmW0oAY?t=185",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Meadows Row",
+        substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
+        substitutionTwo: "Single-Arm Row",
+        substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
+        notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum",
+        createdDate: new Date("2024-01-06T23:34:16.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Reverse Pec Deck",
+        link: "https://youtu.be/qfc70k40318?t=259",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Reverse Cable Flye",
+        substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
+        substitutionTwo: "Bent-Over Reverse DB Flye",
+        substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
+        notes: "Swing the weight \"out\", not \"back\"",
+        createdDate: new Date("2024-01-06T23:34:17.011Z")
+    },
+    {
+        category: "Pull",
+        name: "EZ-Bar Curl",
+        link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Curl",
+        substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        substitutionTwo: "Cable Curl",
+        substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps",
+        createdDate: new Date("2024-01-06T23:34:18.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Hammer Cheat Curl",
+        link: "https://youtu.be/qVek72z3F1U?t=536",
+        warmUpSets: "1",
+        workingSets: "1",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "0 min",
+        substitutionOne: "Inverse Zottman Curl",
+        substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
+        substitutionTwo: "DB Curl",
+        substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary",
+        createdDate: new Date("2024-01-06T23:34:19.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Hack Squat",
+        link: "https://youtu.be/wEgQUCdtFLg",
+        warmUpSets: "3-4",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "44814",
+        rest: "~3-5 min",
+        substitutionOne: "Machine Squat",
+        substitutionOneLink: "https://youtu.be/N56STpGGRYE",
+        substitutionTwo: "Bulgarian Split Squat",
+        substitutionTwoLink: "https://youtu.be/htDXu61MPio",
+        notes: "Allow your knees to come forward (past your toes), focus the tension on your quads",
+        createdDate: new Date("2024-01-06T23:34:20.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated DB Shoulder Press",
+        link: "https://youtu.be/ae9IxwoEpQ8?t=507",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Shoulder Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
+        substitutionTwo: "Standing DB Arnold Press",
+        substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
+        notes: "Bring the dumbbells all the way down, keep your torso upright",
+        createdDate: new Date("2024-01-06T23:34:21.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Close-Grip Seated Cable Row",
+        link: "https://youtu.be/PAXkl-AdJFg?t=335",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "T-Bar Row",
+        substitutionOneLink: "https://youtu.be/160n9FBX84s",
+        substitutionTwo: "Incline Chest-Supported DB Row",
+        substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
+        notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back.",
+        createdDate: new Date("2024-01-06T23:34:22.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Weighted Dip",
+        link: "https://youtu.be/yN6Q1UI_xkE?t=75",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Chest Press",
+        substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        substitutionTwo: "DB Bench Press",
+        substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
+        notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip",
+        createdDate: new Date("2024-01-06T23:34:23.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated Leg Curl",
+        link: "https://youtu.be/2CMmuH4qJh0",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Lying Leg Curl",
+        substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
+        substitutionTwo: "Nordic Ham Curl",
+        substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
+        notes: "Focus on squeezing your hamstrings to move the weight",
+        createdDate: new Date("2024-01-06T23:34:24.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Machine Lateral Raise",
+        link: "https://youtu.be/-9QsrJ542ao",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Cable Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
+        notes: "Focus on squeezing your lateral delt to move the weight",
+        createdDate: new Date("2024-01-06T23:34:25.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Squat or Machine Squat",
+        link: "https://youtu.be/bEv6CCg2BC8?t=147",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "Machine Squat",
+        substitutionOneLink: "https://youtu.be/N56STpGGRYE",
+        substitutionTwo: "Bulgarian Split Squat",
+        substitutionTwoLink: "https://youtu.be/htDXu61MPio",
+        notes: "Sit back and down, keep your upper back tight to the bar",
+        createdDate: new Date("2024-01-06T23:34:26.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Barbell RDL",
+        link: "https://youtu.be/_oyxCn2iSjU?t=95",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "DB RDL",
+        substitutionOneLink: "https://youtu.be/V5u2AP9wBwE",
+        substitutionTwo: "45° Hyperextension",
+        substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
+        notes: "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
+        createdDate: new Date("2024-01-06T23:34:27.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Leg Extension",
+        link: "https://youtu.be/ljO4jkwv8wQ?t=203",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Step-Up",
+        substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
+        substitutionTwo: "Goblet Squat",
+        substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
+        notes: "Focus on squeezing your quads to make the weight move.",
+        createdDate: new Date("2024-01-06T23:34:28.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Seated Calf Raise",
+        link: "https://youtu.be/-qsRtp_PbVM?t=311",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Standing Calf Raise",
+        substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=162",
+        substitutionTwo: "Leg Press Toe Press",
+        substitutionTwoLink: "https://youtu.be/VJ_9xii47Sk",
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+        createdDate: new Date("2024-01-06T23:34:29.011Z")
+    },
+    {
+        category: "Legs",
+        name: "Cable Crunch",
+        link: "https://youtu.be/2RrGnjxSsiA?t=124",
+        warmUpSets: "2",
+        workingSets: "3",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Plate-Weighted Crunch",
+        substitutionOneLink: "https://youtu.be/PRcz1uIkqko",
+        substitutionTwo: "Machine Crunch",
+        substitutionTwoLink: "https://youtu.be/zU6X6DLCH_U",
+        notes: "Round your back as you crunch",
+        createdDate: new Date("2024-01-06T23:34:30.011Z")
+    },
+    {
+        category: "Push",
+        name: "Bench Press",
+        link: "https://youtu.be/vcBig73ojpE?t=134",
+        warmUpSets: "3-4",
+        workingSets: "1",
+        reps: "3-5",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "DB Bench Press",
+        substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
+        substitutionTwo: "Machine Chest Press",
+        substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+        createdDate: new Date("2024-01-06T23:34:31.011Z")
+    },
+    {
+        category: "Push",
+        name: "High-Incline Smith Machine Press",
+        link: "https://youtu.be/egBQ9Svdnok",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Incline DB Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=p2t9daxLpB8",
+        substitutionTwo: "Incline Machine Press",
+        substitutionTwoLink: "https://youtu.be/b8fYnZ-usP0",
+        notes: "Set the bench at a 45-60 degree incline, touch the bar to your upper chest with control",
+        createdDate: new Date("2024-01-06T23:34:32.011Z")
+    },
+    {
+        category: "Push",
+        name: "Egyptian Cable Lateral Raise",
+        link: "https://youtu.be/SJqInYJcg5k?t=653",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Machine Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/-9QsrJ542ao",
+        notes: "Lean away from the cable. Focus on squeezing your delts.",
+        createdDate: new Date("2024-01-06T23:34:33.011Z")
+    },
+    {
+        category: "Push",
+        name: "Overhead Cable Triceps Extension",
+        link: "https://youtu.be/qIW3z-ydg-M",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Floor Skull Crusher",
+        substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
+        substitutionTwo: "DB French Press",
+        substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
+        notes: "Do both arms at once, resist the negative",
+        createdDate: new Date("2024-01-06T23:34:34.011Z")
+    },
+    {
+        category: "Push",
+        name: "Cable Triceps Kickback",
+        link: "https://youtu.be/94DXwlcX8Po?t=327",
+        warmUpSets: "1",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Triceps Kickback",
+        substitutionOneLink: "https://youtu.be/C6UcPm7mdE4",
+        substitutionTwo: "Triceps Pressdown",
+        substitutionTwoLink: "https://youtu.be/94DXwlcX8Po?t=106",
+        notes: "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)",
+        createdDate: new Date("2024-01-06T23:34:35.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Neutral-Grip Lat Pulldown",
+        link: "https://youtu.be/12xHxUnBEiI?t=240",
+        warmUpSets: "3",
+        workingSets: "3",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Neutral-Grip Pull-Up",
+        substitutionOneLink: "https://youtu.be/3FnK1F28UBg",
+        substitutionTwo: "Machine Pulldown",
+        substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
+        notes: "Pull your elbows down against your sides",
+        createdDate: new Date("2024-01-06T23:34:36.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Pendlay Row",
+        link: "https://youtu.be/axoeDmW0oAY?t=185",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Meadows Row",
+        substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=336",
+        substitutionTwo: "Single-Arm Row",
+        substitutionTwoLink: "https://youtu.be/djKXLt7kv7Q?t=115",
+        notes: "Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum",
+        createdDate: new Date("2024-01-06T23:34:37.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Reverse Pec Deck",
+        link: "https://youtu.be/qfc70k40318?t=259",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Reverse Cable Flye",
+        substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
+        substitutionTwo: "Bent-Over Reverse DB Flye",
+        substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
+        notes: "Swing the weight \"out\", not \"back\"",
+        createdDate: new Date("2024-01-06T23:34:38.011Z")
+    },
+    {
+        category: "Pull",
+        name: "EZ-Bar Curl",
+        link: "https://www.youtube.com/watch?v=Dd0t5UOCEUc",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Curl",
+        substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        substitutionTwo: "Cable Curl",
+        substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps",
+        createdDate: new Date("2024-01-06T23:34:39.011Z")
+    },
+    {
+        category: "Pull",
+        name: "Hammer Cheat Curl",
+        link: "https://youtu.be/qVek72z3F1U?t=536",
+        warmUpSets: "1",
+        workingSets: "1",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "0 min",
+        substitutionOne: "Inverse Zottman Curl",
+        substitutionOneLink: "https://youtu.be/oU0Lb2dD_js",
+        substitutionTwo: "DB Curl",
+        substitutionTwoLink: "https://youtu.be/i1YgFZB6alI?t=487",
+        notes: "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary",
+        createdDate: new Date("2024-01-06T23:34:40.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Deadlift",
+        link: "https://youtu.be/VL5Ab0T07e4?t=175",
+        warmUpSets: "3-4",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "8-9",
+        rest: "~3-5 min",
+        substitutionOne: "Trap Bar Deadlift",
+        substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
+        substitutionTwo: "Barbell Hip Thrust",
+        substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
+        notes: "Can pull sumo or conventional, go with whatever variation you are stronger with",
+        createdDate: new Date("2024-01-06T23:34:41.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated DB Shoulder Press",
+        link: "https://youtu.be/ae9IxwoEpQ8?t=507",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Shoulder Press",
+        substitutionOneLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
+        substitutionTwo: "Standing DB Arnold Press",
+        substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
+        notes: "Bring the dumbbells all the way down, keep your torso upright",
+        createdDate: new Date("2024-01-06T23:34:42.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Close-Grip Seated Cable Row",
+        link: "https://youtu.be/PAXkl-AdJFg?t=335",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "T-Bar Row",
+        substitutionOneLink: "https://youtu.be/160n9FBX84s",
+        substitutionTwo: "Incline Chest-Supported DB Row",
+        substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
+        notes: "Focus on squeezing your shoulder blades together, drive your elbows down and back.",
+        createdDate: new Date("2024-01-06T23:34:43.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Weighted Dip",
+        link: "https://youtu.be/yN6Q1UI_xkE?t=75",
+        warmUpSets: "3",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~3-4 min",
+        substitutionOne: "Machine Chest Press",
+        substitutionOneLink: "https://youtu.be/k1S_Any3NIA?t=240",
+        substitutionTwo: "DB Bench Press",
+        substitutionTwoLink: "https://youtu.be/URQ1Wn7lY3A",
+        notes: "Tuck your elbows at 45°, lean your torso forward 15°, shoulder width or slightly wider grip",
+        createdDate: new Date("2024-01-06T23:34:44.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Seated Leg Curl",
+        link: "https://youtu.be/2CMmuH4qJh0",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "4-6",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "Lying Leg Curl",
+        substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
+        substitutionTwo: "Nordic Ham Curl",
+        substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
+        notes: "Focus on squeezing your hamstrings to move the weight",
+        createdDate: new Date("2024-01-06T23:34:45.011Z")
+    },
+    {
+        category: "Full Body",
+        name: "Machine Lateral Raise",
+        link: "https://youtu.be/-9QsrJ542ao",
+        warmUpSets: "2",
+        workingSets: "2",
+        reps: "6-8",
+        load: "",
+        previousLoad: "",
+        rpe: "10",
+        rest: "~2-3 min",
+        substitutionOne: "DB Lateral Raise",
+        substitutionOneLink: "https://youtu.be/v_ZkxWzYnMc?t=215",
+        substitutionTwo: "Cable Lateral Raise",
+        substitutionTwoLink: "https://youtu.be/SJqInYJcg5k?t=653",
+        notes: "Focus on squeezing your lateral delt to move the weight",
+        createdDate: new Date("2024-01-06T23:34:46.011Z")
+    }
 ]
 export const phase3: Exercise[] = [
     {
@@ -4304,7 +4556,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/dIf07rQm3Rs",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-        notes: "These will be challenging, let's push! Don't go so heavy that you miss reps. Be humble with your weight and focus on keeping your torso upright"
+        notes: "These will be challenging, let's push! Don't go so heavy that you miss reps. Be humble with your weight and focus on keeping your torso upright",
+        createdDate: new Date("2024-01-06T23:34:47.011Z")
     },
     {
         category: "Legs",
@@ -4321,7 +4574,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-        notes: "Emphasize the stretch in your hamstrings, prevent your lower back from rounding"
+        notes: "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+        createdDate: new Date("2024-01-06T23:34:48.011Z")
     },
     {
         category: "Legs",
@@ -4338,7 +4592,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-        notes: "Take medium strides, minimize the amount you push off your rear leg"
+        notes: "Take medium strides, minimize the amount you push off your rear leg",
+        createdDate: new Date("2024-01-06T23:34:49.011Z")
     },
     {
         category: "Legs",
@@ -4355,7 +4610,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-        notes: "Lift with a slow tempo. The positive should take 3 seconds and the negative should take 3 seconds."
+        notes: "Lift with a slow tempo. The positive should take 3 seconds and the negative should take 3 seconds.",
+        createdDate: new Date("2024-01-06T23:34:50.011Z")
     },
     {
         category: "Legs",
@@ -4372,7 +4628,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=311",
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce"
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+        createdDate: new Date("2024-01-06T23:34:51.011Z")
     },
     {
         category: "Legs",
@@ -4389,7 +4646,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/1G0y8D5rFDc?t=302",
         substitutionTwo: "Plank",
         substitutionTwoLink: "https://youtu.be/1G0y8D5rFDc?t=79",
-        notes: "Contract your glutes and position your elbows under your eyes to make the plank more difficult"
+        notes: "Contract your glutes and position your elbows under your eyes to make the plank more difficult",
+        createdDate: new Date("2024-01-06T23:34:52.011Z")
     },
     {
         category: "Push",
@@ -4406,7 +4664,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/y66lTqlOa4I",
         substitutionTwo: "Low Incline Smith Machine Press",
         substitutionTwoLink: "https://youtu.be/Kx53V2h3sqU",
-        notes: "15° bench angle, tuck your elbows on the negative, flare as you press"
+        notes: "15° bench angle, tuck your elbows on the negative, flare as you press",
+        createdDate: new Date("2024-01-06T23:34:53.011Z")
     },
     {
         category: "Push",
@@ -4423,7 +4682,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Standing DB Arnold Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-        notes: "Don't stop in between reps, keep smooth and controlled tension on the delts"
+        notes: "Don't stop in between reps, keep smooth and controlled tension on the delts",
+        createdDate: new Date("2024-01-06T23:34:54.011Z")
     },
     {
         category: "Push",
@@ -4440,7 +4700,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/2SCEhuAyKmo",
         substitutionTwo: "Pec Deck",
         substitutionTwoLink: "https://youtu.be/-EIhKMDSjBY?t=151",
-        notes: "Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position"
+        notes: "Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position",
+        createdDate: new Date("2024-01-06T23:34:55.011Z")
     },
     {
         category: "Push",
@@ -4457,7 +4718,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/UiPA-zCknXk",
         substitutionTwo: "Constant-Tension Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/AYkYht1aA8o",
-        notes: "Lean into a bench and do lateral raises. Keep tension - don't rest your arm against your side at the bottom."
+        notes: "Lean into a bench and do lateral raises. Keep tension - don't rest your arm against your side at the bottom.",
+        createdDate: new Date("2024-01-06T23:34:56.011Z")
     },
     {
         category: "Push",
@@ -4474,7 +4736,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
         substitutionTwo: "DB French Press",
         substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-        notes: "Do both arms at once, resist the negative"
+        notes: "Do both arms at once, resist the negative",
+        createdDate: new Date("2024-01-06T23:34:57.011Z")
     },
     {
         category: "Push",
@@ -4491,7 +4754,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/GNfIE4dDQ1M",
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
-        notes: "Place your hands on a medicine ball and do smooth, controlled pushups"
+        notes: "Place your hands on a medicine ball and do smooth, controlled pushups",
+        createdDate: new Date("2024-01-06T23:34:58.011Z")
     },
     {
         category: "Push",
@@ -4508,7 +4772,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         substitutionTwo: "Cable Lat Pullover",
         substitutionTwoLink: "https://youtu.be/Vf7wf6bZODQ",
-        notes: "Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight"
+        notes: "Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight",
+        createdDate: new Date("2024-01-06T23:34:59.011Z")
     },
     {
         category: "Pull",
@@ -4525,7 +4790,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/C47fKaggsJY",
         substitutionTwo: "Chin-Up",
         substitutionTwoLink: "https://youtu.be/-d2Uui6MtRk",
-        notes: "One set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)"
+        notes: "One set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)",
+        createdDate: new Date("2024-01-06T23:35:00.011Z")
     },
     {
         category: "Pull",
@@ -4542,7 +4808,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/axoeDmW0oAY?t=419",
         substitutionTwo: "Incline Chest-Supported DB Row",
         substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-        notes: "Focus on squeezing your shoulder blades together on each rep"
+        notes: "Focus on squeezing your shoulder blades together on each rep",
+        createdDate: new Date("2024-01-06T23:35:01.011Z")
     },
     {
         category: "Pull",
@@ -4559,7 +4826,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/C6sYjDFuq9I?t=327",
         substitutionTwo: "Plate Shrug",
         substitutionTwoLink: "https://youtu.be/NE41flyGBgk",
-        notes: "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight."
+        notes: "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight.",
+        createdDate: new Date("2024-01-06T23:35:02.011Z")
     },
     {
         category: "Pull",
@@ -4576,7 +4844,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-        notes: "Swing the weight \"out\", not \"back\""
+        notes: "Swing the weight \"out\", not \"back\"",
+        createdDate: new Date("2024-01-06T23:35:03.011Z")
     },
     {
         category: "Pull",
@@ -4593,7 +4862,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps"
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps",
+        createdDate: new Date("2024-01-06T23:35:04.011Z")
     },
     {
         category: "Pull",
@@ -4610,7 +4880,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/aLdCmwAfSac",
         substitutionTwo: "Cable Curl 21's",
         substitutionTwoLink: "https://youtu.be/2Gt_Ip_ENv4",
-        notes: "7 reps seated, 7 reps standing full ROM, 7 reps bottom-half curls"
+        notes: "7 reps seated, 7 reps standing full ROM, 7 reps bottom-half curls",
+        createdDate: new Date("2024-01-06T23:35:05.011Z")
     },
     {
         category: "Pull",
@@ -4627,7 +4898,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
-        notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting"
+        notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+        createdDate: new Date("2024-01-06T23:35:06.011Z")
     },
     {
         category: "Pull",
@@ -4638,13 +4910,14 @@ export const phase3: Exercise[] = [
         reps: "2-4",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep"
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+        createdDate: new Date("2024-01-06T23:35:07.011Z")
     },
     {
         category: "Full Body",
@@ -4661,7 +4934,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-        notes: "Use ~60% of the weight you used on your top set and do it for as many reps as possible. You should be in the range of 10-20+ reps on this set! Use a spotter and safety bars!"
+        notes: "Use ~60% of the weight you used on your top set and do it for as many reps as possible. You should be in the range of 10-20+ reps on this set! Use a spotter and safety bars!",
+        createdDate: new Date("2024-01-06T23:35:08.011Z")
     },
     {
         category: "Full Body",
@@ -4678,7 +4952,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=150",
         substitutionTwo: "Machine Pulldown",
         substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-        notes: "6 cluster sets: 3 reps, rest 15s, repeat 6x. Keep form smooth and controlled."
+        notes: "6 cluster sets: 3 reps, rest 15s, repeat 6x. Keep form smooth and controlled.",
+        createdDate: new Date("2024-01-06T23:35:09.011Z")
     },
     {
         category: "Full Body",
@@ -4695,7 +4970,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
-        notes: "Medium width feet placement on the platform, don't allow your lower back to round"
+        notes: "Medium width feet placement on the platform, don't allow your lower back to round",
+        createdDate: new Date("2024-01-06T23:35:10.011Z")
     },
     {
         category: "Full Body",
@@ -4712,7 +4988,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/NnHxGab2zA4",
         substitutionTwo: "Wide-Grip T-Bar Row",
         substitutionTwoLink: "https://youtu.be/X6Ve340eVDs",
-        notes: "10 cluster sets: 3 reps, rest 15s, repeat 10x. Keep form tight."
+        notes: "10 cluster sets: 3 reps, rest 15s, repeat 10x. Keep form tight.",
+        createdDate: new Date("2024-01-06T23:35:11.011Z")
     },
     {
         category: "Full Body",
@@ -4729,7 +5006,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-        notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press."
+        notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
+        createdDate: new Date("2024-01-06T23:35:12.011Z")
     },
     {
         category: "Full Body",
@@ -4746,7 +5024,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/dIf07rQm3Rs",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-        notes: "These will be challenging, let's push! Don't go so heavy that you miss reps. Be humble with your weight and focus on keeping your torso upright."
+        notes: "These will be challenging, let's push! Don't go so heavy that you miss reps. Be humble with your weight and focus on keeping your torso upright.",
+        createdDate: new Date("2024-01-06T23:35:13.011Z")
     },
     {
         category: "Full Body",
@@ -4763,7 +5042,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-        notes: "Emphasize the stretch in your hamstrings, prevent your lower back from rounding."
+        notes: "Emphasize the stretch in your hamstrings, prevent your lower back from rounding.",
+        createdDate: new Date("2024-01-06T23:35:14.011Z")
     },
     {
         category: "Legs",
@@ -4780,7 +5060,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-        notes: "Take medium strides, minimize the amount you push off your rear leg."
+        notes: "Take medium strides, minimize the amount you push off your rear leg.",
+        createdDate: new Date("2024-01-06T23:35:15.011Z")
     },
     {
         category: "Legs",
@@ -4797,7 +5078,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-        notes: "Lift with a slow tempo. The positive should take 3 seconds and the negative should take 3 seconds."
+        notes: "Lift with a slow tempo. The positive should take 3 seconds and the negative should take 3 seconds.",
+        createdDate: new Date("2024-01-06T23:35:16.011Z")
     },
     {
         category: "Legs",
@@ -4814,7 +5096,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=311",
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce."
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce.",
+        createdDate: new Date("2024-01-06T23:35:17.011Z")
     },
     {
         category: "Legs",
@@ -4831,7 +5114,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/1G0y8D5rFDc?t=302",
         substitutionTwo: "Plank",
         substitutionTwoLink: "https://youtu.be/1G0y8D5rFDc?t=79",
-        notes: "Contract your glutes and position your elbows under your eyes to make the plank more difficult."
+        notes: "Contract your glutes and position your elbows under your eyes to make the plank more difficult.",
+        createdDate: new Date("2024-01-06T23:35:18.011Z")
     },
     {
         category: "Legs",
@@ -4848,7 +5132,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/y66lTqlOa4I",
         substitutionTwo: "Low Incline Smith Machine Press",
         substitutionTwoLink: "https://youtu.be/Kx53V2h3sqU",
-        notes: "15° bench angle, tuck your elbows on the negative, flare as you press"
+        notes: "15° bench angle, tuck your elbows on the negative, flare as you press",
+        createdDate: new Date("2024-01-06T23:35:19.011Z")
     },
     {
         category: "Legs",
@@ -4865,7 +5150,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Standing DB Arnold Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-        notes: "Don't stop in between reps, keep smooth and controlled tension on the delts"
+        notes: "Don't stop in between reps, keep smooth and controlled tension on the delts",
+        createdDate: new Date("2024-01-06T23:35:20.011Z")
     },
     {
         category: "Push",
@@ -4882,7 +5168,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/2SCEhuAyKmo",
         substitutionTwo: "Pec Deck",
         substitutionTwoLink: "https://youtu.be/-EIhKMDSjBY?t=151",
-        notes: "Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position"
+        notes: "Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position",
+        createdDate: new Date("2024-01-06T23:35:21.011Z")
     },
     {
         category: "Push",
@@ -4899,7 +5186,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/UiPA-zCknXk",
         substitutionTwo: "Constant-Tension Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/AYkYht1aA8o",
-        notes: "Lean into a bench and do lateral raises. Keep tension - don't rest your arm against your side at the bottom."
+        notes: "Lean into a bench and do lateral raises. Keep tension - don't rest your arm against your side at the bottom.",
+        createdDate: new Date("2024-01-06T23:35:22.011Z")
     },
     {
         category: "Push",
@@ -4916,7 +5204,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
         substitutionTwo: "DB French Press",
         substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-        notes: "Do both arms at once, resist the negative"
+        notes: "Do both arms at once, resist the negative",
+        createdDate: new Date("2024-01-06T23:35:23.011Z")
     },
     {
         category: "Push",
@@ -4933,7 +5222,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/GNfIE4dDQ1M",
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
-        notes: "Place your hands on a medicine ball and do smooth, controlled pushups"
+        notes: "Place your hands on a medicine ball and do smooth, controlled pushups",
+        createdDate: new Date("2024-01-06T23:35:24.011Z")
     },
     {
         category: "Push",
@@ -4950,7 +5240,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         substitutionTwo: "Cable Lat Pullover",
         substitutionTwoLink: "https://youtu.be/Vf7wf6bZODQ",
-        notes: "Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight"
+        notes: "Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight",
+        createdDate: new Date("2024-01-06T23:35:25.011Z")
     },
     {
         category: "Push",
@@ -4967,7 +5258,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/C47fKaggsJY",
         substitutionTwo: "Chin-Up",
         substitutionTwoLink: "https://youtu.be/-d2Uui6MtRk",
-        notes: "One set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)"
+        notes: "One set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)",
+        createdDate: new Date("2024-01-06T23:35:26.011Z")
     },
     {
         category: "Push",
@@ -4984,7 +5276,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/axoeDmW0oAY?t=419",
         substitutionTwo: "Incline Chest-Supported DB Row",
         substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-        notes: "Focus on squeezing your shoulder blades together on each rep"
+        notes: "Focus on squeezing your shoulder blades together on each rep",
+        createdDate: new Date("2024-01-06T23:35:27.011Z")
     },
     {
         category: "Pull",
@@ -5001,7 +5294,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/C6sYjDFuq9I?t=327",
         substitutionTwo: "Plate Shrug",
         substitutionTwoLink: "https://youtu.be/NE41flyGBgk",
-        notes: "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight."
+        notes: "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight.",
+        createdDate: new Date("2024-01-06T23:35:28.011Z")
     },
     {
         category: "Pull",
@@ -5018,7 +5312,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-        notes: "Swing the weight \"out\", not \"back\""
+        notes: "Swing the weight \"out\", not \"back\"",
+        createdDate: new Date("2024-01-06T23:35:29.011Z")
     },
     {
         category: "Pull",
@@ -5035,7 +5330,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps"
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps",
+        createdDate: new Date("2024-01-06T23:35:30.011Z")
     },
     {
         category: "Pull",
@@ -5052,7 +5348,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/aLdCmwAfSac",
         substitutionTwo: "Cable Curl 21's",
         substitutionTwoLink: "https://youtu.be/2Gt_Ip_ENv4",
-        notes: "7 reps seated, 7 reps standing full ROM, 7 reps bottom-half curls"
+        notes: "7 reps seated, 7 reps standing full ROM, 7 reps bottom-half curls",
+        createdDate: new Date("2024-01-06T23:35:31.011Z")
     },
     {
         category: "Pull",
@@ -5069,7 +5366,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
-        notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting"
+        notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+        createdDate: new Date("2024-01-06T23:35:32.011Z")
     },
     {
         category: "Pull",
@@ -5080,13 +5378,14 @@ export const phase3: Exercise[] = [
         reps: "2-4",
         load: "",
         previousLoad: "",
-        rpe: "44782",
+        rpe: "8-9",
         rest: "~3-4 min",
         substitutionOne: "DB Bench Press",
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep"
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+        createdDate: new Date("2024-01-06T23:35:33.011Z")
     },
     {
         category: "Pull",
@@ -5103,7 +5402,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-        notes: "Use ~60% of the weight you used on your top set and do it for as many reps as possible. You should be in the range of 10-20+ reps on this set! Use a spotter and safety bars!"
+        notes: "Use ~60% of the weight you used on your top set and do it for as many reps as possible. You should be in the range of 10-20+ reps on this set! Use a spotter and safety bars!",
+        createdDate: new Date("2024-01-06T23:35:34.011Z")
     },
     {
         category: "Pull",
@@ -5120,7 +5420,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=150",
         substitutionTwo: "Machine Pulldown",
         substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-        notes: "6 cluster sets: 3 reps, rest 15s, repeat 6x. Keep form smooth and controlled."
+        notes: "6 cluster sets: 3 reps, rest 15s, repeat 6x. Keep form smooth and controlled.",
+        createdDate: new Date("2024-01-06T23:35:35.011Z")
     },
     {
         category: "Full Body",
@@ -5137,7 +5438,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
-        notes: "Medium width feet placement on the platform, don't allow your lower back to round"
+        notes: "Medium width feet placement on the platform, don't allow your lower back to round",
+        createdDate: new Date("2024-01-06T23:35:36.011Z")
     },
     {
         category: "Full Body",
@@ -5154,7 +5456,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/NnHxGab2zA4",
         substitutionTwo: "Wide-Grip T-Bar Row",
         substitutionTwoLink: "https://youtu.be/X6Ve340eVDs",
-        notes: "10 cluster sets: 3 reps, rest 15s, repeat 10x. Keep form tight."
+        notes: "10 cluster sets: 3 reps, rest 15s, repeat 10x. Keep form tight.",
+        createdDate: new Date("2024-01-06T23:35:37.011Z")
     },
     {
         category: "Full Body",
@@ -5171,7 +5474,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-        notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press."
+        notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
+        createdDate: new Date("2024-01-06T23:35:38.011Z")
     },
     {
         category: "Full Body",
@@ -5188,7 +5492,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/dIf07rQm3Rs",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-        notes: "Stay light, keep your torso upright"
+        notes: "Stay light, keep your torso upright",
+        createdDate: new Date("2024-01-06T23:35:39.011Z")
     },
     {
         category: "Full Body",
@@ -5205,7 +5510,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/_oyxCn2iSjU?t=95",
         substitutionTwo: "45° Hyperextension",
         substitutionTwoLink: "https://youtu.be/J46aPqFl0WE?t=178",
-        notes: "Emphasize the stretch in your hamstrings, prevent your lower back from rounding."
+        notes: "Emphasize the stretch in your hamstrings, prevent your lower back from rounding.",
+        createdDate: new Date("2024-01-06T23:35:40.011Z")
     },
     {
         category: "Full Body",
@@ -5222,7 +5528,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/cP77gUDvAPA?t=745",
         substitutionTwo: "Goblet Squat",
         substitutionTwoLink: "https://youtu.be/v-mQm_droHg?t=489",
-        notes: "Take medium strides, minimize the amount you push off your rear leg."
+        notes: "Take medium strides, minimize the amount you push off your rear leg.",
+        createdDate: new Date("2024-01-06T23:35:41.011Z")
     },
     {
         category: "Full Body",
@@ -5239,7 +5546,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://www.youtube.com/watch?v=e_48W0vlU58&feature=youtu.be",
         substitutionTwo: "Nordic Ham Curl",
         substitutionTwoLink: "https://youtu.be/qVek72z3F1U?t=683",
-        notes: "Lift with a slow tempo. The positive should take 3 seconds and the negative should take 3 seconds."
+        notes: "Lift with a slow tempo. The positive should take 3 seconds and the negative should take 3 seconds.",
+        createdDate: new Date("2024-01-06T23:35:42.011Z")
     },
     {
         category: "Legs",
@@ -5256,7 +5564,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/-qsRtp_PbVM?t=311",
         substitutionTwo: "Standing Calf Raise",
         substitutionTwoLink: "https://youtu.be/-qsRtp_PbVM?t=162",
-        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce"
+        notes: "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+        createdDate: new Date("2024-01-06T23:35:43.011Z")
     },
     {
         category: "Legs",
@@ -5273,7 +5582,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/1G0y8D5rFDc?t=302",
         substitutionTwo: "Plank",
         substitutionTwoLink: "https://youtu.be/1G0y8D5rFDc?t=79",
-        notes: "Contract your glutes and position your elbows under your eyes to make the plank more difficult"
+        notes: "Contract your glutes and position your elbows under your eyes to make the plank more difficult",
+        createdDate: new Date("2024-01-06T23:35:44.011Z")
     },
     {
         category: "Legs",
@@ -5290,7 +5600,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/y66lTqlOa4I",
         substitutionTwo: "Low Incline Smith Machine Press",
         substitutionTwoLink: "https://youtu.be/Kx53V2h3sqU",
-        notes: "15° bench angle, tuck your elbows on the negative, flare as you press"
+        notes: "15° bench angle, tuck your elbows on the negative, flare as you press",
+        createdDate: new Date("2024-01-06T23:35:45.011Z")
     },
     {
         category: "Legs",
@@ -5307,7 +5618,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Standing DB Arnold Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=zOpA1Op0zvc",
-        notes: "Don't stop in between reps, keep smooth and controlled tension on the delts"
+        notes: "Don't stop in between reps, keep smooth and controlled tension on the delts",
+        createdDate: new Date("2024-01-06T23:35:46.011Z")
     },
     {
         category: "Legs",
@@ -5324,7 +5636,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/2SCEhuAyKmo",
         substitutionTwo: "Pec Deck",
         substitutionTwoLink: "https://youtu.be/-EIhKMDSjBY?t=151",
-        notes: "Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position"
+        notes: "Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position",
+        createdDate: new Date("2024-01-06T23:35:47.011Z")
     },
     {
         category: "Legs",
@@ -5341,7 +5654,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/UiPA-zCknXk",
         substitutionTwo: "Constant-Tension Machine Lateral Raise",
         substitutionTwoLink: "https://youtu.be/AYkYht1aA8o",
-        notes: "Lean into a bench and do lateral raises. Keep tension - don't rest your arm against your side at the bottom."
+        notes: "Lean into a bench and do lateral raises. Keep tension - don't rest your arm against your side at the bottom.",
+        createdDate: new Date("2024-01-06T23:35:48.011Z")
     },
     {
         category: "Push",
@@ -5358,7 +5672,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/_IlI2plHp9g",
         substitutionTwo: "DB French Press",
         substitutionTwoLink: "https://youtu.be/K4E8CXajqfQ",
-        notes: "Do both arms at once, resist the negative."
+        notes: "Do both arms at once, resist the negative.",
+        createdDate: new Date("2024-01-06T23:35:49.011Z")
     },
     {
         category: "Push",
@@ -5375,7 +5690,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/GNfIE4dDQ1M",
         substitutionTwo: "Kneeling Modified Push Up",
         substitutionTwoLink: "https://youtu.be/_68eM9w5N1E",
-        notes: "Place your hands on a medicine ball and do smooth, controlled pushups"
+        notes: "Place your hands on a medicine ball and do smooth, controlled pushups",
+        createdDate: new Date("2024-01-06T23:35:50.011Z")
     },
     {
         category: "Push",
@@ -5392,7 +5708,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/f2JDJV0AnyY?t=36",
         substitutionTwo: "Cable Lat Pullover",
         substitutionTwoLink: "https://youtu.be/Vf7wf6bZODQ",
-        notes: "Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight"
+        notes: "Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight",
+        createdDate: new Date("2024-01-06T23:35:51.011Z")
     },
     {
         category: "Push",
@@ -5409,7 +5726,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/C47fKaggsJY",
         substitutionTwo: "Chin-Up",
         substitutionTwoLink: "https://youtu.be/-d2Uui6MtRk",
-        notes: "One set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)"
+        notes: "One set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)",
+        createdDate: new Date("2024-01-06T23:35:52.011Z")
     },
     {
         category: "Push",
@@ -5426,7 +5744,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/axoeDmW0oAY?t=419",
         substitutionTwo: "Incline Chest-Supported DB Row",
         substitutionTwoLink: "https://youtu.be/bsx8PIGIuaI",
-        notes: "Focus on squeezing your shoulder blades together on each rep"
+        notes: "Focus on squeezing your shoulder blades together on each rep",
+        createdDate: new Date("2024-01-06T23:35:53.011Z")
     },
     {
         category: "Push",
@@ -5443,7 +5762,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/C6sYjDFuq9I?t=327",
         substitutionTwo: "Plate Shrug",
         substitutionTwoLink: "https://youtu.be/NE41flyGBgk",
-        notes: "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight."
+        notes: "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight.",
+        createdDate: new Date("2024-01-06T23:35:54.011Z")
     },
     {
         category: "Push",
@@ -5460,7 +5780,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/uCV40OQMGpM",
         substitutionTwo: "Bent-Over Reverse DB Flye",
         substitutionTwoLink: "https://youtu.be/qfc70k40318?t=311",
-        notes: "Swing the weight \"out\", not \"back\""
+        notes: "Swing the weight \"out\", not \"back\"",
+        createdDate: new Date("2024-01-06T23:35:55.011Z")
     },
     {
         category: "Pull",
@@ -5477,7 +5798,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/i1YgFZB6alI?t=487",
         substitutionTwo: "Cable Curl",
         substitutionTwoLink: "https://youtu.be/tw1h5XOD23Y",
-        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps."
+        notes: "Arc the bar \"out\" not \"up\", focus on squeezing your biceps.",
+        createdDate: new Date("2024-01-06T23:35:56.011Z")
     },
     {
         category: "Pull",
@@ -5494,7 +5816,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/aLdCmwAfSac",
         substitutionTwo: "Cable Curl 21's",
         substitutionTwoLink: "https://youtu.be/2Gt_Ip_ENv4",
-        notes: "7 reps seated, 7 reps standing full ROM, 7 reps bottom-half curls."
+        notes: "7 reps seated, 7 reps standing full ROM, 7 reps bottom-half curls.",
+        createdDate: new Date("2024-01-06T23:35:57.011Z")
     },
     {
         category: "Pull",
@@ -5511,7 +5834,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/AWsIWeZa_Mw",
         substitutionTwo: "Barbell Hip Thrust",
         substitutionTwoLink: "https://youtu.be/xDmFkJxPzeM?t=97",
-        notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting."
+        notes: "Brace your lats, chest tall, pull the slack out of the bar before lifting.",
+        createdDate: new Date("2024-01-06T23:35:58.011Z")
     },
     {
         category: "Pull",
@@ -5528,7 +5852,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/URQ1Wn7lY3A",
         substitutionTwo: "Machine Chest Press",
         substitutionTwoLink: "https://youtu.be/k1S_Any3NIA?t=240",
-        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep."
+        notes: "Set up a comfortable arch, quick pause on the chest and explode up on each rep.",
+        createdDate: new Date("2024-01-06T23:35:59.011Z")
     },
     {
         category: "Pull",
@@ -5545,7 +5870,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/O94yEoGXtBY?t=150",
         substitutionTwo: "Machine Pulldown",
         substitutionTwoLink: "https://youtu.be/j8Q50oBDK44",
-        notes: "6 cluster sets: 3 reps, rest 15s, repeat 6x. Keep form smooth and controlled."
+        notes: "6 cluster sets: 3 reps, rest 15s, repeat 6x. Keep form smooth and controlled.",
+        createdDate: new Date("2024-01-06T23:36:00.011Z")
     },
     {
         category: "Pull",
@@ -5562,7 +5888,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/v-mQm_droHg?t=489",
         substitutionTwo: "Walking Lunge",
         substitutionTwoLink: "https://youtu.be/Y4Vv2ASsyhs?t=536",
-        notes: "Medium width feet placement on the platform, don't allow your lower back to round."
+        notes: "Medium width feet placement on the platform, don't allow your lower back to round.",
+        createdDate: new Date("2024-01-06T23:36:01.011Z")
     },
     {
         category: "Pull",
@@ -5579,7 +5906,8 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/NnHxGab2zA4",
         substitutionTwo: "Wide-Grip T-Bar Row",
         substitutionTwoLink: "https://youtu.be/X6Ve340eVDs",
-        notes: "10 cluster sets: 3 reps, rest 15s, repeat 10x. Keep form tight."
+        notes: "10 cluster sets: 3 reps, rest 15s, repeat 10x. Keep form tight.",
+        createdDate: new Date("2024-01-06T23:36:02.011Z")
     },
     {
         category: "Pull",
@@ -5596,6 +5924,7 @@ export const phase3: Exercise[] = [
         substitutionOneLink: "https://youtu.be/ae9IxwoEpQ8?t=507",
         substitutionTwo: "Machine Shoulder Press",
         substitutionTwoLink: "https://www.youtube.com/watch?v=flr4ohSl0j8",
-        notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press."
+        notes: "Start with your elbows in front of you and palms facing in. Rotate the dumbbells so that your palms face forward as you press.",
+        createdDate: new Date("2024-01-06T23:36:03.011Z")
     }
 ]
