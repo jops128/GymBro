@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { NotificationService } from './services/notification.service';
 import { StorageService } from './services/storage.service';
 import { DialogService } from './services/dialog.service';
+import { AuthService } from './services/auth.service';
 
 @Component({
 	selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent {
 	public static app: AppComponent;
 	title = 'workout-app';
 	@ViewChild('areYouSure') areYouSure: TemplateRef<any> | undefined;
-	constructor(public router: Router, public notificationService: NotificationService, public dialogService: DialogService) {
+	constructor(public router: Router, public notificationService: NotificationService, public dialogService: DialogService, private authService: AuthService) {
 		AppComponent.app = this;
 		AppComponent.navigateToLastSavedExercise();
 	}

@@ -11,7 +11,7 @@ import { EditExerciseComponent } from './workout/week/edit-exercise/edit-exercis
 
 const routes: Routes = [
 	{
-		path: '', component: LayoutComponent, canActivate: [authGuard], children: [
+		path: '', component: LayoutComponent, canActivate: [authGuard], canActivateChild: [authGuard], children: [
 			{ path: '', component: HomeComponent },
 			{ path: 'workout/:id/week/:weekId/:phaseId/exercise-edit/:exerciseId', component: EditExerciseComponent },
 			{ path: 'workout/:id/week/:weekId/:phaseId/exercise-add', component: EditExerciseComponent },

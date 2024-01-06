@@ -10,6 +10,9 @@ import { StorageService } from '../services/storage.service';
 import { WeekService } from '../services/week.service';
 import { Week } from '../models/week';
 import { DialogService } from '../services/dialog.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ControlsOf } from '../helpers/form-group-type';
+import { Exercise } from '../models/exercise';
 
 @Component({
   selector: 'app-workout',
@@ -20,7 +23,10 @@ export class WorkoutComponent implements OnInit {
 	workout: Workout | null = null;
 	selectedTabIndex: number = 0;
 	isLoading: boolean = false;
-	selectedIndex: number = 0;
+
+	fullViewer: boolean = false;
+	viewerExerciseId: string | null = null;
+	viewerPhaseId: string | null = null;	
 
 	constructor(private workoutService: WorkoutService, private route: ActivatedRoute, private phaseService: PhaseService, private weekService: WeekService) {}
 
@@ -36,7 +42,9 @@ export class WorkoutComponent implements OnInit {
 			this.workout = workout;
 			this.isLoading = false;
 			if(this.route.snapshot.queryParamMap.keys.length > 0) {
-				this.selectedIndex = this.workout.phases?.findIndex(p => p.id === this.route.snapshot.queryParamMap.get('phaseId')!)!;
+				this.selectedTabIndex = this.workout.phases?.findIndex(p => p.id === this.route.snapshot.queryParamMap.get('phaseId')!)!;
+				this.openViewer(this.route.snapshot.queryParamMap.get('phaseId')!, this.route.snapshot.queryParamMap.get('exerciseId')!);
+				AppComponent.app.router.navigate([], { queryParams: {} });
 			}
 		});
 	}
@@ -70,5 +78,15 @@ export class WorkoutComponent implements OnInit {
 
 	onDeleteWeek(weekId: string) {
 		this.workout!.phases![this.selectedTabIndex].weeks = this.workout!.phases![this.selectedTabIndex].weeks!.filter(w => w.id !== weekId);
+	}
+
+	openViewer(phaseId: string, exerciseId: string) {
+		this.fullViewer = true;
+		this.viewerExerciseId = exerciseId;
+		this.viewerPhaseId = phaseId;
+	}
+
+	closeViewer() {
+		this.fullViewer = false;
 	}
 }

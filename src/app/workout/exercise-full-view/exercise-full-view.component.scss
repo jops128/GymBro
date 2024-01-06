@@ -1,0 +1,21 @@
+.full-screen-viewer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: white;
+	z-index: 2;
+	padding-bottom: 60px;
+}
+
+.viewer-buttons {
+	position: fixed;
+	bottom: 0;
+	background: white;
+	padding-top: 20px;
+}
+
+.full-view-body {
+	background-color: rgb(224 228 249);
+}

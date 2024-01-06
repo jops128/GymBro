@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -23,6 +24,7 @@ export class WeekComponent implements OnInit {
 	@Input('phaseId') phaseId?: string | null = null;
 	@Input('workoutId') workoutId?: string | null = null;
 	@Output('onDeleteWeek') onDeleteWeek = new EventEmitter<string>();
+	@Output('openViewer') onOpenViewer = new EventEmitter<string>();
 	fullViewer: boolean = false;
 	selectedExerciseIndex: number = 0;
 
@@ -43,72 +45,15 @@ export class WeekComponent implements OnInit {
 		substitutionTwoLink: new FormControl(''),
 		notes: new FormControl('', Validators.required)
 	});
+	reorderingEnabled: any;
 
 	constructor(private exerciseService: ExerciseService, private route: ActivatedRoute, private router: Router, private weekService: WeekService) { }
 
 	ngOnInit(): void {
-		if (this.route.snapshot.queryParamMap.has('exerciseId')) {
-			const index = this.week?.exercises?.findIndex(e => e.id === this.route.snapshot.queryParamMap.get('exerciseId')!);
-			if (index != null && index > -1) {
-				this.openViewer(index);
-				this.router.navigate([], { queryParams: {} });
-			}
-		}
 	}
 
-	openViewer(index: number) {
-		this.selectedExerciseIndex = index;
-		this.exerciseForm.patchValue(this.week!.exercises![index]);
-		this.fullViewer = true;
-		StorageService.setLastOpenedExercise(this.workoutId!, this.phaseId!, this.week!.exercises![index].id!);
-	}
-
-	closeViewer() {
-		this.fullViewer = false;
-		StorageService.removeLastOpenedExercise();
-	}
-
-	previous(parentElement: HTMLDivElement) {
-		if (this.selectedExerciseIndex === 0) {
-			return;
-		}
-		if (this.exerciseForm.dirty) {
-			const formValue = this.exerciseForm.value as Exercise;
-			const exerciseId = this.week?.exercises?.at(this.selectedExerciseIndex)?.id!
-			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.week?.id!, exerciseId, formValue).pipe(take(1)).subscribe(() => {
-				this.week?.exercises?.splice(this.selectedExerciseIndex, 1, { ...formValue, id: exerciseId });
-				this.selectedExerciseIndex--;
-				this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
-				this.exerciseForm.markAsPristine();
-			});
-			parentElement.scrollTo(0, 0)
-			return;
-		}
-		this.selectedExerciseIndex--;
-		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
-		parentElement.scrollTo(0, 0)
-	}
-
-	next(parentElement: HTMLDivElement) {
-		if (this.selectedExerciseIndex === this.week!.exercises!.length - 1) {
-			return;
-		}
-
-		if (this.exerciseForm.dirty) {
-			const formValue = this.exerciseForm.value as Exercise;
-			const exerciseId = this.week?.exercises?.at(this.selectedExerciseIndex)?.id!
-			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.week?.id!, exerciseId, formValue).pipe(take(1)).subscribe(() => {
-				this.week?.exercises?.splice(this.selectedExerciseIndex, 1, { ...formValue, id: exerciseId });
-				this.selectedExerciseIndex++;
-				this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
-				this.exerciseForm.markAsPristine();
-			});
-			parentElement.scrollTo(0, 0)
-			return;
-		}
-		this.selectedExerciseIndex++;
-		this.exerciseForm.patchValue(this.week!.exercises![this.selectedExerciseIndex]);
-		parentElement.scrollTo(0, 0)
+	openViewer(exerciseId: string) {
+		this.onOpenViewer.emit(exerciseId);
 	}
 
 	deleteWeek() {
@@ -133,6 +78,19 @@ export class WeekComponent implements OnInit {
 					NotificationService.show('Exercise deleted');
 				});
 			})
+	}
+
+	drop(event: CdkDragDrop<string[]>) {
+		moveItemInArray(this.week!.exercises!, event.previousIndex, event.currentIndex);
+		const orderedExercises = [...this.week!.exercises!].sort((a, b) => a.createdDate! > b.createdDate! ? 1 : -1).map(e => e.createdDate);
+		orderedExercises.forEach((createdDate, index) => {
+			this.week!.exercises![index].createdDate = createdDate;
+			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.week!.id!, this.week!.exercises![index].id!, this.week!.exercises![index]).pipe(take(1)).subscribe();
+		});
+	}
+
+	enableReordering() {
+		this.reorderingEnabled = !this.reorderingEnabled;
 	}
 }
 

@@ -3,7 +3,7 @@
 		<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
 	</h2>
 
-	<mat-tab-group [selectedIndex]="">
+	<mat-tab-group [selectedIndex]="selectedTabIndex" (selectedTabChange)="selectTab($event.index)">
 		@for(phase of workout?.phases; track phase.id; let i = $index) {
 			<mat-tab>
 				<ng-template mat-tab-label>				
@@ -11,7 +11,12 @@
 					<button mat-icon-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}"><mat-icon fontIcon="edit"></mat-icon></button>
 					<button mat-icon-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)"><mat-icon fontIcon="delete"></mat-icon></button>
 				</ng-template>
-				<app-week *ngFor="let week of phase.weeks" [week]="week" [phaseId]="phase.id" [workoutId]="workout?.id" (onDeleteWeek)="onDeleteWeek($event)"></app-week>
+				<app-week *ngFor="let week of phase.weeks" 
+							[week]="week" 
+							[phaseId]="phase.id" 
+							[workoutId]="workout?.id" 
+							(onDeleteWeek)="onDeleteWeek($event)"
+							(openViewer)="openViewer(phase.id!, $event)"></app-week>
 				<div class="d-flex justify-content-center w-100 mb-4 mt-3">					
 					<button mat-fab color="primary" matTooltip="Add new week" (click)="addWeek()"><mat-icon fontIcon="add"></mat-icon></button>					
 				</div>
@@ -19,6 +24,13 @@
 		}
 	  </mat-tab-group>
 </ng-container>
+
+<app-exercise-full-view *ngIf="fullViewer" 
+						[workout]="workout" 
+						[exerciseId]="viewerExerciseId" 
+						[phaseId]="viewerPhaseId"
+						(onCloseViewer)="closeViewer()">
+</app-exercise-full-view>
 
 <ng-template #loader>
 	<app-loader></app-loader>

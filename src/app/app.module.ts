@@ -35,6 +35,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ExerciseFullViewComponent } from './workout/exercise-full-view/exercise-full-view.component';
 
 @NgModule({
 	declarations: [
@@ -52,7 +54,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 		LoaderComponent,
 		FadeInDirective,
 		TitleComponent,
-		SelectInputComponent
+		SelectInputComponent,
+  ExerciseFullViewComponent
 	],
 	imports: [
 		BrowserModule,
@@ -71,6 +74,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 		MatCheckboxModule,
 		MatTooltipModule,
 		MatDialogModule,
+		DragDropModule,
 		provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
 		provideAuth(() => getAuth()),
 		provideFirestore(() => getFirestore()),

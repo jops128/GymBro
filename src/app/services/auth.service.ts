@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FirebaseApp } from '@angular/fire/app';
-import { Auth, User, getAuth, signInWithEmailAndPassword } from '@angular/fire/auth';
+import { Auth, User, signInWithEmailAndPassword } from '@angular/fire/auth';
 import { Observable, from, map } from 'rxjs';
 import { AppComponent } from '../app.component';
 import { StorageService } from './storage.service';
@@ -15,13 +14,23 @@ export class AuthService {
 	public login(email: string, password: string): Observable<User> {		
 		return from(signInWithEmailAndPassword(this.auth, email, password))
 			.pipe(
-				map(userCredential => userCredential.user)
+				map(userCredential => {
+					StorageService.setToken(userCredential.user)
+					return userCredential.user
+				})
 			);
+	}
+
+	public refreshToken() {
+		return from(this.auth.currentUser?.getIdToken(true) ?? Promise.resolve(null)).pipe(map(token => {
+			StorageService.setToken(this.auth.currentUser!);
+			return !!token;
+		}));
 	}
 
 	public logout() {
 		this.auth.signOut();
-		StorageService.removeUser();
+		StorageService.logout();
 		AppComponent.app.router.navigate(['/login']);
 	}
 
