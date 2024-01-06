@@ -1,4 +1,4 @@
-<div appFadeIn *ngIf="!fullViewer" class="card my-2 shadow-none">
+<div appFadeIn class="card my-2 shadow-none">
 	<div class="card-header bg-primary text-light d-flex justify-content-between align-items-center">
 		<h4 class="mb-0">
 			{{ week?.name }}
@@ -37,28 +37,30 @@
 				</tr>
 			</thead>
 			<tbody cdkDropList class="example-list" (cdkDropListDropped)="drop($event)" [cdkDropListDisabled]="!reorderingEnabled">
-				<tr cdkDrag class="table-row example-box" *ngFor="let exercise of week?.exercises; let i = index">
-					<td *ngIf="reorderingEnabled" cdkDragHandle>
-						<svg width="24px" fill="currentColor" viewBox="0 0 24 24">
-							<path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path>
-							<path d="M0 0h24v24H0z" fill="none"></path>
-						  </svg>
-					</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.category }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.name }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.warmUpSets }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.workingSets }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.reps }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.load }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.previousLoad }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.rpe }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.rest }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.substitutionOne }}</td>
-					<td (click)="openViewer(exercise.id!)">{{ exercise.substitutionTwo }}</td>
-					<td (click)="openViewer(exercise.id!)" class="table-note">{{ exercise.notes }}</td>
-					<td class="text-center"><button mat-icon-button color="primary" class="action-button" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-edit/{{exercise.id}}"><mat-icon fontIcon="edit"></mat-icon></button></td>
-					<td class="text-center"><button mat-icon-button color="warn" class="action-button" (click)="deleteExercise(exercise.id!)"><mat-icon fontIcon="delete"></mat-icon></button></td>
-				</tr>
+				@for(exercise of week?.exercises; let i = $index; track exercise.id) { 
+					<tr cdkDrag class="table-row example-box">
+						<td *ngIf="reorderingEnabled" cdkDragHandle>
+							<svg width="24px" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path>
+								<path d="M0 0h24v24H0z" fill="none"></path>
+							  </svg>
+						</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.category }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.name }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.warmUpSets }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.workingSets }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.reps }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.load }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.previousLoad }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.rpe }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.rest }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.substitutionOne }}</td>
+						<td (click)="openViewer(exercise.id!)">{{ exercise.substitutionTwo }}</td>
+						<td (click)="openViewer(exercise.id!)" class="table-note">{{ exercise.notes }}</td>
+						<td class="text-center"><button mat-icon-button color="primary" class="action-button" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-edit/{{exercise.id}}"><mat-icon fontIcon="edit"></mat-icon></button></td>
+						<td class="text-center"><button mat-icon-button color="warn" class="action-button" (click)="deleteExercise(exercise.id!)"><mat-icon fontIcon="delete"></mat-icon></button></td>
+					</tr>
+				}
 			</tbody>
 		</table>
 	</div>

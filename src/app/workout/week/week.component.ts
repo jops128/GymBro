@@ -25,7 +25,6 @@ export class WeekComponent implements OnInit {
 	@Input('workoutId') workoutId?: string | null = null;
 	@Output('onDeleteWeek') onDeleteWeek = new EventEmitter<string>();
 	@Output('openViewer') onOpenViewer = new EventEmitter<string>();
-	fullViewer: boolean = false;
 	selectedExerciseIndex: number = 0;
 
 	public exerciseForm = new FormGroup<ControlsOf<Exercise>>({

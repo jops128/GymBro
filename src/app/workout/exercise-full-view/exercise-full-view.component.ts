@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { take } from 'rxjs';
+import { switchMap, take } from 'rxjs';
 import { ControlsOf } from 'src/app/helpers/form-group-type';
 import { Exercise } from 'src/app/models/exercise';
 import { Workout } from 'src/app/models/workout';
@@ -33,7 +33,8 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 		substitutionOneLink: new FormControl(''),
 		substitutionTwo: new FormControl('', Validators.required),
 		substitutionTwoLink: new FormControl(''),
-		notes: new FormControl('', Validators.required)
+		notes: new FormControl('', Validators.required),
+		createdDate: new FormControl(new Date())
 	});
 	selectedExerciseIndex: number = 0;
 
@@ -53,11 +54,13 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 			const exerciseId = this.allExercises.at(this.selectedExerciseIndex)?.id!
 			const phaseId = this.phaseId!;
 			const week = this.workout?.phases?.find(p => p.id === phaseId)?.weeks?.find(w => w.exercises?.some(e => e.id === exerciseId))!;
-			this.exerciseService.updateExercise(this.workout!.id!, phaseId, week.id!, exerciseId, formValue).pipe(take(1)).subscribe(() => {
-				week.exercises?.splice(this.selectedExerciseIndex, 1, { ...formValue, id: exerciseId });
-				this.selectedExerciseIndex--;
-				this.patchForm();
-			});
+			this.updateExercise(phaseId, week.id!, exerciseId, formValue).
+				subscribe(() => {
+					const weekExerciseIndex = week.exercises?.findIndex(e => e.id === exerciseId)!;
+					week.exercises!.splice(weekExerciseIndex, 1, { ...formValue, id: exerciseId });
+					this.selectedExerciseIndex--;
+					this.patchForm();
+				});
 			parentElement.scrollTo(0, 0)
 			return;
 		}
@@ -76,8 +79,9 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 			const exerciseId = this.allExercises.at(this.selectedExerciseIndex)?.id!
 			const phaseId = this.phaseId!;
 			const week = this.workout?.phases?.find(p => p.id === phaseId)?.weeks?.find(w => w.exercises?.some(e => e.id === exerciseId))!;
-			this.exerciseService.updateExercise(this.workout!.id!, this.phaseId!, week?.id!, exerciseId, formValue).pipe(take(1)).subscribe(() => {
-				week?.exercises?.splice(this.selectedExerciseIndex, 1, { ...formValue, id: exerciseId });
+			this.updateExercise(phaseId, week.id!, exerciseId, formValue).subscribe(() => {
+				const weekExerciseIndex = week.exercises?.findIndex(e => e.id === exerciseId)!;
+				week.exercises!.splice(weekExerciseIndex, 1, { ...formValue, id: exerciseId });
 				this.selectedExerciseIndex++;
 				this.patchForm();
 			});
@@ -87,6 +91,16 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 		this.selectedExerciseIndex++;
 		this.patchForm();
 		parentElement.scrollTo(0, 0)
+	}
+
+	updateExercise(phaseId: string, weekId: string, exerciseId: string, exercise: Exercise) {
+		return this.exerciseService.updateExercise(this.workout!.id!, phaseId, weekId, exerciseId, exercise).
+			pipe(
+				take(1),
+				switchMap(() => {
+					return this.exerciseService.updateNextExercisePreviousLoad(this.workout!, { ...exercise, id: exerciseId });
+				})
+			)
 	}
 
 	patchForm() {
@@ -111,7 +125,7 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 	closeViewer() {
 		this.onCloseViewer.emit();
 	}
-	
+
 	ngOnDestroy(): void {
 		StorageService.removeLastOpenedExercise();
 	}
