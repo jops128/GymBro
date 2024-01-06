@@ -3,7 +3,7 @@
 		<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
 	</h2>
 
-	<mat-tab-group [selectedIndex]="selectedTabIndex" (selectedTabChange)="selectTab($event.index)">
+	<mat-tab-group appFadeIn [selectedIndex]="selectedTabIndex" (selectedTabChange)="selectTab($event.index)">
 		@for(phase of workout?.phases; track phase.id; let i = $index) {
 			<mat-tab>
 				<ng-template mat-tab-label>				

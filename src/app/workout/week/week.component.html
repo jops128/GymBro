@@ -5,9 +5,11 @@
 			{{ week?.description }}
 		</h4>
 		<div>
-			<button mat-flat-button color="basic" (click)="enableReordering()">{{ reorderingEnabled ? 'Disable Reordering' : 'Enable Reordering' }}</button>
-			<button mat-flat-button color="basic" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add" class="ms-2">Add
-				exercise</button>
+			<button mat-flat-button class="d-none d-md-inline-block" color="basic" (click)="enableReordering()">{{ reorderingEnabled ? 'Disable Reordering' : 'Enable Reordering' }}</button>
+			<button mat-flat-button color="basic" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add" class="ms-2 text-center">
+				<span class="d-none d-md-inline">Add exercise</span>
+				<mat-icon class="d-inline d-md-none m-0" fontIcon="add"></mat-icon>
+			</button>
 			<button mat-flat-button color="warn" matTooltip="Delete week" class="ms-2 text-center" (click)="deleteWeek()">
 				<mat-icon fontIcon="delete" class="m-0"></mat-icon>
 			</button>

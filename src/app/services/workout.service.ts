@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Workout } from '../models/workout';
-import { Firestore, addDoc, collection, deleteDoc, doc, getDoc, getDocs, updateDoc } from '@angular/fire/firestore';
+import { Firestore, addDoc, collection, deleteDoc, doc, getDoc, getDocs, query, updateDoc, where } from '@angular/fire/firestore';
 import { Observable, forkJoin, from, map, of, switchMap } from 'rxjs';
 import { mapIdField } from '../helpers/response-map.helper';
 import { Phase } from '../models/phase';
 import { Week } from '../models/week';
 import { Exercise } from '../models/exercise';
+import { StorageService } from './storage.service';
 
 @Injectable({
 	providedIn: 'root'
@@ -15,10 +16,12 @@ export class WorkoutService {
 	constructor(private firestore: Firestore) { }
 
 	public saveWorkout(workout: Workout) {
+		workout.userId = StorageService.getUser()?.uid!;
 		return from(addDoc(collection(this.firestore, "workouts"), workout));
 	}
 
 	public updateWorkout(id: string, workout: Partial<Workout>) {
+		workout.userId = StorageService.getUser()?.uid!;
 		return from(updateDoc(doc(this.firestore, "workouts", id), workout));
 	}
 
@@ -27,7 +30,9 @@ export class WorkoutService {
 	}
 
 	public getAllWorkouts(): Observable<Workout[]> {
-		return from(getDocs(collection(this.firestore, "workouts"))).pipe(
+		const workoutsCollectionRef = collection(this.firestore, 'workouts');
+		const queryRef = query(workoutsCollectionRef, where('userId', '==', StorageService.getUser()?.uid));
+		return from(getDocs(queryRef)).pipe(
 			map(snapshot => snapshot.docs.map(doc => mapIdField<Workout>(doc)))
 		);
 	}
