@@ -26,8 +26,8 @@
 					<th scope="col" [width]="100">Working Sets</th>
 					<th scope="col" [width]="100">Reps</th>
 					<th scope="col" [width]="300">Load</th>
-					<th class="d-none d-md-table" scope="col" [width]="100">Previous Load</th>
-					<th class="d-none d-md-table" scope="col" [width]="100">RPE</th>
+					<th class="d-none d-md-table-cell" scope="col" [width]="100">Previous Load</th>
+					<th class="d-none d-md-table-cell" scope="col" [width]="100">RPE</th>
 					<!-- <th scope="col" [width]="100">Rest</th> -->
 					<!-- <th scope="col" [width]="100">Substitution One</th> -->
 					<!-- <th scope="col" [width]="100">Substitution Two</th> -->
@@ -54,8 +54,8 @@
 						<td (click)="openViewer(exercise.id!)">{{ exercise.workingSets }}</td>
 						<td (click)="openViewer(exercise.id!)">{{ exercise.reps }}</td>
 						<td (click)="openViewer(exercise.id!)">{{ exercise.load }}</td>
-						<td class="d-none d-md-table" (click)="openViewer(exercise.id!)">{{ exercise.previousLoad }}</td>
-						<td class="d-none d-md-table" (click)="openViewer(exercise.id!)">{{ exercise.rpe }}</td>
+						<td class="d-none d-md-table-cell" (click)="openViewer(exercise.id!)">{{ exercise.previousLoad }}</td>
+						<td class="d-none d-md-table-cell" (click)="openViewer(exercise.id!)">{{ exercise.rpe }}</td>
 						<!-- <td (click)="openViewer(exercise.id!)">{{ exercise.rest }}</td> -->
 						<!-- <td (click)="openViewer(exercise.id!)">{{ exercise.substitutionOne }}</td> -->
 						<!-- <td (click)="openViewer(exercise.id!)">{{ exercise.substitutionTwo }}</td> -->
