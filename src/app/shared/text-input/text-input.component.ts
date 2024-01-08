@@ -34,6 +34,16 @@ export class TextInputComponent extends InputBaseComponent implements OnInit {
 	}
 
 	navigateToLink() {
-		window.open(this.formGroup!.get('link')!.value, '_blank');
+		switch (this.name) {
+			case 'name':
+				window.open(this.formGroup!.get('link')!.value, '_blank');
+				break;
+			case 'substitutionOne':
+				window.open(this.formGroup!.get('substitutionOneLink')!.value, '_blank');
+				break;
+			case 'substitutionTwo':
+				window.open(this.formGroup!.get('substitutionTwoLink')!.value, '_blank');
+				break;			
+		  }
 	}
 }

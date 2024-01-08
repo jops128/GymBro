@@ -49,6 +49,13 @@ export class WeekComponent implements OnInit {
 	constructor(private exerciseService: ExerciseService, private route: ActivatedRoute, private router: Router, private weekService: WeekService) { }
 
 	ngOnInit(): void {
+		this.week?.exercises?.forEach((exercise, i, exercises) => {
+			let rowspan = 1;
+			while (i + rowspan < exercises.length && exercises[i + rowspan].category === exercise.category) {
+			  rowspan++;
+			}
+			(exercise as any)['rowspan'] = rowspan;
+		  });
 	}
 
 	openViewer(exerciseId: string) {
