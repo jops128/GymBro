@@ -1,0 +1,15 @@
+{
+	"name": "GymBro",
+	"short_name": "GymBro",
+	"start_url": "https://workout-app-6d2a8.web.app/",
+	"display": "standalone",
+	"theme_color": "#3f51b5",
+	"background_color": "#3f51b5",
+	"icons": [
+		{
+			"src": "assets/app_logo.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
