@@ -81,7 +81,9 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 			const week = this.workout?.phases?.find(p => p.id === phaseId)?.weeks?.find(w => w.exercises?.some(e => e.id === exerciseId))!;
 			this.updateExercise(phaseId, week.id!, exerciseId, formValue).subscribe(() => {
 				const weekExerciseIndex = week.exercises?.findIndex(e => e.id === exerciseId)!;
-				week.exercises!.splice(weekExerciseIndex, 1, { ...formValue, id: exerciseId });
+				const exercise = week.exercises!.at(weekExerciseIndex)!;
+				exercise.load = formValue.load;
+				exercise.id = exerciseId;
 				this.selectedExerciseIndex++;
 				this.patchForm();
 			});

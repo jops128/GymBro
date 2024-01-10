@@ -11,9 +11,9 @@ import { NotificationService } from 'src/app/services/notification.service';
 import { WeekService } from 'src/app/services/week.service';
 
 @Component({
-  selector: 'app-edit-exercise',
-  templateUrl: './edit-exercise.component.html',
-  styleUrl: './edit-exercise.component.scss'
+	selector: 'app-edit-exercise',
+	templateUrl: './edit-exercise.component.html',
+	styleUrl: './edit-exercise.component.scss'
 })
 export class EditExerciseComponent implements OnInit {
 	public form = new FormGroup<ControlsOf<Exercise>>({
@@ -42,7 +42,7 @@ export class EditExerciseComponent implements OnInit {
 	exerciseId: string | null = null;
 	isLoading: boolean = false;
 	categories = UIUtility.getWorkoutCategories();
-	constructor(private route: ActivatedRoute, private exerciseService: ExerciseService, private weekService: WeekService) {}
+	constructor(private route: ActivatedRoute, private exerciseService: ExerciseService, private weekService: WeekService) { }
 
 	ngOnInit(): void {
 		this.workoutId = this.route.snapshot.paramMap.get('id');
@@ -50,44 +50,51 @@ export class EditExerciseComponent implements OnInit {
 		this.weekId = this.route.snapshot.paramMap.get('weekId');
 		this.exerciseId = this.route.snapshot.paramMap.get('exerciseId');
 
-		if(this.exerciseId) {
+		if (this.exerciseId) {
 			this.isLoading = true;
 			this.exerciseService.getExerciseById(this.workoutId!, this.phaseId!, this.weekId!, this.exerciseId!).pipe(take(1)).subscribe(exercise => {
 				this.form.patchValue(exercise);
 				this.isLoading = false;
-		});
+			});
 		}
 	}
 
 	save() {
 		const value = this.form.value as Exercise;
-		if(this.exerciseId) {
+		if (this.exerciseId) {
 			this.exerciseService.updateExercise(this.workoutId!, this.phaseId!, this.weekId!, this.exerciseId!, value).pipe(take(1)).subscribe(() => {
 				NotificationService.show('Exercise updated');
-				AppComponent.app.router.navigate(['/workout', this.workoutId]);
+				AppComponent.app.router.navigate(['/workout', this.workoutId], { queryParams: { phaseId: this.phaseId } });
+
 			});
 			return;
 		}
 
-		if(this.applyForAllWeeks) {
+		if (this.applyForAllWeeks) {
 			this.weekService.getAllWeeks(this.workoutId!, this.phaseId!).pipe(
 				take(1),
 				switchMap(weeks => {
-				  const saveExerciseObservables = weeks.map(week => 
-					this.exerciseService.saveExercise(this.workoutId!, this.phaseId!, week.id!, value).pipe(take(1))
-				  );
-				  return forkJoin(saveExerciseObservables);
+					const saveExerciseObservables = weeks.map(week =>
+						this.exerciseService.saveExercise(this.workoutId!, this.phaseId!, week.id!, value).pipe(take(1))
+					);
+					return forkJoin(saveExerciseObservables);
 				})
-			  ).subscribe(() => {
-				AppComponent.app.router.navigate(['/workout', this.workoutId]);
+			).subscribe(() => {
+				AppComponent.app.router.navigate(['/workout', this.workoutId], { queryParams: { phaseId: this.phaseId } });
+
 				NotificationService.show('Exercise saved');
-			  });
+			});
 			return;
 		}
 
 		this.exerciseService.saveExercise(this.workoutId!, this.phaseId!, this.weekId!, value).pipe(take(1)).subscribe(() => {
-			AppComponent.app.router.navigate(['/workout', this.workoutId]);
+			AppComponent.app.router.navigate(['/workout', this.workoutId], { queryParams: { phaseId: this.phaseId } });
+
 			NotificationService.show('Exercise saved');
 		});
+	}
+
+	cancel() {
+		AppComponent.app.router.navigate(['/workout', this.workoutId], { queryParams: { phaseId: this.phaseId } });
 	}
 }

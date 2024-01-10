@@ -18,7 +18,7 @@
 			<mat-checkbox [(ngModel)]="applyForAllWeeks" class="example-margin" [ngModelOptions]="{standalone: true}">Apply for all weeks</mat-checkbox>		  
 		</div>
 		<button type="submit" mat-flat-button color="primary">Submit</button>
-		<button type="submit" mat-flat-button color="basic" routerLink="/workout/{{workoutId}}">Cancel</button>
+		<button type="submit" mat-flat-button color="basic" (click)="cancel()">Cancel</button>
 	</form>
 </ng-container>
 

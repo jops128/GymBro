@@ -34,19 +34,23 @@ export class WorkoutComponent implements OnInit {
 
 	ngOnInit() {
 		const workoutId = this.route.snapshot.paramMap.get('id');
+		const queryPhaseId = this.route.snapshot.queryParamMap.get('phaseId');
+		const queryExerciseId = this.route.snapshot.queryParamMap.get('exerciseId')!
 		if (!workoutId) {
 			AppComponent.app.router.navigate(['']);
 			return;
 		}
 		this.isLoading = true;
 		this.workoutService.getCompleteWorkoutById(workoutId).pipe(take(1)).subscribe(workout => {
-			
+
 			this.workout = workout;
 			// this.seedData();
 			this.isLoading = false;
-			if (this.route.snapshot.queryParamMap.keys.length > 0) {
-				this.selectedTabIndex = this.workout.phases?.findIndex(p => p.id === this.route.snapshot.queryParamMap.get('phaseId')!)!;
-				this.openViewer(this.route.snapshot.queryParamMap.get('phaseId')!, this.route.snapshot.queryParamMap.get('exerciseId')!);
+			if (queryPhaseId) {
+				this.selectedTabIndex = this.workout.phases?.findIndex(p => p.id === queryPhaseId)!;
+				if (queryExerciseId) {
+					this.openViewer(queryPhaseId, queryExerciseId);
+				}
 				AppComponent.app.router.navigate([], { queryParams: {} });
 			}
 		});
