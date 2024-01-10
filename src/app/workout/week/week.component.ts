@@ -45,6 +45,7 @@ export class WeekComponent implements OnInit {
 		notes: new FormControl('', Validators.required)
 	});
 	reorderingEnabled: any;
+	isExpanded: boolean = false;
 
 	constructor(private exerciseService: ExerciseService, private route: ActivatedRoute, private router: Router, private weekService: WeekService) { }
 
@@ -52,10 +53,11 @@ export class WeekComponent implements OnInit {
 		this.week?.exercises?.forEach((exercise, i, exercises) => {
 			let rowspan = 1;
 			while (i + rowspan < exercises.length && exercises[i + rowspan].category === exercise.category) {
-			  rowspan++;
+				rowspan++;
 			}
 			(exercise as any)['rowspan'] = rowspan;
-		  });
+		});
+		this.isExpanded = this.week?.exercises?.some((e) => e.id === StorageService.getLastOpenedExercise()?.exerciseId) ?? false;
 	}
 
 	openViewer(exerciseId: string) {
