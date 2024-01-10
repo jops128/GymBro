@@ -19,21 +19,21 @@ export class ExerciseFullViewComponent implements OnInit, OnDestroy {
 	@Output('onCloseViewer') onCloseViewer = new EventEmitter();
 
 	public exerciseForm = new FormGroup<ControlsOf<Exercise>>({
-		name: new FormControl('', Validators.required),
-		link: new FormControl('', Validators.required),
-		category: new FormControl('', Validators.required),
-		warmUpSets: new FormControl('', Validators.required),
-		workingSets: new FormControl('', Validators.required),
-		reps: new FormControl('', Validators.required),
-		load: new FormControl('', Validators.required),
-		previousLoad: new FormControl('', Validators.required),
-		rpe: new FormControl('', Validators.required),
-		rest: new FormControl('', Validators.required),
-		substitutionOne: new FormControl('', Validators.required),
+		name: new FormControl(''),
+		link: new FormControl(''),
+		category: new FormControl(''),
+		warmUpSets: new FormControl(''),
+		workingSets: new FormControl(''),
+		reps: new FormControl(''),
+		load: new FormControl(''),
+		previousLoad: new FormControl(''),
+		rpe: new FormControl(''),
+		rest: new FormControl(''),
+		substitutionOne: new FormControl(''),
 		substitutionOneLink: new FormControl(''),
-		substitutionTwo: new FormControl('', Validators.required),
+		substitutionTwo: new FormControl(''),
 		substitutionTwoLink: new FormControl(''),
-		notes: new FormControl('', Validators.required),
+		notes: new FormControl(''),
 		createdDate: new FormControl(new Date())
 	});
 	selectedExerciseIndex: number = 0;
