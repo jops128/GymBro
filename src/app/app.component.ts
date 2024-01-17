@@ -18,7 +18,7 @@ export class AppComponent {
 		AppComponent.app = this;
 		AppComponent.navigateToLastSavedExercise();
 		// this.formatSeedData();
-		// this.assignDate();
+		this.assignDate();
 	}
 
 	public static navigateToLastSavedExercise() {
@@ -29,11 +29,11 @@ export class AppComponent {
 	}
 
 	public formatSeedData() {
-		const categories = ['Legs', 'Push', 'Pull', 'Full Body'];
-		const chunkSizes = [6, 7, 8, 7];
+		const categories = ['Legs', 'Push', 'Pull', 'Full Body','Legs', 'Push', 'Pull', 'Full Body','Legs', 'Push', 'Pull', 'Full Body'];
+		const chunkSizes = [6, 7, 8, 7, 6, 7, 8, 7, 6, 7, 8, 6];
 		let chunkIndex = 0;
 		let categoryIndex = 0;
-		const data = phase2;
+		const data = phase3;
 
 		data.forEach((workout) => {
 		  workout.category = categories[categoryIndex];
@@ -44,7 +44,7 @@ export class AppComponent {
 			categoryIndex++;
 	  
 			if (categoryIndex === categories.length) {
-			  categoryIndex = 0;
+			  categoryIndex ++;
 			}
 		  }
 		});
@@ -54,13 +54,13 @@ export class AppComponent {
 
 	public assignDate() {
 		const date = new Date();
-		[...phase1, ...phase2, ...phase3].forEach((workout) => {
+		[...phase3].forEach((workout) => {
 			workout.createdDate = new Date(date);
 			date.setSeconds(date.getSeconds() + 1);
 		});
 
-		console.log("phase1: ", phase1);
-		console.log("phase2: ", phase2);
+		// console.log("phase1: ", phase1);
+		// console.log("phase2: ", phase2);
 		console.log("phase3: ", phase3);
 	}
 }

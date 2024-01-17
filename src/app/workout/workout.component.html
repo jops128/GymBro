@@ -3,17 +3,18 @@
 		<a routerLink="phase-add" mat-flat-button color="primary" class="ms-2">Add Phase</a>
 	</h2>
 
-	<mat-tab-group appFadeIn [selectedIndex]="selectedTabIndex" (selectedTabChange)="selectTab($event.index)">
+	<mat-tab-group appFadeIn dynamicHeight [selectedIndex]="selectedTabIndex" (selectedTabChange)="selectTab($event.index)">
 		@for(phase of workout?.phases; track phase.id; let i = $index) {
 			<mat-tab>
 				<ng-template mat-tab-label>				
 					{{phase.name}}
-					<button mat-icon-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}"><mat-icon fontIcon="edit"></mat-icon></button>
-					<button mat-icon-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)"><mat-icon fontIcon="delete"></mat-icon></button>
+					
 				</ng-template>
+				<div class="bg-secondary d-flex justify-content-center mt-2 text-light py-1">
+					{{ phase.description }}
+				</div>
 				<mat-accordion>
-
-				<app-week *ngFor="let week of phase.weeks" 
+					<app-week *ngFor="let week of phase.weeks" 
 							[week]="week" 
 							[phaseId]="phase.id" 
 							[workoutId]="workout?.id" 
@@ -22,6 +23,11 @@
 				</mat-accordion>
 				<div class="d-flex justify-content-center w-100 mb-4 mt-3">					
 					<button mat-fab color="primary" matTooltip="Add new week" (click)="addWeek()"><mat-icon fontIcon="add"></mat-icon></button>					
+				</div>
+				<hr>
+				<div class="d-flex justify-content-center">
+					<button mat-stroked-button color="basic" class="btn-sm ms-2" routerLink="phase-edit/{{phase.id}}">Edit <mat-icon fontIcon="edit"></mat-icon></button>
+					<button mat-stroked-button color="warn" class="btn-sm ms-2" (click)="deletePhase(phase.id!)">Delete Phase<mat-icon fontIcon="delete"></mat-icon></button>
 				</div>
 			</mat-tab>
 		}

@@ -103,28 +103,28 @@ export class WorkoutComponent implements OnInit {
 		let phase3Index = 0;
 		this.workout!.phases!.forEach((phase, index) => {
 			switch (index) {
-				case 0:
-					phase.weeks?.forEach(week => {
-						const chunk = phase1.slice(phase1Index, phase1Index + 30);
-						const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
-						forkJoin(requests).pipe(take(1)).subscribe();
-						phase1Index += 30;
-					})
-					break;
-				case 1:
-					phase.weeks?.forEach(week => {
-						const chunk = phase2.slice(phase2Index, phase2Index + 21);
-						const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
-						forkJoin(requests).pipe(take(1)).subscribe();
-						phase2Index += 21;
-					})
-					break;
+				// case 0:
+				// 	phase.weeks?.forEach(week => {
+				// 		const chunk = phase1.slice(phase1Index, phase1Index + 30);
+				// 		const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
+				// 		forkJoin(requests).pipe(take(1)).subscribe();
+				// 		phase1Index += 30;
+				// 	})
+				// 	break;
+				// case 1:
+				// 	phase.weeks?.forEach(week => {
+				// 		const chunk = phase2.slice(phase2Index, phase2Index + 21);
+				// 		const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
+				// 		forkJoin(requests).pipe(take(1)).subscribe();
+				// 		phase2Index += 21;
+				// 	})
+				// 	break;
 				case 2:
 					phase.weeks?.forEach(week => {
-						const chunk = phase3.slice(phase3Index, phase3Index + 27);
+						const chunk = phase3.slice(phase3Index, phase3Index + 28);
 						const requests = chunk.map(exercise => this.exerciseService.saveExercise(this.workout!.id!, phase.id!, week.id!, exercise));
 						forkJoin(requests).pipe(take(1)).subscribe();
-						phase3Index += 27;
+						phase3Index += 28;
 					})
 					break;
 				default:
