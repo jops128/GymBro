@@ -28,7 +28,7 @@
       </mat-panel-title>
     </mat-expansion-panel-header>
 	<div class="overflow-auto">
-		<div class="bg-success d-flex justify-content-center mt-2 text-light py-1 px-2 text-center">			
+		<div *ngIf="week?.description" class="bg-success d-flex justify-content-center mt-2 text-light py-1 px-2 text-center">			
 			{{ week?.description }}
 		</div>
 
