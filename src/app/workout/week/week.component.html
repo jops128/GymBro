@@ -4,22 +4,34 @@
 		<div class="d-flex justify-content-between align-items-center w-100 bg-primary text-light px-3">
 			<h4 class="mb-0">
 				{{ week?.name }}
-				{{ week?.description }}
 			</h4>
 			<div>
-				<button mat-flat-button class="d-none d-md-inline-block" color="basic" (click)="enableReordering()">{{ reorderingEnabled ? 'Disable Reordering' : 'Enable Reordering' }}</button>
-				<button mat-flat-button color="basic" routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add" class="ms-2 text-center">
-					<span class="d-none d-md-inline">Add exercise</span>
-					<mat-icon class="d-inline d-md-none m-0" fontIcon="add"></mat-icon>
+				<button mat-icon-button [matMenuTriggerFor]="menu" (click)="onMenuClick($event)" aria-label="Example icon-button with a menu">
+					<mat-icon>more_vert</mat-icon>
 				</button>
-				<button mat-flat-button color="warn" matTooltip="Delete week" class="ms-2 text-center" (click)="deleteWeek()">
-					<mat-icon fontIcon="delete" class="m-0"></mat-icon>
-				</button>
+				<mat-menu #menu="matMenu">
+					<button mat-menu-item (click)="enableReordering()">
+						<mat-icon>menu_open</mat-icon>
+						<span>{{ reorderingEnabled ? 'Disable Reordering' : 'Enable Reordering' }}</span>
+					</button>
+					<button mat-menu-item routerLink="week/{{week?.id}}/{{phaseId}}/exercise-add">
+						<mat-icon>add</mat-icon>
+						<span>Add exercise</span>
+					</button>
+					<button mat-menu-item (click)="deleteWeek()">
+						<mat-icon>delete</mat-icon>
+						<span>Delete week</span>
+					</button>
+				</mat-menu>
 			</div>
 		</div>
       </mat-panel-title>
     </mat-expansion-panel-header>
 	<div class="overflow-auto">
+		<div class="bg-success d-flex justify-content-center mt-2 text-light py-1 px-2 text-center">			
+			{{ week?.description }}
+		</div>
+
 		<table class="table table-striped table-bordered mt-4">
 			<thead>
 				<tr>

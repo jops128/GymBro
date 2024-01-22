@@ -38,6 +38,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ExerciseFullViewComponent } from './workout/exercise-full-view/exercise-full-view.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
 	declarations: [
@@ -77,6 +78,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 		MatDialogModule,
 		DragDropModule,
 		MatExpansionModule,
+		MatMenuModule,
 		provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
 		provideAuth(() => getAuth()),
 		provideFirestore(() => getFirestore()),

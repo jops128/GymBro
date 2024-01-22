@@ -18,7 +18,7 @@ export class AppComponent {
 		AppComponent.app = this;
 		AppComponent.navigateToLastSavedExercise();
 		// this.formatSeedData();
-		this.assignDate();
+		// this.assignDate();
 	}
 
 	public static navigateToLastSavedExercise() {

@@ -100,5 +100,9 @@ export class WeekComponent implements OnInit {
 	enableReordering() {
 		this.reorderingEnabled = !this.reorderingEnabled;
 	}
+
+	onMenuClick(event: MouseEvent) {
+		event.stopPropagation();
+	}
 }
 
