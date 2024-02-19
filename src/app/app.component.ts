@@ -18,7 +18,7 @@ export class AppComponent {
 		AppComponent.app = this;
 		AppComponent.navigateToLastSavedExercise();
 		// this.formatSeedData();
-		// this.assignDate();
+		this.assignDate();
 	}
 
 	public static navigateToLastSavedExercise() {
@@ -54,13 +54,13 @@ export class AppComponent {
 
 	public assignDate() {
 		const date = new Date();
-		[...phase3].forEach((workout) => {
+		[...phase1].forEach((workout) => {
 			workout.createdDate = new Date(date);
 			date.setSeconds(date.getSeconds() + 1);
 		});
 
 		// console.log("phase1: ", phase1);
 		// console.log("phase2: ", phase2);
-		console.log("phase3: ", phase3);
+		console.log("phase3: ", phase1);
 	}
 }
